@@ -1,0 +1,515 @@
+#get libraries----
+library(plyr) 
+library(ggplot2) 
+library(gridExtra) 
+library(xcms) 
+#library(XLConnect) 
+library(dplyr) 
+library(seqinr) 
+library(lubridate)
+library(reshape2)
+
+#getTIC----
+getTIC <- function(file,rtcor=NULL) {
+  object <- xcmsRaw(file)
+  cbind(if (is.null(rtcor)) object@scantime else rtcor, rawEIC(object,mzrange=range(object@env$mz))$intensity) 
+}
+
+#Calculate CV----
+CV <- function(mean, sd){
+  (sd/mean)*100
+}
+
+#overlay TIC from all files in current folder or from xcmsSet, create pdf----
+getTICs <- function(xcmsSet=NULL,files=NULL, pdfname="TICs.pdf",rt=c("raw","corrected")) {
+  if (is.null(xcmsSet)) {
+    filepattern <- c("[Cc][Dd][Ff]", "[Nn][Cc]", "([Mm][Zz])?[Xx][Mm][Ll]",
+                     "[Mm][Zz][Dd][Aa][Tt][Aa]", "[Mm][Zz][Mm][Ll]")
+    filepattern <- paste(paste("\\.", filepattern, "$", sep = ""), collapse = "|")
+    if (is.null(files))
+      files <- getwd()
+    info <- file.info(files)
+    listed <- list.files(files[info$isdir], pattern = filepattern,
+                         recursive = TRUE, full.names = TRUE)
+    files <- c(files[!info$isdir], listed)
+  } else {
+    files <- filepaths(xcmsSet)
+  }
+  
+  N <- length(files)
+  TIC <- vector("list",N)
+  
+  for (i in 1:N) {
+    cat(files[i],"n")
+    if (!is.null(xcmsSet) && rt == "corrected")
+      rtcor <- xcmsSet@rt$corrected[[i]] else 
+        rtcor <- NULL
+      TIC[[i]] <- getTIC(files[i],rtcor=rtcor)
+  }
+  
+  pdf(pdfname,w=16,h=10)
+  cols <- rainbow(N)
+  lty = 1:N
+  pch = 1:N
+  xlim = range(sapply(TIC, function(x) range(x[,1])))
+  ylim = range(sapply(TIC, function(x) range(x[,2])))
+  plot(0, 0, type="n", xlim = xlim, ylim = ylim, main = "Total Ion Chromatograms", xlab = "Retention Time", ylab = "TIC")
+  for (i in 1:N) {
+    tic <- TIC[[i]]
+    points(tic[,1], tic[,2], col = cols[i], pch = pch[i], type="l")
+  }
+  legend("topright",paste(basename(files)), col = cols, lty = lty, pch = pch)
+  dev.off()
+  
+  invisible(TIC)
+}
+
+
+
+#doRetcorPG----
+doRetcorPG<- function(xset1){
+  retcor(xset1, 
+         method="peakgroups", 
+         plottype = NULL, 
+         missing=1, 
+         extra=16,
+         smooth="loess",
+         family = "symmetric")
+}
+
+
+#doPeakPicking----
+doPeakPick <- function(DatFiles){
+xcmsSet(DatFiles,
+        method='centWave',
+        ppm=Params["PPM", Fraction], 
+        peakwidth=c(Params["PEAKWIDTHlow", Fraction], Params["PEAKWIDTHhigh", Fraction]),
+        snthresh=Params["SNthresh", Fraction] , 
+        mzdiff=Params["MZDIFF", Fraction],
+        prefilter=c(Params["PREFILTERlow", Fraction], Params["PREFILTERhigh", Fraction]))
+}
+
+#doGrouping----
+dogrouping<- function(xset1){
+  group(xset1,
+        method = "density", 
+        bw = Params["BW", Fraction], 
+        minfrac = Params["MINFRAC", Fraction],
+        minsamp = Params["MINSAMP", Fraction], 
+        mzwid = Params["MZWID", Fraction], 
+        max = Params["MAX", Fraction])
+}
+
+#doRetcor----
+doRetcor<- function(xset1){
+  retcor(xset1, 
+         method="obiwarp", 
+         plottype = c("none", "deviation"), 
+         profStep=Params["profStep", Fraction], 
+         gapInit=Params["GAPInit", Fraction], 
+         gapExtend=Params["GAPExtend", Fraction])
+}
+
+#checkit ----
+checkit <- function(x, ranges){
+  which(x>=ranges[,1] & x<=ranges[,2])}
+
+
+###########Function to find isotope matches-------
+isotopehunter8<-function(mzxcms,isotopefile,scantime){
+  
+  starttime<-Sys.time()
+  
+  if(scantime[1]=="all"){
+    startscan<-1
+    endscan<-length(mzxcms@scantime)
+  }else{
+    startscan<-which(mzxcms@scantime>scantime[1])[1]
+    endscan<-tail(which(mzxcms@scantime<scantime[2]),1)
+  }
+  
+  readpattern<-read.csv(isotopefile, header = TRUE, sep = ",")
+  
+  pattern<-readpattern[(readpattern[,6]=='Y'),]
+  uppermass<-pattern[-1,2]+pattern[-1,4]-pattern[1,2]
+  lowermass<-pattern[-1,2]-pattern[-1,4]-pattern[1,2]
+  upperratio<-pattern[-1,3]*pattern[-1,5]/pattern[1,3]
+  lowerratio<-pattern[-1,3]/pattern[-1,5]/pattern[1,3]
+  nisotope<-length(uppermass)
+  
+  columnnames<-c(sapply(pattern[,1],FUN=function(x) c(paste(x,'mass'),paste(x,'intensity'))))
+  
+  results<-matrix(0,ncol=(4+nisotope*2),nrow=1E6)
+  r<-1
+  colnames(results) = c('scan','time', columnnames)
+  
+  
+  mzint<-20
+  mzbuffer<-uppermass[length(uppermass)]
+  
+  for(i in startscan:endscan) {
+    tscan<-getScan(mzxcms,i)
+    tscan<-tscan[which(tscan[,2]>0),]
+    
+    #print(paste(i,'of',endscan))
+    
+    first<-tscan[1,1]
+    last<-first+mzint
+    
+    while(last<tscan[nrow(tscan),1]){
+      
+      scan<-tscan[which(tscan[,1]>first & tscan[,1]<last),]
+      
+      if(length(scan)>2){
+        final<-length(which(scan[,1]<(last-mzbuffer)))
+        for(j in 1:final){
+          x<-scan[j,1]
+          y<-scan[j,2]
+          isotopes<-matrix(NA,ncol=nisotope)
+          k<-1
+          while(k<nisotope+1){
+            isotopes[k]<-(which(
+              scan[,1]>(x+lowermass[k]) & 
+                scan[,1]<(x+uppermass[k]) & 
+                scan[,2]>(y*lowerratio[k]) & 
+                scan[,2]<(y*upperratio[k])
+            )[1])
+            if(is.na(isotopes[k])){k<-(nisotope+2)
+            } else {k<-k+1
+            }
+          }
+          if(k==(nisotope+1)){
+            results[r,]<-c(i,mzxcms@scantime[i],x,y,c(t(scan[isotopes,])))
+            r<-r+1
+          }
+          
+        }
+      }
+      first<-last-mzbuffer
+      last<-last+mzint
+    }
+    scan<-tscan[which(tscan[,1]>first & tscan[,1]<last),]
+    if(length(scan)>2){
+      for(j in 1:nrow(scan)){
+        x<-scan[j,1]
+        y<-scan[j,2]
+        isotopes<-matrix(NA,ncol=nisotope)
+        k<-1
+        while(k<nisotope+1){
+          isotopes[k]<-(which(
+            scan[,1]>(x+lowermass[k]) & 
+              scan[,1]<(x+uppermass[k]) & 
+              scan[,2]>(y*lowerratio[k]) & 
+              scan[,2]<(y*upperratio[k])
+          )[1])
+          if(is.na(isotopes[k])){k<-(nisotope+2)
+          } else {k<-k+1
+          }
+        }
+        if(k==(nisotope+1)){
+          results[r,]<-c(i,mzxcms@scantime[i],x,y,c(t(scan[isotopes,])))
+          r<-r+1
+        }
+      }
+    }
+  }
+  if('O' %in% readpattern[,6]){
+    optionalpattern<-readpattern[(readpattern[,6]=='O')]   
+    
+    for(i in 1:nrow(results)){
+      
+    }
+    
+  }
+  
+  
+  print(Sys.time()-starttime)
+  
+  return(results[1:(r-1),])
+}
+
+###########Function to remove noise from isotope matches-------
+Removenoise4<-function(result,background,twidth){
+  
+  masslist2<-c()
+  
+  if(length(which(result[,4]>background))>1){
+    
+    #remove elements below x counts (x=background)
+    results2<-result[(result[,4]>background),]
+    
+    #round data for binning
+    results3<-round(results2, digits=2)
+    
+    #remove elements that don't appear twice or more in x chromatographic seconds (x=twidth) and which don't have a modest peak if there are more than 10 points.
+    masslist<-unique(results3[which(duplicated(results3[,3])),3])
+    
+    
+    #remove elements that appear in x or more 30 second intervals (x = noise).
+    for(i in 1:length(masslist)){
+      scantime<-0
+      intense<-NULL
+      intense2<-NULL
+      times<-results3[which(results3[,3]==masslist[i]),2]
+      timediff<-times[2:length(times)]-times[1:length(times)-1]
+      
+      if(min(timediff)<twidth){
+        while(scantime<max(result[,2])){
+          resultint<-results3[which(results3[,3]==masslist[i] & results3[,2]>scantime & results3[,2]<(scantime+30)),4]
+          resultint2<-results3[which(results3[,3]==masslist[i] & results3[,2]>scantime & results3[,2]<(scantime+30)),6]
+          if(length(resultint)>0){
+            intense<-c(intense,max(resultint))
+            intense2<-c(intense2,max(resultint2))
+          }
+          scantime<-(scantime+30)
+        }
+        intense<-sort(intense)
+        intense2<sort(intense2)
+        if(length(intense)<7.5){masslist2<-c(masslist2,masslist[i])}
+        if(length(intense)>7.5){
+          quartile<-as.integer(length(intense)*3/4)
+          threshold1<-mean(intense[1:quartile]+4*sd(intense[1:quartile]))
+          threshold2<-mean(intense2[1:quartile]+4*sd(intense[1:quartile]))
+          if(max(intense)>threshold1 & max(intense2)>threshold2){masslist2<-c(masslist2,masslist[i])}
+        }
+      }
+    }
+  }
+  
+  ##Now return only the result with the maximum intensity for each element:
+  
+  result4<-matrix(data=0,nrow=length(masslist2),ncol=ncol(result))
+  colnames(result4) = colnames(result)
+  
+  if(length(masslist2)>0){
+    
+    for(i in 1:length(masslist2)){
+      resultint<-results2[(results3[,3]==masslist2[i]),]
+      result4[i,]<-resultint[which.max(resultint[,4]),]
+    }
+  }
+  
+  return(result4)
+}
+
+
+#Generate PDF report for isotope search----
+XCMSreport<-function(savefile,mzxcms,results,isotopefile,timerange){
+  
+  masslist<-results[,3]
+  
+  pdf(paste(savefile,'.pdf', sep = ""))
+  for(i in 1:length(masslist)){
+    finalplotter_MSonly2(mzxcms,masslist[i],results,isotopefile,timerange,i)
+  }
+  dev.off()
+  write.table(results,paste(savefile,'.txt', sep = ""),sep="\t")
+  return()
+}
+
+#Final plot function for generating report for any pattern. Includes MS spectra as last panel----
+finalplotter_MSonly<-function(mzxcms,mass,results,isotopefile,timerange,i){
+  par(mfrow=c(2,1))
+  par(mar=c(4,4,3,3))
+  mzxcms@scantime<-mzxcms@scantime/60
+  timerange<-timerange/60
+  isotopeplotter3(mzxcms,isotopefile,mass,timerange,(results[i,2]/60))
+  MSplotter2(mzxcms,results,i,isotopefile)
+}
+
+#Isotope plotter for final report -----
+#Makes one plot with EIC's of every isotope found, scaled to the 'same' intensity
+isotopeplotter3<-function(mzxcms,isotopefile,lowmass,timerange,maxscan){
+  pattern<-read.csv(isotopefile, header = TRUE, sep = ",")
+  
+  plotrange<-pattern[,2]-pattern[1,2]+lowmass
+  isotoperatio<-pattern[,3]/pattern[1,3]
+  namerange<-as.vector(pattern[,1])
+  
+  colors<-c('blue4','darkorange2','burlywood4','black','red')
+  usedcolors<-colors[1:ncol(pattern)]
+  
+  maxy<-0
+  times<-mzxcms@scantime
+  
+  for(i in 1:nrow(pattern)){
+    mzrange<-c(-0.005,0.005)+plotrange[i]
+    EIC<-rawEIC(mzxcms,mzrange)
+    EIC1<-unlist(EIC[2])/isotoperatio[i]
+    newmax<-max(EIC1[which(times>timerange[1]&times<timerange[2])])
+    maxy<-max(c(maxy,newmax))
+  }
+  
+  
+  mzrange<-c(-0.005,0.005)+lowmass
+  EIC<-rawEIC(mzxcms,mzrange)
+  plot(times,EIC[[2]],
+       type='l',
+       lwd=1,
+       xlim=timerange,
+       ylim=c(0,maxy*1.1),
+       ylab='Scaled Intensity',
+       xlab='Retention Time (min)',
+       col=usedcolors[1],
+       bty='n',
+       cex.axis=1,
+       cex.lab=1
+  )
+  
+  for(i in 2:ncol(pattern)){
+    mzrange<-c(-0.005,0.005)+plotrange[i]
+    EIC<-rawEIC(mzxcms,mzrange)
+    lines(times,EIC[[2]]/isotoperatio[i],col=usedcolors[i],lwd=1)
+  }
+  
+  abline(v=maxscan, lty=3,col='gray48')
+  title(paste('  Isotope peaks LC-ESIMS.  EIC = ',toString(round(plotrange,digits=3))))
+  legend('topright',bty="n",namerange,lwd=2,col=usedcolors,cex=0.7,horiz=TRUE)
+  
+}
+
+#Mass spectra plotter-----
+MSplotter2<-function(mzxcms,results,i,isotopefile){
+  
+  #determine correct isotope pattern
+  readpattern<-read.csv(isotopefile, header = TRUE, sep = ",")
+  pattern<-readpattern[(readpattern[,6]=='Y'),]
+  theorymass<-pattern[,2]-pattern[1,2]+results[i,3]
+  theoryratio<-pattern[,3]/pattern[1,3]*results[i,4]
+  
+  isotopes<-matrix(results[i,-1:-2],byrow=TRUE,ncol=2)
+  massrange<-c(mean(isotopes[,1])-10,mean(isotopes[,1])+10)
+  scanrange<-getScan(mzxcms,results[i,1],mzrange=massrange)
+  #scanrange<-scan[which(scan[,1]>mzrange[1] & scan[,1]<mzrange[2]),]
+  plot(scanrange,type='h',ylim=c(0,max(scanrange[,2])))
+  lines(theorymass,theoryratio,type='h',col='cornsilk3',lwd=3)
+  lines(isotopes,type='h',col='red')
+  title(paste('MS: ',toString(round(results[i,2]/60,digits=2)),' min'))
+  
+}
+
+#KRH Peak Peeker Function----------
+KRHS1picker <- function(DFFiltered){
+  print(paste("Get ready to look at", length(DFFiltered$scan), "peaks!"))
+  DFFiltered <- split(DFFiltered, DFFiltered$SampleID)
+  for (j in 1:length(DFFiltered)){ #Loop through # of mzxml files to open and shut
+    print(paste("Opening next sample, please wait, this is number", j, "of", length(DFFiltered)))
+    cleanresult <- DFFiltered[[j]]
+    mzdatafiles <- DFFiltered[[j]]$mzFile
+    mzxcms <- xcmsRaw(mzdatafiles[1],profstep=0.01,profmethod="bin",profparam=list(),includeMSn=FALSE,mslevel=NULL, scanrange=NULL)
+    masslist32S<-cleanresult$X32S.mass
+    masslist34S<-cleanresult$X34S.mass
+    timelist <- cleanresult$scan
+    cleanlist <- cleanresult$GoodPeak
+    intensitylist <- cleanresult$X32S.intensity
+    namelist <- cleanresult$SampleID
+    
+    for (i in 1:length(timelist)) {   
+      EICS32<-rawEIC(mzxcms,mzrange=c(masslist32S[i]-0.005,masslist32S[i]+0.005))#, timerange = c(timelist[i]-100, timelist[i]+100))
+      EICS34<-rawEIC(mzxcms,mzrange=c(masslist34S[i]-0.005,masslist34S[i]+0.005))#, timerange = c(timelist[i]-100, timelist[i]+100)
+      plot(EICS32[[2]],
+           xlim = c(timelist[i]-300, timelist[i]+300),
+           ylim = c(0, (2*intensitylist[i])),
+           type='l',
+           lty=3,
+           lwd=2,
+           ylab='Scaled Intensity',
+           xlab='scan number',
+           col="black",
+           bty='n',
+           cex.axis=1,
+           cex.lab=1, 
+           main = namelist[i])
+      lines(22.12821*EICS34[[2]],
+            xlim = c(timelist[i]-300, timelist[i]+300),
+            ylim = c(0, (2*intensitylist[i])),
+            type='l',
+            lwd=2,
+            col="orange",
+            bty='n')
+      abline(v=timelist[i], col='cyan',lty=3, lwd=6)
+      ask<-readline(prompt="Enter 'y' if this is a good hit: ")
+      if(ask=='y'){cleanlist[i]="GOOD"}else{cleanlist[i]="BAD"}
+    }
+    
+    DFFiltered[[j]]$GoodPeak <- cleanlist
+  }
+  DFFiltered2 <- do.call(rbind, DFFiltered)
+  write.csv(DFFiltered2,  paste(as.character(Dirs[as.character(Fraction) , "SResults"]), 
+                                "/Culled_S1_List_wtihTargets_Checked.csv", sep = "", collapse = NULL))
+}
+
+KRHS1pickerOrg <- function(DFFiltered){
+  print(paste("Get ready to look at", length(DFFiltered$scan), "peaks!"))
+  DFFiltered <- split(DFFiltered, DFFiltered$SampleID)
+  for (j in 1:length(DFFiltered)){ #Loop through # of mzxml files to open and shut
+    print(paste("Opening next sample, please wait, this is number", j, "of", length(DFFiltered)))
+    cleanresult <- DFFiltered[[j]]
+    mzdatafiles <- DFFiltered[[j]]$mzFile
+    mzxcms <- xcmsRaw(mzdatafiles[1],profstep=0.01,profmethod="bin",profparam=list(),includeMSn=FALSE,mslevel=NULL, scanrange=NULL)
+    masslist32S<-cleanresult$X32S.mass
+    masslist34S<-cleanresult$X34S.mass
+    timelist <- cleanresult$scan
+    cleanlist <- cleanresult$GoodPeak
+    intensitylist <- cleanresult$X32S.intensity
+    namelist <- cleanresult$SampleID
+    
+    for (i in 1:length(timelist)) {   
+      EICS32<-rawEIC(mzxcms,mzrange=c(masslist32S[i]-0.005,masslist32S[i]+0.005))#, timerange = c(timelist[i]-100, timelist[i]+100))
+      EICS34<-rawEIC(mzxcms,mzrange=c(masslist34S[i]-0.005,masslist34S[i]+0.005))#, timerange = c(timelist[i]-100, timelist[i]+100)
+      plot(EICS32[[2]],
+           xlim = c(timelist[i]-300, timelist[i]+300),
+           ylim = c(0, (2*intensitylist[i])),
+           type='l',
+           lty=3,
+           lwd=2,
+           ylab='Scaled Intensity',
+           xlab='scan number',
+           col="black",
+           bty='n',
+           cex.axis=1,
+           cex.lab=1, 
+           main = namelist[i])
+      lines(22.12821*EICS34[[2]],
+            xlim = c(timelist[i]-300, timelist[i]+300),
+            ylim = c(0, (2*intensitylist[i])),
+            type='l',
+            lwd=2,
+            col="orange",
+            bty='n')
+      abline(v=timelist[i], col='cyan',lty=3, lwd=6)
+      ask<-readline(prompt="Enter 'y' if this is a good hit: ")
+      if(ask=='y'){cleanlist[i]="GOOD"}else{cleanlist[i]="BAD"}
+    }
+    
+    DFFiltered[[j]]$GoodPeak <- cleanlist
+  }
+  DFFiltered2 <- do.call(rbind, DFFiltered)
+  write.csv(DFFiltered2,  paste(as.character(Dirs[as.character(Fraction) , "SResults"]), "/", Org ,
+                                "_Culled_S1_List_wtihTargets_Checked.csv", sep = "", collapse = NULL))
+}
+
+#Final plot function for generating report for any pattern. Includes MS spectra as last panel
+finalplotter_MSonly<-function(mzxcms,mass,results,isotopefile,timerange,i){
+  par(mfrow=c(2,1))
+  par(mar=c(4,4,3,3))
+  mzxcms@scantime<-mzxcms@scantime/60
+  timerange<-timerange/60
+  isotopeplotter3(mzxcms,isotopefile,mass,timerange,(results[i,2]/60))
+  MSplotter2(mzxcms,results,i,isotopefile)
+}
+
+#Final plot function for generating report for any pattern. Includes Apo form MS spectra as last panel
+finalplotter_MSonly2<-function(mzxcms,mass,results,isotopefile,timerange,i){
+  par(mfrow=c(3,1))
+  par(mar=c(4,4,3,3))
+  mzxcms@scantime<-mzxcms@scantime/60
+  timerange<-timerange/60
+  isotopeplotter3(mzxcms,isotopefile,mass,timerange,(results[i,2]/60))
+  if(isotopefile=='./Feisotope.csv'){EICplot1(mzxcms,mass-50.9161,'Apo form',timerange,(results[i,2]/60))}
+  if(isotopefile=='./Cuisotope.csv'){EICplot1(mzxcms,mass-60.9139,'Apo form',timerange,(results[i,2]/60))}
+  MSplotter2(mzxcms,results,i,isotopefile)
+}
+
+
+
