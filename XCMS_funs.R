@@ -596,7 +596,8 @@ checkKEGG <- function(MFs, ppmtol) {
   matchedKEGGs[[2]] <- matchedKEGGs[[1]] %>%
     group_by(MF_Frac) %>%
     summarise(KeggMatches = as.character(paste(KeggMatches,  collapse="; ")),
-              Keggppm = as.character(paste(Keggppm,  collapse="; ")))
+              Keggppm = as.character(paste(Keggppm,  collapse="; ")),
+              KeggNames = as.character(paste(KEGGMatchesNames,  collapse="; ")))
   return(matchedKEGGs)}
 
 
