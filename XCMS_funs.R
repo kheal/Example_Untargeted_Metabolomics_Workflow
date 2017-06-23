@@ -513,3 +513,90 @@ finalplotter_MSonly2<-function(mzxcms,mass,results,isotopefile,timerange,i){
 
 
 
+
+
+#checkKnownCompounds -----------
+checkKnownCompounds <- function(MFs, ppmtol) {
+if(missing(ppmtol)) {
+  ppmtol <- 15
+}
+matchedKnownCompounds <- list()
+knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv?token=AKBCZwCTNmRQgTI5V7M0JJxFPxc0q0F_ks5ZVaf5wA%3D%3D"), header = T)  %>%
+  mutate(mz = m.z, RT = RT..min.) %>% select(Compound.Name, mz, RT, Fraction1, Fraction2) %>% 
+  mutate(Fraction1 = as.character(Fraction1),
+         Fraction2 = as.character(Fraction2))
+MFstry <- MFs %>% mutate(MF_Frac2 = MF_Frac) %>% separate(MF_Frac2, c("MF", "Frac"), sep =  "_") %>% select(-MF)  
+matchedKnownCompounds[[1]] <- difference_inner_join(x= MFstry, y = knownShortCompounds, 
+                                                    by = "mz", max_dist = .01,  distance_col = NULL) %>%
+  mutate(MZdiff = abs(mz.x-mz.y ))%>%
+  mutate(RTdiff = abs(RT.x-RT.y),
+         ppm = (MZdiff/mz.x *10^6)) %>%
+  filter(ppm < ppmtol) %>%
+  filter(Frac == Fraction1 | Frac == Fraction2) %>%
+  mutate(Frac = as.factor(Frac), mz = mz.x) %>% 
+  select(MF_Frac, mz, rt, Compound.Name, RTdiff, ppm)
+matchedKnownCompounds[[2]] <- matchedKnownCompounds[[1]] %>% 
+  group_by(MF_Frac) %>%
+  summarise(TargetMatches = as.character(paste(Compound.Name,  collapse="; ")),
+            ppmMatches = as.character(paste(ppm,  collapse="; ")),
+            RTdiffMatches = as.character(paste(ppm,  collapse="; ")))
+return(matchedKnownCompounds)
+
+}
+
+#flag for known Contaminants -------
+checkContaminants <- function(MFs, ppmtol) {
+  if(missing(ppmtol)) {
+    ppmtol <- 15
+  }
+  matchedKnownContaminants <- list()
+  knownContaminants <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/CommonContams.csv?token=AKBCZ1Nk5DRacGo9ZwMWIU_KcvDhmUSlks5ZVW5JwA%3D%3D"), comment.char = "#", header = T)%>%
+    mutate(mz = m.z) %>% select(Fraction1:Fraction3, mz, Compound) %>% mutate(Flag = "PossibleContamin")
+  MFstry <- MFs %>% mutate(MF_Frac2 = MF_Frac) %>% separate(MF_Frac2, c("MF", "Frac"), sep =  "_") %>% select(-MF)
+  matchedKnownContaminants[[1]] <- difference_inner_join(x= knownContaminants, y = MFstry, 
+                                                         by = "mz", max_dist = .01,  distance_col = NULL) %>%
+    mutate(ppm = (abs(mz.x-mz.y )/mz.x *10^6)) %>%
+    filter(ppm < ppmtol, Frac == Fraction1 | Frac == Fraction2 | Frac == Fraction3) %>%
+    mutate(Frac = as.factor(Frac), mz = mz.x) %>% 
+    select(MF_Frac, Compound, ppm, Flag ) %>% 
+    rename(ContamMatches = Compound, Contamppm = ppm, ContamFlag = Flag)
+  
+  matchedKnownContaminants[[2]] <- matchedKnownContaminants[[1]] %>% 
+    group_by(MF_Frac) %>%
+    summarise(ContamMatches = as.character(paste(ContamMatches,  collapse="; ")),
+              Contamppm = as.character(paste(Contamppm,  collapse="; ")))
+  return(matchedKnownContaminants)
+}
+
+#Check against the KEGG list of compounds -----
+checkKEGG <- function(MFs, ppmtol) {
+  if(missing(ppmtol)) {
+    ppmtol <- 15
+  }
+  matchedKEGGs <- list()
+  keggCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/KEGGCompounds_withMasses.csv?token=AKBCZ26yPE2ubOUFxJo9X4N706tmq-ufks5ZVUN5wA%3D%3D"), header = T) %>% rename(Compound= OtherCmpds)
+  keggPos <- keggCompounds %>% select(Compound, PosMZ) %>% 
+    mutate(Fraction1 = "HILICPos", Fraction2="CyanoAq", Fraction3= "CyanoDCM") %>% unique() %>% 
+    rename(mz = PosMZ)
+  keggCompoundsShort <- keggCompounds %>% select(Compound, NegMZ) %>% 
+    mutate(Fraction1 = "HILICNeg", Fraction2=NA, Fraction3= NA) %>% unique() %>%
+    rename(mz = NegMZ) %>% rbind(keggPos)
+  MFstry <- MFs %>% mutate(MF_Frac2 = MF_Frac) %>% separate(MF_Frac2, c("MF", "Frac"), sep =  "_") %>% select(-MF)
+  matched <- difference_inner_join(x= keggCompoundsShort, y = MFstry, 
+                                   by = "mz", max_dist = .01,  distance_col = NULL) %>%
+    mutate(ppm = (abs(mz.x-mz.y )/mz.x *10^6)) %>%
+    filter(ppm < ppmtol, Frac == Fraction1 | Frac == Fraction2 | Frac == Fraction3) %>%
+    mutate(Frac = as.factor(Frac),mz = mz.x) %>% 
+    select(MF_Frac, Compound, ppm ) %>% rename(Keggppm = ppm)
+  
+  matchedNames <- left_join(matched, keggCompounds) %>% select(Compound, Name) %>%
+    group_by(Compound) %>%
+    summarise(KEGGMatchesNames = as.character(paste(Name,  collapse=" ")))
+  matchedKEGGs[[1]] <- left_join(matched, matchedNames) %>% rename(KeggMatches = Compound)
+  matchedKEGGs[[2]] <- matchedKEGGs[[1]] %>%
+    group_by(MF_Frac) %>%
+    summarise(KeggMatches = as.character(paste(KeggMatches,  collapse="; ")),
+              Keggppm = as.character(paste(Keggppm,  collapse="; ")))
+  return(matchedKEGGs)}
+
+
