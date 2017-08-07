@@ -178,13 +178,19 @@ Fraction <- FractionList[j]
   Samps <- DatNames[grepl("_Smp_", DatNames)]
   Poos <- DatNames[grepl("_Poo_", DatNames)]
 
+  
+  
+   #Set rt max and min
+  rtminparam <- Params["RTMIN", Fraction]
+  rtmaxparam <- Params["RTMAX", Fraction]
+  
  if (length(Blks) > 1) {Peaks.filled$AveBlank<- rowMeans(Peaks.filled[, Blks])} else {Peaks.filled$AveBlank<- Blks[1]}
   Peaks.filled$AveSmp<- rowMeans(Peaks.filled[, Samps])
   Peaks.filled$AvePoo <- rowMeans(Peaks.filled[, Poos])
   Peaks.filtered <- Peaks.filled %>%
-    filter(rt > Params["RTMIN", Fraction]) %>%
-    filter(rt < Params["RTMAX", Fraction]) %>%
-    filter(AvePoo > 10*AveBlank)  %>%
+    filter(rt > rtminparam) %>%
+    filter(rt < rtmaxparam) %>%
+     filter(AvePoo > 10*AveBlank)  %>%
     filter(npeaks > (0.25*length(Samps))) %>%
     filter(AvePoo > 5000)
     
