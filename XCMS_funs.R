@@ -521,7 +521,7 @@ if(missing(ppmtol)) {
   ppmtol <- 15
 }
 matchedKnownCompounds <- list()
-knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv?token=AKBCZwCTNmRQgTI5V7M0JJxFPxc0q0F_ks5ZVaf5wA%3D%3D"), header = T)  %>%
+knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv"), header = T)  %>%
   mutate(mz = m.z, RT = RT..min.) %>% select(Compound.Name, mz, RT, Fraction1, Fraction2) %>% 
   mutate(Fraction1 = as.character(Fraction1),
          Fraction2 = as.character(Fraction2))
@@ -550,7 +550,7 @@ checkContaminants <- function(MFs, ppmtol) {
     ppmtol <- 15
   }
   matchedKnownContaminants <- list()
-  knownContaminants <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/CommonContams.csv?token=AKBCZ1Nk5DRacGo9ZwMWIU_KcvDhmUSlks5ZVW5JwA%3D%3D"), comment.char = "#", header = T)%>%
+  knownContaminants <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/CommonContams.csv"), comment.char = "#", header = T)%>%
     mutate(mz = m.z) %>% select(Fraction1:Fraction3, mz, Compound) %>% mutate(Flag = "PossibleContamin")
   MFstry <- MFs %>% mutate(MF_Frac2 = MF_Frac) %>% separate(MF_Frac2, c("MF", "Frac"), sep =  "_") %>% select(-MF)
   matchedKnownContaminants[[1]] <- difference_inner_join(x= knownContaminants, y = MFstry, 
@@ -574,7 +574,7 @@ checkKEGG <- function(MFs, ppmtol) {
     ppmtol <- 15
   }
   matchedKEGGs <- list()
-  keggCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/KEGGCompounds_withMasses.csv?token=AKBCZ26yPE2ubOUFxJo9X4N706tmq-ufks5ZVUN5wA%3D%3D"), header = T) %>% rename(Compound= OtherCmpds)
+  keggCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/KEGGCompounds_withMasses.csv"), header = T) %>% rename(Compound= OtherCmpds)
   keggPos <- keggCompounds %>% select(Compound, PosMZ) %>% 
     mutate(Fraction1 = "HILICPos", Fraction2="CyanoAq", Fraction3= "CyanoDCM") %>% unique() %>% 
     rename(mz = PosMZ)
