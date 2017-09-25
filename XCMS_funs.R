@@ -80,13 +80,13 @@ doRetcorPG<- function(xset1){
 
 #doPeakPicking----
 doPeakPick <- function(DatFiles){
-xcmsSet(DatFiles,
-        method='centWave',
-        ppm=Params["PPM", Fraction], 
-        peakwidth=c(Params["PEAKWIDTHlow", Fraction], Params["PEAKWIDTHhigh", Fraction]),
-        snthresh=Params["SNthresh", Fraction] , 
-        mzdiff=Params["MZDIFF", Fraction],
-        prefilter=c(Params["PREFILTERlow", Fraction], Params["PREFILTERhigh", Fraction]))
+  xcmsSet(DatFiles,
+          method='centWave',
+          ppm=Params["PPM", Fraction], 
+          peakwidth=c(Params["PEAKWIDTHlow", Fraction], Params["PEAKWIDTHhigh", Fraction]),
+          snthresh=Params["SNthresh", Fraction] , 
+          mzdiff=Params["MZDIFF", Fraction],
+          prefilter=c(Params["PREFILTERlow", Fraction], Params["PREFILTERhigh", Fraction]))
 }
 
 #doGrouping----
@@ -517,31 +517,31 @@ finalplotter_MSonly2<-function(mzxcms,mass,results,isotopefile,timerange,i){
 
 #checkKnownCompounds -----------
 checkKnownCompounds <- function(MFs, ppmtol) {
-if(missing(ppmtol)) {
-  ppmtol <- 15
-}
-matchedKnownCompounds <- list()
-knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv"), header = T)  %>%
-  mutate(mz = m.z, RT = RT..min.) %>% select(Compound.Name, mz, RT, Fraction1, Fraction2) %>% 
-  mutate(Fraction1 = as.character(Fraction1),
-         Fraction2 = as.character(Fraction2))
-MFstry <- MFs %>% mutate(MF_Frac2 = MF_Frac) %>% separate(MF_Frac2, c("MF", "Frac"), sep =  "_") %>% select(-MF)  
-matchedKnownCompounds[[1]] <- difference_inner_join(x= MFstry, y = knownShortCompounds, 
-                                                    by = "mz", max_dist = .01,  distance_col = NULL) %>%
-  mutate(MZdiff = abs(mz.x-mz.y ))%>%
-  mutate(RTdiff = abs(RT.x-RT.y),
-         ppm = (MZdiff/mz.x *10^6)) %>%
-  filter(ppm < ppmtol) %>%
-  filter(Frac == Fraction1 | Frac == Fraction2) %>%
-  mutate(Frac = as.factor(Frac), mz = mz.x) %>% 
-  select(MF_Frac, mz, rt, Compound.Name, RTdiff, ppm)
-matchedKnownCompounds[[2]] <- matchedKnownCompounds[[1]] %>% 
-  group_by(MF_Frac) %>%
-  summarise(TargetMatches = as.character(paste(Compound.Name,  collapse="; ")),
-            ppmMatches = as.character(paste(ppm,  collapse="; ")),
-            RTdiffMatches = as.character(paste(ppm,  collapse="; ")))
-return(matchedKnownCompounds)
-
+  if(missing(ppmtol)) {
+    ppmtol <- 15
+  }
+  matchedKnownCompounds <- list()
+  knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv"), header = T)  %>%
+    mutate(mz = m.z, RT = RT..min.) %>% select(Compound.Name, mz, RT, Fraction1, Fraction2) %>% 
+    mutate(Fraction1 = as.character(Fraction1),
+           Fraction2 = as.character(Fraction2))
+  MFstry <- MFs %>% mutate(MF_Frac2 = MF_Frac) %>% separate(MF_Frac2, c("MF", "Frac"), sep =  "_") %>% select(-MF)  
+  matchedKnownCompounds[[1]] <- difference_inner_join(x= MFstry, y = knownShortCompounds, 
+                                                      by = "mz", max_dist = .01,  distance_col = NULL) %>%
+    mutate(MZdiff = abs(mz.x-mz.y ))%>%
+    mutate(RTdiff = abs(RT.x-RT.y),
+           ppm = (MZdiff/mz.x *10^6)) %>%
+    filter(ppm < ppmtol) %>%
+    filter(Frac == Fraction1 | Frac == Fraction2) %>%
+    mutate(Frac = as.factor(Frac), mz = mz.x) %>% 
+    select(MF_Frac, mz, rt, Compound.Name, RTdiff, ppm)
+  matchedKnownCompounds[[2]] <- matchedKnownCompounds[[1]] %>% 
+    group_by(MF_Frac) %>%
+    summarise(TargetMatches = as.character(paste(Compound.Name,  collapse="; ")),
+              ppmMatches = as.character(paste(ppm,  collapse="; ")),
+              RTdiffMatches = as.character(paste(ppm,  collapse="; ")))
+  return(matchedKnownCompounds)
+  
 }
 
 #flag for known Contaminants -------
@@ -599,5 +599,32 @@ checkKEGG <- function(MFs, ppmtol) {
               Keggppm = as.character(paste(Keggppm,  collapse="; ")),
               KeggNames = as.character(paste(KEGGMatchesNames,  collapse="; ")))
   return(matchedKEGGs)}
+
+
+#Get max RT function----- 
+maxRT <- function(mz, rt, mzxcms, compound, xset3, XcmsIndex){
+  EICinfo<-rawEIC(mzxcms, mzrange=c(mz-0.005,mz+0.005))
+  SubEICdat <- data.frame("intensity"=EICinfo[[2]],"time"=mzxcms@scantime, "correcttime" = xset3@rt[[2]][[XcmsIndex]]) %>%
+    filter(time > (rt-100) & time < (rt+100))
+  maxtime <- SubEICdat %>%
+    filter(intensity == max(intensity)) %>%
+    select(time) %>%
+    as.numeric()
+  maxcorrecttime <- SubEICdat %>%
+    filter(intensity == max(intensity)) %>%
+    select(correcttime) %>%
+    as.numeric()
+  plot(x = SubEICdat$time, y = SubEICdat$intensity,
+       type='l', 
+       xlim = c(rt-300, rt+300), 
+       ylab='Intensity',
+       xlab='time',
+       main = compound)
+  abline(v=rt, col='cyan',lty=3, lwd=6)
+  abline(v= maxtime, col = 'red', lty = 3, lwd =6)
+  ask<-readline(prompt="Enter 'y' if this is a good match: ")
+  if(ask=='y'){return(maxcorrecttime)}else{return(NA)}
+}
+
 
 
