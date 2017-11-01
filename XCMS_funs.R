@@ -628,7 +628,7 @@ maxRT <- function(mz, rt, mzxcms, compound, xset3, XcmsIndex){
 
                         
                         
-#Pull an MS2 spectra from a DDA file according to the a targeted mass and time
+#Pull an MS2 spectra from a DDA file according to the a targeted mass and time------
 getms2spectra<-function(xs=xs, mass=mass, time=time, timetol=15, masstolLR=0.2, masstolHR=0.02){
   #xs is msn2xcmsRaw(xcmsRaw(DDAFILE, includeMSn=TRUE))
   masslow<-mass-masstolLR
@@ -662,4 +662,13 @@ getms2spectra<-function(xs=xs, mass=mass, time=time, timetol=15, masstolLR=0.2, 
     sortedscanrange <- paste(sortedscanrange$mash, collapse = "; ")
     return(sortedscanrange)}else{return(NA)}
   }
+                        
+#Get a scan table from a concatenated scanlist---- (Scan is output from getms2spectra function)
+ scantable <- function(Scan){
+  Try <- read.table(text=as.character(Scan),
+                  col.names=c('mz','intensity')) %>% 
+          mutate(mz = as.numeric(mz %>% str_replace(",", "")),
+                 intensity = as.numeric(intensity %>% str_replace(";", "")))
+return(Try)
+  }                       
 
