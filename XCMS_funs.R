@@ -626,5 +626,40 @@ maxRT <- function(mz, rt, mzxcms, compound, xset3, XcmsIndex){
   if(ask=='y'){return(maxcorrecttime)}else{return(NA)}
 }
 
-
+                        
+                        
+#Pull an MS2 spectra from a DDA file according to the a targeted mass and time
+getms2spectra<-function(xs=xs, mass=mass, time=time, timetol=15, masstolLR=0.2, masstolHR=0.02){
+  #xs is msn2xcmsRaw(xcmsRaw(DDAFILE, includeMSn=TRUE))
+  masslow<-mass-masstolLR
+  masshigh<-mass+masstolLR
+  masslowhr <- mass - masstolHR
+  masshighr <- mass + masstolHR
+  timelow<-time-timetol
+  timehigh<-time+timetol
+  scanlist<-which(xs@msnPrecursorMz>masslow & xs@msnPrecursorMz<masshigh & xs@scantime>timelow & xs@scantime<timehigh)
+  allMS2list <- list()
+  if(length(scanlist)>0){
+    for (l in 1:length(scanlist)){
+      ms2dat <- as.data.frame(getScan(xs,scanlist[l])) %>% mutate(scannumber = scanlist[l])
+      allMS2list[[l]] <- ms2dat
+      }
+      allMS2_matched <- do.call(rbind, allMS2list) %>%
+        filter(mz > masslowhr & mz < masshighr) %>%
+        select(scannumber) %>% unique()
+      bestscan<-allMS2_matched$scannumber[which.max(xs@msnPrecursorIntensity[allMS2_matched$scannumber])]
+    }else{bestscan <- c()}
+  if(length(bestscan)>0){
+    scanrange<-getScan(xs,bestscan[1])
+    interval<-30
+    sortedscanrange<-scanrange[order(scanrange[,2],decreasing=TRUE),] %>%
+      as.data.frame() %>%
+      mutate(Percent = round(100*intensity/max(intensity), digits = 1),
+             mz = round(mz, digits = 5)) %>%
+      filter(Percent > 1) %>%
+      mutate(mash = paste(mz, Percent, sep = ", " )) %>%
+      select(mash)
+    sortedscanrange <- paste(sortedscanrange$mash, collapse = "; ")
+    return(sortedscanrange)}else{return(NA)}
+  }
 
