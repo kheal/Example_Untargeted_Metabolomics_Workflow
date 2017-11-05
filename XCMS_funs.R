@@ -735,7 +735,7 @@ peakPeeker <- function(xs, mz, rt, rtmin, rtmax, XcmsIndex, xset3){
       filter(time > (rt-100) & time < (rt+100))
     plot(x = SubEICdat$correcttime, y = SubEICdat$intensity,
          type='l', 
-         xlim = c(rt-300, rt+300), 
+         xlim = c(rt-100, rt+100), 
          ylab='Intensity',
          xlab='time')
     abline(v=rt, col='cyan',lty=3, lwd=2)
