@@ -719,3 +719,30 @@ MSMScosine_2<-function(scan1,scan2,mass1,mass2){
   
   return(similarity2)
 }
+                     
+                     
+#  QUICKLY LOOK AT MANY PEAKS TO SEE IF THEY ARE HIGH QUALITY ------
+### xs = xcmsRaw(DATAFILE,profstep=0.01,profmethod="bin",profparam=list(),includeMSn=FALSE,mslevel=NULL, scanrange=NULL)
+### XCMSIndex = index # in xset3 that matches your DATAFILE
+### xset3 = RT corrected xset that includes the DATAFILE
+### rt, rtmin, rtmax = all in seconds
+                     
+peakPeeker <- function(xs, mz, rt, rtmin, rtmax, XcmsIndex, xset3){
+    EICinfo<-rawEIC(xs, mzrange=c(mz-0.005,mz+0.005))
+    SubEICdat <- data.frame("intensity"=EICinfo[[2]],
+                            "time"=xs@scantime, 
+                            "correcttime" = xset3@rt[[2]][[XcmsIndex]]) %>%
+      filter(time > (rt-100) & time < (rt+100))
+    plot(x = SubEICdat$correcttime, y = SubEICdat$intensity,
+         type='l', 
+         xlim = c(rt-300, rt+300), 
+         ylab='Intensity',
+         xlab='time')
+    abline(v=rt, col='cyan',lty=3, lwd=2)
+    abline(v=rtmin, col = 'red', lwd =2)
+    abline(v=rtmax, col = 'red', lwd =2)
+    ask<-readline(prompt="Enter 'y' if this is a good peak: ")
+    if(ask=='y'){return("YES")}else{return(NA)}
+}
+                     
+                     
