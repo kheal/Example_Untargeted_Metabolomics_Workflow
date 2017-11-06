@@ -727,7 +727,7 @@ MSMScosine_2<-function(scan1,scan2,mass1,mass2){
 ### xset3 = RT corrected xset that includes the DATAFILE
 ### rt, rtmin, rtmax = all in seconds
                      
-peakPeeker <- function(xs, mz, rt, rtmin, rtmax, XcmsIndex, xset3){
+peakPeeker <- function(xs, mz, rt, XcmsIndex, xset3){
     EICinfo<-rawEIC(xs, mzrange=c(mz-0.005,mz+0.005))
     SubEICdat <- data.frame("intensity"=EICinfo[[2]],
                             "time"=xs@scantime, 
@@ -735,12 +735,11 @@ peakPeeker <- function(xs, mz, rt, rtmin, rtmax, XcmsIndex, xset3){
       filter(time > (rt-100) & time < (rt+100))
     plot(x = SubEICdat$correcttime, y = SubEICdat$intensity,
          type='l', 
-         xlim = c(rt-100, rt+100), 
          ylab='Intensity',
          xlab='time')
     abline(v=rt, col='cyan',lty=3, lwd=2)
-    abline(v=rtmin, col = 'red', lwd =2)
-    abline(v=rtmax, col = 'red', lwd =2)
+    #abline(v=rtmin, col = 'red', lwd =2)
+    #abline(v=rtmax, col = 'red', lwd =2)
     ask<-readline(prompt="Enter 'y' if this is a good peak: ")
     if(ask=='y'){return("YES")}else{return("NO")}
 }
