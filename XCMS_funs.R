@@ -738,8 +738,6 @@ peakPeeker <- function(xs, mz, rt, XcmsIndex, xset3){
          ylab='Intensity',
          xlab='time')
     abline(v=rt, col='cyan',lty=3, lwd=2)
-    #abline(v=rtmin, col = 'red', lwd =2)
-    #abline(v=rtmax, col = 'red', lwd =2)
     ask<-readline(prompt="Enter 'y' if this is a good peak: ")
     if(ask=='y'){return("YES")}else{return("NO")}
 }
