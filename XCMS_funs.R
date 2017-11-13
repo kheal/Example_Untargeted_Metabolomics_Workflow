@@ -539,7 +539,7 @@ checkKnownCompounds <- function(MFs, ppmtol) {
     group_by(MF_Frac) %>%
     summarise(TargetMatches = as.character(paste(Compound.Name,  collapse="; ")),
               ppmMatches = as.character(paste(ppm,  collapse="; ")),
-              RTdiffMatches = as.character(paste(ppm,  collapse="; ")))
+              RTdiffMatches = as.character(paste(RTdiff,  collapse="; ")))
   return(matchedKnownCompounds)
   
 }
