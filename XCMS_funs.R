@@ -659,15 +659,15 @@ getms2spectra <-
                     scancount = n())
         bestscan <- MS2Summed %>%
           arrange(desc(intensity)) %>%
-          mutate(runningsum = cumsum(sqrtintensity)) %>%
-          filter(runningsum < 0.5*sum(MS2Summed$sqrtintensity)) %>%
-          mutate(intensity = round(intensity/max(intensity)*100, digits = 1),
-                 mz = round (mz, digits = 5),
+          mutate(intensity = round(intensity/max(intensity)*100, digits = 1))%>%
+          filter(intensity > 0.5) %>%
+          mutate(mz = round (mz, digits = 5),
                  mash = paste(mz, intensity, sep = ", " ))
         sortedscanrange <- paste(bestscan$mash, collapse = "; ")
         return(sortedscanrange)}else{return(NA)} #Close if/then for scanlist >1
   
-  }#Close Funtion
+  }
+#Close Funtion
 
                         
 #Get a scan table from a concatenated scanlist---- (Scan is output from getms2spectra function)
