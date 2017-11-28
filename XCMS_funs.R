@@ -514,7 +514,7 @@ finalplotter_MSonly2<-function(mzxcms,mass,results,isotopefile,timerange,i){
 
 
 
-
+#Check known compounds
 checkKnownCompounds <- function(MFs, ppmtol, rttolRP, rttolHILIC) {
   if(missing(ppmtol)) {
     ppmtol <- 15
@@ -579,7 +579,7 @@ checkContaminants <- function(MFs, ppmtol) {
 #Check against the KEGG list of compounds -----
 checkKEGG <- function(MFs, ppmtol) {
   if(missing(ppmtol)) {
-    ppmtol <- 15
+    ppmtol <- 5
   }
   matchedKEGGs <- list()
   keggCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/KEGGCompounds_withMasses.csv"), header = T) %>% rename(Compound= OtherCmpds)
@@ -602,11 +602,13 @@ checkKEGG <- function(MFs, ppmtol) {
     summarise(KEGGMatchesNames = as.character(paste(Name,  collapse=" ")))
   matchedKEGGs[[1]] <- left_join(matched, matchedNames) %>% rename(KeggMatches = Compound)
   matchedKEGGs[[2]] <- matchedKEGGs[[1]] %>%
+    arrange(Keggppm) %>%
     group_by(MF_Frac) %>%
     summarise(KeggMatches = as.character(paste(KeggMatches,  collapse="; ")),
               Keggppm = as.character(paste(Keggppm,  collapse="; ")),
               KeggNames = as.character(paste(KEGGMatchesNames,  collapse="; ")))
   return(matchedKEGGs)}
+
 
 
 #Get max RT function----- 
