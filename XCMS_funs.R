@@ -515,10 +515,15 @@ finalplotter_MSonly2<-function(mzxcms,mass,results,isotopefile,timerange,i){
 
 
 
-#checkKnownCompounds -----------
-checkKnownCompounds <- function(MFs, ppmtol) {
+checkKnownCompounds <- function(MFs, ppmtol, rttolRP, rttolHILIC) {
   if(missing(ppmtol)) {
     ppmtol <- 15
+  }
+  if(missing(rttolRP)) {
+    rttolRP <- 0.5
+  }
+  if(missing(rttolHILIC)) {
+    rttolHILIC <- 1
   }
   matchedKnownCompounds <- list()
   knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv"), header = T)  %>%
@@ -533,9 +538,12 @@ checkKnownCompounds <- function(MFs, ppmtol) {
            ppm = (MZdiff/mz.x *10^6)) %>%
     filter(ppm < ppmtol) %>%
     filter(Frac == Fraction1 | Frac == Fraction2) %>%
-    mutate(Frac = as.factor(Frac), mz = mz.x) %>% 
+    mutate(Frac = as.factor(Frac), mz = mz.x) %>%
+    filter(!((Frac == "CyanoAq" | Frac == "CyanoDCM") &  RTdiff > rttolRP)) %>%
+    filter(!((Frac == "HILICNeg" | Frac == "HILICPos") &  RTdiff > rttolHILIC))   %>%
     select(MF_Frac, mz, rt, Compound.Name, RTdiff, ppm)
   matchedKnownCompounds[[2]] <- matchedKnownCompounds[[1]] %>% 
+    arrange(RTdiff) %>%
     group_by(MF_Frac) %>%
     summarise(TargetMatches = as.character(paste(Compound.Name,  collapse="; ")),
               ppmMatches = as.character(paste(ppm,  collapse="; ")),
