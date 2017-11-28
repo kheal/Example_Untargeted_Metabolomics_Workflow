@@ -828,3 +828,49 @@ massbankMS2MatchNEGATIVE <- function(ShortestDat){
       return(Candidates)
   }
 
+#These functions can be used with aply functions, otherwise the same as MSMScosine1 and 2
+MSMSconsine1_df <- function(df){
+  scan1 <- scantable(df["scan1"])
+  scan2 <- scantable(df["scan2"])
+  mass1 <- df["mass1"]
+  mass2 <- df["mass2"]
+
+  mztolerance<-0.02
+  
+  w1<-(scan1[,1]^2)*sqrt(scan1[,2])
+  w2<-(scan2[,1]^2)*sqrt(scan2[,2])
+  
+  diffmatrix<-sapply(scan1[,1], function(x) scan2[,1]-x)
+  sameindex<-which(abs(diffmatrix)<mztolerance,arr.ind=T)
+  
+  similarity<-sum(w1[sameindex[,2]]*w2[sameindex[,1]])/(sqrt(sum(w2^2))*sqrt(sum(w1^2)))
+  
+  return(similarity)
+}
+
+MSMSconsine2_df <- function(df){
+  scan1 <- scantable(df["scan1"])
+  scan2 <- scantable(df["scan2"])
+  mass1 <- as.numeric(df["mass1"])
+  mass2 <- as.numeric(df["mass2"])
+
+  mztolerance<-0.02
+  
+  loss1<-scan1
+  loss1[,1]<-mass1-loss1[,1]
+  loss2<-scan2
+  loss2[,1]<-mass2-loss2[,1]
+  w1<-(loss1[,1]^2)*sqrt(loss1[,2])
+  w2<-(loss2[,1]^2)*sqrt(loss2[,2])
+  
+  diffmatrix<-sapply(loss1[,1], function(x) loss2[,1]-x)
+  sameindex<-which(abs(diffmatrix)<mztolerance,arr.ind=T)
+  
+  similarity2<-sum(w1[sameindex[,2]]*w2[sameindex[,1]])/(sqrt(sum(w2^2))*sqrt(sum(w1^2)))
+  
+  return(similarity2)
+}
+                                  
+                                  
+                                  
+                                  
