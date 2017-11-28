@@ -752,4 +752,79 @@ peakPeeker <- function(xs, mz, rt, XcmsIndex, xset3){
     if(ask=='y'){return("YES")}else{return("NO")}
 }
                      
-                     
+#Check against MassBank Spectrum (m/z and spectra match for putative ID)
+#Need to have the Spectra in your working set, which is parsed from MONA, KRH has copy, but can't upload -- too big
+massbankMS2MatchPOSITIVE <- function(ShortestDat){
+  mz <- as.numeric(ShortestDat["mz"])
+  MS2 <- as.character(ShortestDat["MS2"])
+  MF_Frac <- as.character(ShortestDat["MF_Frac"])
+  
+  Candidates <- Spectra %>%
+    mutate(MH_mass = M_mass + 1.0072766) %>%
+    filter(near(MH_mass, mz, tol= 0.02)) %>%
+    mutate(scan1 = spectrum_KRHform_filtered, 
+           scan2 = MS2, mass1 = MH_mass, mass2 = mz)%>%
+    filter(!is.na(scan1))
+  
+   NoMatchReturn <- Spectra %>% 
+        mutate(MassBankMatch = NA,
+               MassBankppm = NA,
+               MassBankCosine1 = NA,
+               MF_Frac = MF_Frac) %>%
+        select(MF_Frac, MassBankMatch:MassBankCosine1) %>% head(1)
+    
+  if (length(Candidates$ID > 1)){
+      Candidates$Cosine1 <- apply(Candidates, 1, FUN=function(x) MSMSconsine1_df(x))
+      Candidates$Cosine2 <- apply(Candidates, 1, FUN=function(x) MSMSconsine2_df(x))
+      Candidates <- Candidates %>% filter(Cosine1 > 0.8) %>% arrange(desc(Cosine1)) %>% 
+        mutate(MF_Frac = MF_Frac) %>% head(1)
+      Candidates <- Candidates %>% 
+        mutate(MassBankMatch = paste(Names, ID, sep= " ID:"),
+               MassBankppm = abs(mass1-mass2)/mass2 *10^6,
+               MassBankCosine1 = Cosine1) %>%
+        filter(MassBankppm < 5) %>%
+        select(MF_Frac, MassBankMatch:MassBankCosine1)
+      }
+      if (length(Candidates$MF_Frac) == 0){
+      Candidates <-NoMatchReturn
+      }
+      return(Candidates)
+  }
+
+massbankMS2MatchNEGATIVE <- function(ShortestDat){
+  mz <- as.numeric(ShortestDat["mz"])
+  MS2 <- as.character(ShortestDat["MS2"])
+  MF_Frac <- as.character(ShortestDat["MF_Frac"])
+  
+  Candidates <- Spectra %>%
+    mutate(MH_mass = M_mass - 1.0072766) %>%
+    filter(near(MH_mass, mz, tol= 0.02)) %>%
+    mutate(scan1 = spectrum_KRHform_filtered, 
+           scan2 = MS2, mass1 = MH_mass, mass2 = mz)%>%
+    filter(!is.na(scan1))
+  
+  NoMatchReturn <- Spectra %>% 
+        mutate(MassBankMatch = NA,
+               MassBankppm = NA,
+               MassBankCosine1 = NA,
+               MF_Frac = MF_Frac) %>%
+        select(MF_Frac, MassBankMatch:MassBankCosine1) %>% head(1)
+    
+  if (length(Candidates$ID > 1)){
+      Candidates$Cosine1 <- apply(Candidates, 1, FUN=function(x) MSMSconsine1_df(x))
+      Candidates$Cosine2 <- apply(Candidates, 1, FUN=function(x) MSMSconsine2_df(x))
+      Candidates <- Candidates %>% filter(Cosine1 > 0.8) %>% arrange(desc(Cosine1)) %>% 
+        mutate(MF_Frac = MF_Frac) %>% head(1)
+      Candidates <- Candidates %>% 
+        mutate(MassBankMatch = paste(Names, ID, sep= " ID:"),
+               MassBankppm = abs(mass1-mass2)/mass2 *10^6,
+               MassBankCosine1 = Cosine1) %>%
+        filter(MassBankppm < 5) %>%
+        select(MF_Frac, MassBankMatch:MassBankCosine1)
+      }
+      if (length(Candidates$MF_Frac) == 0){
+      Candidates <-NoMatchReturn
+      }
+      return(Candidates)
+  }
+
