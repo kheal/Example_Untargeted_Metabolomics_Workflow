@@ -872,6 +872,56 @@ MSMSconsine2_df <- function(df){
   
   return(similarity2)
 }
+                     
+####For 2nd search for S-containing compounds            
+KRHS1pickerOrg_SecondSearch  <- function(DFFiltered){
+  print(paste("Get ready to look at", length(DFFiltered$scan), "peaks!"))
+  DFFiltered <- split(DFFiltered, DFFiltered$SampleID)
+  for (j in 1:length(DFFiltered)){ #Loop through # of mzxml files to open and shut
+    print(paste("Opening next sample, please wait, this is number", j, "of", length(DFFiltered)))
+    cleanresult <- DFFiltered[[j]]
+    cleanresult$GoodPeak <- NA
+    mzdatafiles <- DFFiltered[[j]]$mzFile
+    mzxcms <- xcmsRaw(mzdatafiles[1],profstep=0.01,profmethod="bin",profparam=list(),includeMSn=FALSE,mslevel=NULL, scanrange=NULL)
+    masslist32S<-cleanresult$X32S.mass
+    masslist34S<-cleanresult$X34S.mass
+    timelist <- cleanresult$scan
+    cleanlist <- cleanresult$GoodPeak
+    intensitylist <- cleanresult$X32S.intensity
+    namelist <- cleanresult$SampleID
+    
+    for (i in 1:length(timelist)) {   
+      EICS32<-rawEIC(mzxcms,mzrange=c(masslist32S[i]-0.005,masslist32S[i]+0.005))#, timerange = c(timelist[i]-100, timelist[i]+100))
+      EICS34<-rawEIC(mzxcms,mzrange=c(masslist34S[i]-0.005,masslist34S[i]+0.005))#, timerange = c(timelist[i]-100, timelist[i]+100)
+      plot(EICS32[[2]],
+           xlim = c(timelist[i]-200, timelist[i]+200),
+           ylim = c(0, (2*intensitylist[i])),
+           type='l',
+           lwd=2,
+           ylab='Scaled Intensity',
+           xlab='scan number',
+           col="black",
+           bty='n',
+           cex.axis=1,
+           cex.lab=1, 
+           main = namelist[i])
+      lines(22.12821*EICS34[[2]],
+            xlim = c(timelist[i]-300, timelist[i]+300),
+            ylim = c(0, (2*intensitylist[i])),
+            type='l',
+            lwd=1,
+            col="orange",
+            bty='n')
+      abline(v=timelist[i], col='cyan',lty=3, lwd=6)
+      ask<-readline(prompt="Enter 'y' if this is a good hit: ")
+      if(ask=='y'){cleanlist[i]="GOOD"}else{cleanlist[i]="BAD"}
+    }
+    
+    DFFiltered[[j]]$GoodPeak <- cleanlist
+  }
+  DFFiltered2 <- do.call(rbind, DFFiltered)
+  return(DFFiltered2)
+}
                                   
                                   
                                   
