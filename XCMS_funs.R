@@ -616,25 +616,27 @@ maxRT <- function(mz, rt, mzxcms, compound, xset3, XcmsIndex){
   EICinfo<-rawEIC(mzxcms, mzrange=c(mz-0.005,mz+0.005))
   SubEICdat <- data.frame("intensity"=EICinfo[[2]],"time"=mzxcms@scantime, "correcttime" = xset3@rt[[2]][[XcmsIndex]]) %>%
     filter(time > (rt-100) & time < (rt+100))
-  maxtime <- SubEICdat %>%
-    filter(intensity == max(intensity)) %>%
-    select(time) %>%
-    as.numeric()
-  maxcorrecttime <- SubEICdat %>%
-    filter(intensity == max(intensity)) %>%
-    select(correcttime) %>%
-    as.numeric()
-  plot(x = SubEICdat$time, y = SubEICdat$intensity,
-       type='l', 
-       xlim = c(rt-300, rt+300), 
-       ylab='Intensity',
-       xlab='time',
-       main = compound)
-  abline(v=rt, col='cyan',lty=3, lwd=6)
-  abline(v= maxtime, col = 'red', lty = 3, lwd =6)
-  ask<-readline(prompt="Enter 'y' if this is a good match: ")
-  if(ask=='y'){return(maxcorrecttime)}else{return(NA)}
+  if(sum(SubEICdat$intensity)==0){return(NA)}else{
+    maxtime <- SubEICdat %>%
+      filter(intensity == max(intensity)) %>%
+      select(time) %>%
+      as.numeric()
+    maxcorrecttime <- SubEICdat %>%
+      filter(intensity == max(intensity)) %>%
+      select(correcttime) %>%
+      as.numeric()
+    plot(x = SubEICdat$time, y = SubEICdat$intensity,
+         type='l', 
+         xlim = c(rt-300, rt+300), 
+         ylab='Intensity',
+         xlab='time',
+         main = compound)
+    abline(v=rt, col='cyan',lty=3, lwd=6)
+    abline(v= maxtime, col = 'red', lty = 3, lwd =6)
+    ask<-readline(prompt="Enter 'y' if this is a good match: ")
+    if(ask=='y'){return(maxcorrecttime)}else{return(NA)}}
 }
+
 
                         
                         
