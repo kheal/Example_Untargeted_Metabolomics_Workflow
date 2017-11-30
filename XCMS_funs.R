@@ -526,7 +526,7 @@ checkKnownCompounds <- function(MFs, ppmtol, rttolRP, rttolHILIC) {
     rttolHILIC <- 1
   }
   matchedKnownCompounds <- list()
-  knownShortCompounds <- read.csv(text = getURL("https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/QE_MasterList_AllCompounds_wIS.csv"), header = T)  %>%
+  knownShortCompounds <- read.csv(text = getURL("https://github.com/kheal/Example_Untargeted_Metabolomics_Workflow/blob/master/Ingalls_Lab_Standards.csv"), header = T)  %>%
     mutate(mz = m.z, RT = RT..min.) %>% select(Compound.Name, mz, RT, Fraction1, Fraction2) %>% 
     mutate(Fraction1 = as.character(Fraction1),
            Fraction2 = as.character(Fraction2))
