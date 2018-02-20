@@ -1,307 +1,310 @@
-Compound.Type,Column,Compound.Name,Emperical.Formula,RT..min.,m.z,z,C0,Fraction1,Fraction2,KEGGNAME
-Lignin,HILIC,Ethyl Dihydroxybenzoate,C9H10O4,2.08,181.0501,-1,NA,HILICNeg,NA,NA
-Antioxidant,HILIC,Salicylic Acid,C7H6O3,2.2,137.0234,-1,cpd:C00805,HILICNeg,NA,Salicylate; o-Hydroxybenzoic acid; Salicylic acid
-Phytohormone,HILIC,Indole 3 Pyruvic Acid,C11H9NO3,2.375,202.0509,-1,cpd:C00331,HILICNeg,NA,Indolepyruvate; Indolepyruvic acid; (Indol-3-yl)pyruvate; Indole-3-pyruvate; 
-Phytohormone,HILIC,Indole 3 carbinol,C9H9NO,2.395,146.0603,-1,NA,HILICNeg,NA,NA
-Organic Acid,HILIC,Lipoic Acid,C8H14O2S2,2.42,205.03624,-1,cpd:C00725,HILICNeg,NA,Lipoate; Lipoic acid; Thioctic acid; dl-alpha-Lipoic acid; DL-Thioctic acid
-Sulfur,HILIC,MESNA (Sodium 2-mercaptoethanesulfonate),C2H5O3S2,2.67,140.9676,-1,NA,HILICNeg,NA,NA
-Nucleic Acid,HILIC,Adenine,C5H5N5,3,134.0462,-1,cpd:C00147,HILICNeg,NA,Adenine; 6-Aminopurine
-Nucleic Acid,HILIC,Thymine,C5H6N2O2,3,125.03565,-1,cpd:C00178,HILICNeg,NA,Thymine; 5-Methyluracil
-Nucleoside,HILIC,Thymidine,C10H14N2O5,3.27,241.08299,-1,cpd:C00214,HILICNeg,NA,Thymidine; Deoxythymidine
-Sulfur,HILIC,N-acetyltaurine,C4H9NO4S,3.74,166.0172,-1,NA,HILICNeg,NA,NA
-Nucleic Acid,HILIC,Uracil,C4H4N2O2 ,4,111.0194,-1,cpd:C00106,HILICNeg,NA,Uracil
-Intracellular signaling,HILIC,cAMP,C10H12N5O6P,4.06,328.04524,-1,cpd:C00575,HILICNeg,NA,"3',5'-Cyclic AMP; Cyclic adenylic acid; Cyclic AMP; Adenosine 3',5'-phosphate; Adenosine 3',5'-cyclic phosphate; cAMP"
-Lignin,HILIC,Resorcylic Acid,C7H6O4,4.08,153.0185,-1,cpd:C00628,HILICNeg,NA,"2,5-Dihydroxybenzoate; 2,5-Dihydroxybenzoic acid; Gentisic acid; Hydroquinonecarboxylic acid; Gentisate"
-Organic Acid,HILIC,Orotic Acid,C5H4N2O4,4.195,155.0091,-1,cpd:C00295,HILICNeg,NA,Orotate; Orotic acid; Uracil-6-carboxylic acid
-Nucleoside,HILIC,Adenosine,C10H13N5O4,5.26,266.08948,-1,cpd:C00212,HILICNeg,NA,Adenosine
-Nucleic Acid,HILIC,Cytosine,C4H5N3O,5.615,110.03599,-1,cpd:C00380,HILICNeg,NA,Cytosine
-Nucleoside,HILIC,Uridine,C9H12N2O6,6.02,243.06226,-1,cpd:C00299,HILICNeg,NA,Uridine
-Sulfur,HILIC,Isethionic Acid,C2H6O4S,7.2,124.9904,-1,cpd:C05123,HILICNeg,NA,2-Hydroxyethanesulfonate; 2-Hydroxyethanesulfonic acid; 2-Hydroxyethane-1-sulfonic acid; Isethionic acid; Isethionate
-Nucleoside,HILIC,Cytidine,C9H13N3O5,7.31,242.07824,-1,cpd:C00475,HILICNeg,NA,Cytidine
-Redox,HILIC,FAD,C27H33N9O15P2,7.585,784.14986,-1,cpd:C00016,HILICNeg,NA,FAD; Flavin adenine dinucleotide
-Co-enzyme A,HILIC,Crotonyl CoA,C25H40N7O17P3S,8.45,834.13415,-1,cpd:C00877,HILICNeg,NA,Crotonoyl-CoA; Crotonyl-CoA; 2-Butenoyl-CoA; trans-But-2-enoyl-CoA; But-2-enoyl-CoA; (E)-But-2-enoyl-CoA
-Redox,HILIC,Riboflavin Monophosphate,C17H21N4O9P,8.6,455.09734,-1,cpd:C00061,HILICNeg,NA,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
-Intracellular signaling,HILIC,cGMP,C10H12N5O7P,8.8,344.04016,-1,cpd:C00942,HILICNeg,NA,"3',5'-Cyclic GMP; Guanosine 3',5'-cyclic monophosphate; Guanosine 3',5'-cyclic phosphate; Cyclic GMP; cGMP"
-Co-enzyme A,HILIC,Propionyl CoA,C24H40N7O17P3S,8.83,822.13415,-1,cpd:C00100,HILICNeg,NA,Propanoyl-CoA; Propionyl-CoA; Propionyl coenzyme A
-Nucleic Acid,HILIC,Guanine,C5H5N5O,8.95,150.0415,-1,cpd:C00242,HILICNeg,NA,Guanine; 2-Amino-6-hydroxypurine
-Sulfur,HILIC,DMSP,C5H10O2S,9.325,135.0473,1,cpd:C04022,HILICPos,NA,"S,S-Dimethyl-beta-propiothetin; S-Dimethylsulfonium propionic acid; Dimethylpropiothetin; DMPT; DMSP"
-Nucleoside,HILIC,Guanosine,C10H13N5O5 ,9.67,282.08439,-1,cpd:C00387,HILICNeg,NA,Guanosine
-Osmolyte,HILIC,Ectoine,C6H10N2O2,10,141.06695,-1,cpd:C06231,HILICNeg,NA,Ectoine; L-Ectoine
-Sulfur,HILIC,Taurine,C2H7NO3S,10,124.0064,-1,cpd:C00245,HILICNeg,NA,Taurine; 2-Aminoethanesulfonic acid; Aminoethylsulfonic acid
-Co-enzyme A,HILIC,Acetoacetyl CoA,C25H40N7O18P3S,10.6,850.12906,-1,cpd:C00332,HILICNeg,NA,Acetoacetyl-CoA; Acetoacetyl coenzyme A; 3-Acetoacetyl-CoA
-Redox,HILIC,NAD,C21H27N7O14P2,10.6,662.10184,-1,cpd:C00003,HILICNeg,NA,NAD+; NAD; Nicotinamide adenine dinucleotide; DPN; Diphosphopyridine nucleotide; Nadide; beta-NAD+
-Sulfur,HILIC,DHPS,C3H8O5S,10.67,155.0011,-1,cpd:C19675,HILICNeg,NA,"(R)-2,3-Dihydroxypropane-1-sulfonate"
-Organic Acid,HILIC,Gluconic Acid,C6H12O7,10.79,195.05103,-1,cpd:C00257,HILICNeg,NA,D-Gluconic acid; D-Gluconate; D-gluco-Hexonic acid
-Co-enzyme A,HILIC,Acetyl CoA,C23H38N7O17P3S,10.84,808.1185,-1,cpd:C00024,HILICNeg,NA,Acetyl-CoA; Acetyl coenzyme A
-Organic Acid,HILIC,Ketoglutaric Acid,C5H6O5,10.845,145.0134,-1,cpd:C00026,HILICNeg,NA,2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
-Amino Acid synthesis,HILIC,Shikimic Acid,C7H10O5,10.97,173.04555,-1,cpd:C00493,HILICNeg,NA,"Shikimate; Shikimic acid; 3,4,5-Trihydroxy-1-cyclohexenecarboxylic acid"
-Organic Acid,HILIC,Methylphosphonic Acid,CH5O3P,11,94.9795,-1,NA,HILICNeg,NA,NA
-Redox,HILIC,NADH,C21H27N7O14P2,11.26,664.1191,-1,cpd:C00004,HILICNeg,NA,NADH; DPNH; Reduced nicotinamide adenine dinucleotide
-Co-enzyme A,HILIC,Hydroxybutyryl CoA,C25H42N7O18P3S,11.545,852.1098,-1,cpd:C01144,HILICNeg,NA,(S)-3-Hydroxybutanoyl-CoA; (S)-3-Hydroxybutyryl-CoA
-Energy charge,HILIC,AMP,C10H14N5O7P,11.585,346.05581,-1,cpd:C00020,HILICNeg,NA,AMP; Adenosine 5'-monophosphate; Adenylic acid; Adenylate; 5'-AMP; 5'-Adenylic acid; 5'-Adenosine monophosphate; Adenosine 5'-phosphate
-Organic Acid,HILIC,Succinic Acid,C4H6O4,11.9,117.0183,-1,cpd:C00042,HILICNeg,NA,Succinate; Succinic acid; Butanedionic acid; Ethylenesuccinic acid
-Organic Acid,HILIC,Malic Acid,C4H6O5,11.97,133.0133,-1,cpd:C00149,HILICNeg,NA,(S)-Malate; L-Malate; L-Apple acid; L-Malic acid; L-2-Hydroxybutanedioic acid; Malate; Malic acid
-Energy charge,HILIC,ADP,C10H15N5O10P2,12.09,426.02214,-1,cpd:C00008,HILICNeg,NA,ADP; Adenosine 5'-diphosphate
-Sulfur,HILIC,Cysteic Acid,C3H7NO5S,12.15,167.9966,-1,cpd:C00506,HILICNeg,NA,L-Cysteate; L-Cysteic acid; 3-Sulfoalanine; 2-Amino-3-sulfopropionic acid
-Organic Acid,HILIC,Fumaric Acid,C4H4O4,12.7,115.0026,-1,cpd:C00122,HILICNeg,NA,Fumarate; Fumaric acid; trans-Butenedioic acid
-Redox,HILIC,NADP,C21H29N7O17P3,12.74,742.0698,-1,cpd:C00006,HILICNeg,NA,NADP+; NADP; Nicotinamide adenine dinucleotide phosphate; beta-Nicotinamide adenine dinucleotide phosphate; TPN; Triphosphopyridine nucleotide; beta-NADP+
-Nucleotide sugar,HILIC,UDP-glucosamine,C17H27N3O17P2,12.75,606.07429,-1,cpd:C00043,HILICNeg,NA,UDP-N-acetyl-alpha-D-glucosamine; UDP-N-acetyl-D-glucosamine; UDP-N-acetylglucosamine
-Calvin cycle intermediate,HILIC,DHAP,C3H7O6P,12.86,168.9888,-1,cpd:C00111,HILICNeg,NA,Glycerone phosphate; Dihydroxyacetone phosphate; 3-Hydroxy-2-oxopropyl phosphate
-Sulfur,HILIC,3-Sulfopyruvic Acid,C3H4O6S,12.92,166.96558,-1,cpd:C05528,HILICNeg,NA,3-Sulfopyruvate; 3-Sulfopyruvic acid
-Co-enzyme A,HILIC,Succinyl CoA,C25H40N7O19P3S,12.965,866.12398,-1,cpd:C00091,HILICNeg,NA,Succinyl-CoA; Succinyl coenzyme A
-Antioxidant,HILIC,Trehalose,C12H22O11 ,13,341.10893,-1,cpd:C01083,HILICNeg,NA,"alpha,alpha-Trehalose; alpha,alpha'-Trehalose; Trehalose"
-Redox,HILIC,glycerol 3 phosphate,C3H9O6P,13.065,171.0064,-1,cpd:C00093,HILICNeg,NA,sn-Glycerol 3-phosphate; Glycerophosphoric acid; D-Glycerol 1-phosphate
-Co-enzyme A,HILIC,Methyl Malonyl CoA,C25H40N7O19P3S,13.18,866.1251,-1,cpd:C00683,HILICNeg,NA,(S)-Methylmalonyl-CoA; (S)-Methylmalonyl-coenzyme A; (2S)-Methylmalonyl-CoA; D-Methylmalonyl-CoA
-Organic Acid,HILIC,Oxalic Acid,C2H2O4,13.235,88.9869,-1,cpd:C00209,HILICNeg,NA,Oxalate; Oxalic acid; Ethanedioic acid
-Sulfur,HILIC,Sulfolactic Acid,C3H6O6S,13.275,168.9812,-1,cpd:C11537,HILICNeg,NA,(2R)-3-Sulfolactate; (R)-3-Sulfolactate
-Sugar phosphate,HILIC,Ribose 5 phosphate,C5H11O8P,13.29,229.01188,-1,cpd:C00117,HILICNeg,NA,D-Ribose 5-phosphate; Ribose 5-phosphate
-Redox,HILIC,NADPH,C21H29N7O17P3,13.345,744.0833,-1,cpd:C00005,HILICNeg,NA,NADPH; TPNH; Reduced nicotinamide adenine dinucleotide phosphate
-Sugar phosphate,HILIC,Glucose 1 phosphate,C6H13O9P,13.45,259.02244,-1,cpd:C00103,HILICNeg,NA,D-Glucose 1-phosphate; alpha-D-Glucose 1-phosphate; Cori ester; D-Glucose alpha-1-phosphate
-Sugar phosphate,HILIC,Fructose 6 phosphate,C6H13O9P,13.51,259.02244,-1,cpd:C00085,HILICNeg,NA,D-Fructose 6-phosphate; D-Fructose 6-phosphoric acid; Neuberg ester
-Co-enzyme A,HILIC,Malonyl CoA,C24H38N7O19P3S,13.525,852.1458,-1,cpd:C00083,HILICNeg,NA,Malonyl-CoA; Malonyl coenzyme A
-Nucleotide sugar,HILIC,UDP-glucose,C15H24N2O17P2,13.59,565.04774,-1,cpd:C00029,HILICNeg,NA,UDP-glucose; UDPglucose; UDP-D-glucose; Uridine diphosphate glucose; UDP-alpha-D-glucose
-Intracellular signaling,HILIC,Cyclic diGMP,C20H24N10O14P2,13.74,689.08759,-1,cpd:C16463,HILICNeg,NA,"3',5'-Cyclic diGMP; cdiGMP; 3',5'-Cyclic diguanylic acid; Bis-(3',5')-cyclic diGMP; Cyclic di-3',5'-guanylate"
-Energy charge,HILIC,GMP,C10H14N5O8P,13.85,362.0515,-1,cpd:C00144,HILICNeg,NA,GMP; Guanosine 5'-phosphate; Guanosine monophosphate; Guanosine 5'-monophosphate; Guanylic acid
-Organic Acid,HILIC,PEP,C3H5O6P,13.865,166.9751,-1,cpd:C00074,HILICNeg,NA,Phosphoenolpyruvate; Phosphoenolpyruvic acid; PEP
-Sulfur,HILIC,Sulfoacetic Acid,C2H4O5S,13.9,138.9698,-1,cpd:C14179,HILICNeg,NA,Sulfoacetate; Sulfoacetic acid
-Sugar phosphate,HILIC,Glucose 6 phosphate,C6H13O9P,14.12,259.02244,-1,cpd:C00092,HILICNeg,NA,D-Glucose 6-phosphate; Glucose 6-phosphate; Robison ester
-Organic Acid,HILIC,Aconitic Acid,C6H6O6,14.21,173.00916,-1,cpd:C00417,HILICNeg,NA,cis-Aconitate; cis-Aconitic acid
-Sugar phosphate,HILIC,Phosphoglyceric Acid,C3H7O7P ,14.755,184.98566,-1,cpd:C00197,HILICNeg,NA,3-Phospho-D-glycerate; D-Glycerate 3-phosphate; 3-Phospho-(R)-glycerate; 3-Phosphoglycerate
-Energy charge,HILIC,ATP,C10H16N5O13P3,15.35,505.98847,-1,cpd:C00002,HILICNeg,NA,ATP; Adenosine 5'-triphosphate
-Organic Acid,HILIC,Isocitric Acid,C6H8O7,15.65,191.01973,-1,cpd:C00311,HILICNeg,NA,"Isocitrate; Isocitric acid; 1-Hydroxytricarballylic acid; 1-Hydroxypropane-1,2,3-tricarboxylic acid"
-Energy charge,HILIC,GTP,C10H16N5O14P3,16.58,543.9536,-1,cpd:C00044,HILICNeg,NA,GTP; Guanosine 5'-triphosphate
-Organic Acid,HILIC,Citric Acid,C6H8O7,17.06,191.01973,-1,cpd:C00158,HILICNeg,NA,"Citrate; Citric acid; 2-Hydroxy-1,2,3-propanetricarboxylic acid; 2-Hydroxytricarballylic acid"
-New,HILIC,Sucrose,C12H22O11,11.93,341.1092,-1,cpd:C00089,HILICNeg,NA,Sucrose; Cane sugar; Saccharose; 1-alpha-D-Glucopyranosyl-2-beta-D-fructofuranoside
-New,HILIC,Keto-?-(methylthio)butyric acid,C5H7O3S,2.59,147.0111,-1,NA,HILICNeg,NA,NA
-New,HILIC,2-Hydroxy-4-(methylthio)butyric_acid,C5H10O3S,2.69,149.0268,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"L-Cysteic Acid, D3",C3D3H4NO5S,12.15,171.0161,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Sulfolactic Acid, 13C3",C(13)2H5O4S,13.27,171.9913,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Sulfoacetic Acid, 13C2",C(13)2H4O5S,13.9,140.9774,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Isethionic Acid, 13C2",C(13)2H6O4S,7.2,126.9981,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Taurine, D4",C2D4H3NO3S,10,128.0325,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Acetyl CoA, 13C2",C21C(13)2H38N7O17P3S,10.84,810.1252,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Succinic Acid, D4",C4D4H2O4,11.9,121.0444,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Guanosine Monophosphate, 15N5",C10H13N(15)5O8P,13.85,367.0359,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Adenosine Monophosphate, 15N5",C10H13N(15)5O7P,11.585,351.0411,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Trehalose, 13C",C(13)12H22O11,12.63,353.1781,-1,NA,HILICNeg,NA,NA
-Internal Standard,HILIC,"Sucrose, 13C",C(13)12H22O11,11.77,353.1781,-1,NA,HILICNeg,NA,NA
-New,HILIC,Cys-Gly,C5H10N2O3S,9.53,179.0486,1,cpd:C01419,HILICPos,NA,Cys-Gly; L-Cysteinylglycine
-Lignin,HILIC,Ethyl 3 aminobenzoate,C9H11NO2,2.01,166.08626,1,cpd:C07527,HILICPos,NA,Benzocaine; Ethyl aminobenzoate
-Quorum sensing,HILIC,PQS,C16H21NO2,2.16,260.16451,1,cpd:C11848,HILICPos,NA,2-Heptyl-3-hydroxy-quinolone; 2-Heptyl-3-hydroxy-4(1H)-quinolone; 2-Heptyl-3-hydroxy-4-quinolone
-Vitamin,HILIC,Vitamin B3,C6H5NO2,2.68,124.0393,1,cpd:C00253,HILICPos,NA,Nicotinate; Nicotinic acid; Niacin; 3-Pyridinecarboxylic acid
-Amino Acid,HILIC,Kynurenine,C10H12N2O3,4.345,209.0921,1,cpd:C00328,HILICPos,NA,L-Kynurenine; 3-Anthraniloyl-L-alanine
-Osmolyte,HILIC,Homarine,C7H7NO2,6.19,138.05496,1,NA,HILICPos,NA,NA
-Amino Acid,HILIC,Cysteine,C3H7NO2S,7,122.0276,1,cpd:C00097,HILICPos,NA,L-Cysteine; L-2-Amino-3-mercaptopropionic acid
-Amino Acid,HILIC,Leucine,C6H13NO2,7.63,132.10191,1,cpd:C00123,HILICPos,NA,L-Leucine; 2-Amino-4-methylvaleric acid; (2S)-alpha-2-Amino-4-methylvaleric acid; (2S)-alpha-Leucine
-Amino Acid derivative,HILIC,Betaine,C5H11NO2,7.86,118.08626,1,cpd:C00719,HILICPos,NA,"Betaine; Trimethylaminoacetate; Glycine betaine; N,N,N-Trimethylglycine; Trimethylammonioacetate"
-Amino Acid,HILIC,Isoleucine,C6H13NO2,8.17,132.10191,1,cpd:C00407,HILICPos,NA,L-Isoleucine; 2-Amino-3-methylvaleric acid
-Amino Acid,HILIC,Methionine,C5H11NO2S,8.29,150.05833,1,cpd:C00073,HILICPos,NA,L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid
-Amino Acid synthesis,HILIC,L-Homocysteine,C4H9NO2S,8.7,136.04268,1,cpd:C00155,HILICPos,NA,L-Homocysteine; L-2-Amino-4-mercaptobutyric acid; Homocysteine
-Amino Acid derivative,HILIC,Dimethyl Glycine,C4H9NO2,8.97,104.07061,1,cpd:C01026,HILICPos,NA,"N,N-Dimethylglycine; Dimethylglycine"
-Amino Acid,HILIC,Valine,C5H11NO2,9.09,118.08626,1,cpd:C00183,HILICPos,NA,L-Valine; 2-Amino-3-methylbutyric acid
-Amino Acid,HILIC,Proline,C5H9NO2,9.49,116.07061,1,cpd:C00148,HILICPos,NA,L-Proline; 2-Pyrrolidinecarboxylic acid
-Amino Acid,HILIC,Tyrosine,C9H11NO3,9.76,182.08117,1,cpd:C00082,HILICPos,NA,L-Tyrosine; (S)-3-(p-Hydroxyphenyl)alanine; (S)-2-Amino-3-(p-hydroxyphenyl)propionic acid; Tyrosine
-Amino Acid,HILIC,Glycine,C2H5NO2,9.895,76.0398,1,cpd:C00037,HILICPos,NA,Glycine; Aminoacetic acid; Gly
-Amino Acid - collagen,HILIC,trans Hydroxyl proline,C5H9NO3,10.07,132.06552,1,cpd:C01157,HILICPos,NA,Hydroxyproline; L-Hydroxyproline; trans-4-Hydroxy-L-proline
-Osmolyte,HILIC,Glucosylglycerol,C9H18O8,10.1,255.1057,1,cpd:C11546,HILICPos,NA,2-O-(alpha-D-Glucopyranosyl)glycerol; 2-O-alpha-D-Glucosylglycerol
-Amino sugar,HILIC,Chitobiose,C16H28N2O11 ,10.21,425.17659,1,cpd:C01674,HILICPos,NA,"Chitobiose; Diacetylchitobiose; N,N'-Diacetylchitobiose"
-Glycine metabolite,HILIC,Sarcosine,C3H7NO2,10.6,90.0554,1,cpd:C00213,HILICPos,NA,Sarcosine; N-Methylglycine
-Amino Acid synthesis,HILIC,Adenosyl Homocysteine,C14H20N6O5S,10.85,385.12886,1,cpd:C00021,HILICPos,NA,S-Adenosyl-L-homocysteine; S-Adenosylhomocysteine
-Amino Acid,HILIC,Threonine,C4H9NO3,10.92,120.06552,1,cpd:C00188,HILICPos,NA,L-Threonine; 2-Amino-3-hydroxybutyric acid
-Peptidoglycan,HILIC,Muramic Acid,C9H17NO7,11,252.10778,1,cpd:C06470,HILICPos,NA,Muramic acid; 3-O-alpha-Carboxyethyl-D-glucosamine; 2-Amino-3-O-[(R)-1-carboxyethyl]-2-deoxy-D-glucopyranose
-Amino Acid - degraded,HILIC,Aminobutyric Acid,C4H9NO2,11.155,104.07061,1,cpd:C00334,HILICPos,NA,4-Aminobutanoate; 4-Aminobutanoic acid; 4-Aminobutyrate; 4-Aminobutyric acid; gamma-Aminobutyric acid; GABA
-Amino Acid,HILIC,Alanine,C3H7NO2,11.3,90.05496,1,cpd:C00041,HILICPos,NA,L-Alanine; L-2-Aminopropionic acid; L-alpha-Alanine
-Organic Acid - nitrogenous,HILIC,Creatine,C4H9N3O2,11.34,132.07675,1,cpd:C00300,HILICPos,NA,Creatine; alpha-Methylguanidino acetic acid; Methylglycocyamine
-Amino Acid,HILIC,Histidine,C6H9N3O2,11.45,156.07675,1,cpd:C00135,HILICPos,NA,L-Histidine; (S)-alpha-Amino-1H-imidazole-4-propionic acid
-Vitamin (B1-derivative),HILIC,Thiamine monophosphate,C12H18N4O4PS,11.5,345.07809,1,cpd:C01081,HILICPos,NA,Thiamin monophosphate; Thiamine monophosphate; Thiamin phosphate; Thiamine phosphate; TMP
-Amino Acid,HILIC,Glutamine,C5H10N2O3,11.7,147.07642,1,cpd:C00064,HILICPos,NA,L-Glutamine; L-2-Aminoglutaramic acid
-Amino Acid,HILIC,Asparagine,C4H8N2O3,11.86,133.06077,1,cpd:C00152,HILICPos,NA,L-Asparagine; 2-Aminosuccinamic acid
-Amino Acid,HILIC,Serine,C3H7NO3,11.86,106.04987,1,cpd:C00065,HILICPos,NA,L-Serine; L-2-Amino-3-hydroxypropionic acid; L-3-Hydroxy-alanine; Serine
-Antioxidant,HILIC,Glutathione,C10H17N3O6S,12,308.09108,1,cpd:C00051,HILICPos,NA,Glutathione; 5-L-Glutamyl-L-cysteinylglycine; N-(N-gamma-L-Glutamyl-L-cysteinyl)glycine; gamma-L-Glutamyl-L-cysteinyl-glycine; GSH; Reduced glutathione
-Amino Acid,HILIC,Glutamic acid,C5H9NO4,12.41,148.06043,1,cpd:C00025,HILICPos,NA,L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
-Amino Acid,HILIC,Aspartic acid,C4H7NO4,12.86,134.04478,1,cpd:C00049,HILICPos,NA,L-Aspartate; L-Aspartic acid; 2-Aminosuccinic acid; L-Asp
-Amino Acid synthesis,HILIC,Adenosyl Methionine,C15H22N6O5S,13.01,399.14451,1,cpd:C00019,HILICPos,NA,S-Adenosyl-L-methionine; S-Adenosylmethionine; AdoMet; SAM
-Amino Acid,HILIC,Cystine,C6H12N2O4S2,13.1,241.03112,1,cpd:C00491,HILICPos,NA,L-Cystine; L-Dicysteine; L-alpha-Diamino-beta-dithiolactic acid
-Amino Acid synthesis,HILIC,Cystathionine,C7H14N2O4S,13.14,223.07582,1,cpd:C02291,HILICPos,NA,L-Cystathionine
-Vitamin (B1-derivative),HILIC,Thiamine pyrophosphate,C12H19N4O7P2S,13.765,425.04442,1,cpd:C00068,HILICPos,NA,Thiamin diphosphate; Thiamine diphosphate; Thiamin pyrophosphate; TPP; ThPP
-Vitamin (B-like),HILIC,Choline,C5H14NO,15.265,104.10699,1,cpd:C00114,HILICPos,NA,Choline; Bilineurine
-Amino Acid - collagen,HILIC,Hydroxylysine,C6H14N2O3,16.37,163.10772,1,cpd:C16741,HILICPos,NA,L-Hydroxylysine; 5-Hydroxy-L-lysine; L-erythro-5-Hydroxylysine; (5R)-5-Hydroxy-L-lysine
-Amino Acid,HILIC,Lysine,C6H14N2O2,17.5,147.1128,1,cpd:C00047,HILICPos,NA,"L-Lysine; Lysine acid; 2,6-Diaminohexanoic acid"
-Amino Acid,HILIC,Arginine,C6H14N4O2,17.93,175.11895,1,cpd:C00062,HILICPos,NA,L-Arginine; (S)-2-Amino-5-guanidinovaleric acid; L-Arg
-New,HILIC,Methionine Sulfoxide,C5H11NO3S,9.73,166.0644,1,cpd:C02989,HILICPos,NA,L-Methionine S-oxide
-New,HILIC,Cys-Gly oxidized,C10H18N4O6S2,11.85,355.0739,1,NA,HILICPos,NA,NA
-New,HILIC,N-Acetyl-Lysine,C8H16N2O3,9.71,189.1233,1,cpd:C12989,HILICPos,NA,N2-Acetyl-L-lysine; N(alpha)-Acetyllysine
-New,HILIC,Carnitine ,C7H16NO3,10.21,162.1124,1,cpd:C00487,HILICPos,NA,Carnitine; gamma-Trimethyl-hydroxybutyrobetaine; 3-Hydroxy-4-trimethylammoniobutanoate
-New,HILIC,Homocystine,C8H16N2O4S2,12.58,269.0105,1,cpd:C01817,HILICPos,NA,L-Homocystine; Homocystine
-New,HILIC,Methyl 3-methylthiopropionate,C5H10O2S,6.53,158.1177,1,NA,HILICPos,NA,NA
-New,HILIC,Stachydrine hydrochloride,C7H13NO2,7.18,144.1019,1,cpd:C10172,HILICPos,NA,Stachydrine; Proline betaine; L-Proline betaine
-New,HILIC,Trigonelline,C7H7NO2,8.36,138.0549,1,cpd:C01004,HILICPos,NA,N-Methylnicotinate; Trigonelline; Trigenelline; 1-Methylpyridinio-3-carboxylate; Betaine nicotinate; Caffearin; Gynesine
-New,HILIC,Ornithine,C5H12N2O2,16.79,133.0973,1,cpd:C00077,HILICPos,NA,"L-Ornithine; (S)-2,5-Diaminovaleric acid; (S)-2,5-Diaminopentanoic acid; (S)-2,5-Diaminopentanoate"
-New,HILIC,Homoserine,C4H9NO3,11.32,120.0658,1,cpd:C00263,HILICPos,NA,L-Homoserine; 2-Amino-4-hydroxybutyric acid
-New,HILIC,N-Acetyl-Serine,C5H9NO4,6.27,148.0604,1,cpd:C00979,HILICPos,NA,O-Acetyl-L-serine; O3-Acetyl-L-serine
-New,HILIC,Homocysteine Thiolactone,C4H7NOS,2.78,118.0865,1,NA,HILICPos,NA,NA
-New,HILIC,Citrulline,C6H13N3O3,12.21,176.1031,1,cpd:C00327,HILICPos,NA,L-Citrulline; 2-Amino-5-ureidovaleric acid; Citrulline
-New,HILIC,Argininosuccinic Acid,C10H18N4O6,13.69,291.1298,1,cpd:C03406,HILICPos,NA,N-(L-Arginino)succinate; 2-(Nomega-L-Arginino)succinate; L-Argininosuccinate; L-Argininosuccinic acid; L-Arginosuccinic acid
-Internal Standard,HILIC,"DL-Proline, D7",C5H3D7NO2,9.49,123.1145,1,NA,HILICPos,NA,NA
-Internal Standard,HILIC,"DL-Valine, D8",C5H4D8NO2,9.09,126.1365,1,NA,HILICPos,NA,NA
-Internal Standard,HILIC,"L-Methionine, D3",C5D3H8NO2S,8.29,153.0722,1,NA,HILICPos,NA,NA
-Internal Standard,HILIC,"DL-Histidine, 15N",C6H9N3N(15)O2,11.45,157.0738,1,NA,HILICPos,NA,NA
-Internal Standard,HILIC,"DL-Alanine, D3",C3H4D3NO2,11.3,93.0738,1,NA,HILICPos,NA,NA
-Internal Standard,HILIC,"L-Isoleucine, 15N",C6H13N(15)O2,8.17,133.0989,1,NA,HILICPos,NA,NA
-Vitamin,RP,Vitamin C,C6H8O6,0.8,NA,-1,cpd:C00072,CyanoAq,CyanoDCM,Ascorbate; Ascorbic acid; L-Ascorbate; L-Ascorbic acid; Vitamin C
-Phytohormone,RP,DHZ,C10H15N5O,2.01,NA,-1,cpd:C02029,CyanoAq,CyanoDCM,Dihydrozeatin; 2-Methyl-4-(1H-purin-6-ylamino)butan-1-ol; N6-(4-Hydroxyisopentanyl)adenine
-Phytohormone,RP,Zeatin,C10H13N5O,2.02,NA,-1,cpd:C00371,CyanoAq,CyanoDCM,Zeatin; N6-(4-Hydroxyisopentenyl)adenine; (E)-2-Methyl-4-(1H-purin-6-ylamino)but-2-en-1-ol; trans-Zeatin
-Sulfur,RP,Methylthioadenosine,C11H15N5O3S,2.1,298.0969,-1,cpd:C00170,CyanoAq,CyanoDCM,5'-Methylthioadenosine; Methylthioadenosine; S-Methyl-5'-thioadenosine; 5-Methylthioadenosine; 5'-Deoxy-5'-(methylthio)adenosine; Thiomethyladenosine; MTA
-Lignin,RP,"3,4-Dihydroxybenzoic acid",C7H6O4,2.55,153.0185,-1,cpd:C00230,CyanoAq,CyanoDCM,"3,4-Dihydroxybenzoate; 3,4-Dihydroxybenzoic acid; Protocatechuate; Protocatechuic acid"
-Lignin,RP,4-hydroxybenzaldehyde,C7H6O2,3.775,NA,-1,cpd:C00633,CyanoAq,CyanoDCM,4-Hydroxybenzaldehyde; p-Hydroxybenzaldehyde
-Phytohormone,RP,2iP,C10H13N5,4.18,NA,-1,cpd:C04083,CyanoAq,CyanoDCM,"N6-(delta2-Isopentenyl)-adenine; N6-(3-Methylbut-2-enyl)adenine; 6-(gamma,gamma-Dimethylallylamino)purine; N6-Dimethylallyladenine"
-Lignin,RP,Caffeic Acid,C9H8O4,4.83,NA,-1,cpd:C01197,CyanoAq,CyanoDCM,"Caffeate; Caffeic acid; 3,4-Dihydroxy-trans-cinnamate; trans-Caffeate; (2E)-3-(3,4-Dihydroxyphenyl)prop-2-enoate"
-Phytohormone,RP,GA3,C19H22O6,5.16,NA,-1,cpd:C01699,CyanoAq,CyanoDCM,Gibberellin A3; Gibberellic acid; Gibberellin
-Antioxidant,RP,Trolox,C14H18O4,7,NA,-1,NA,CyanoAq,CyanoDCM,NA
-Phytohormone,RP,GA4,C19H24O5,8.18,NA,-1,cpd:C11864,CyanoAq,CyanoDCM,Gibberellin A4
-Vitamin,RP,Pyridoxamine,C8H12N2O2,0.65,169.09715,1,cpd:C00534,CyanoAq,CyanoDCM,Pyridoxamine; PM
-Vitamin (B1-derivative),RP,Thiamine monophosphate,C12H18N4O4PS,0.67,345.07809,1,cpd:C01081,CyanoAq,CyanoDCM,Thiamin monophosphate; Thiamine monophosphate; Thiamin phosphate; Thiamine phosphate; TMP
-Vitamin (B1-derivative),RP,thiamine pyrophosphate,C12H19N4O7P2S,0.67,425.34141,1,cpd:C00068,CyanoAq,CyanoDCM,Thiamin diphosphate; Thiamine diphosphate; Thiamin pyrophosphate; TPP; ThPP
-Vitamin (B-like),RP,Choline,C5H14NO,0.69,104.10699,1,cpd:C00114,CyanoAq,CyanoDCM,Choline; Bilineurine
-Amino Acid derivative,RP,Dimethyl glycine,C4H9NO2,0.69,104.07061,1,cpd:C01026,CyanoAq,CyanoDCM,"N,N-Dimethylglycine; Dimethylglycine"
-Vitamin,RP,Vitamin B1,C12H17N4OS,0.69,265.1119,1,cpd:C00378,CyanoAq,CyanoDCM,Thiamine; Thiamin; Vitamin B1; Aneurin; Antiberiberi factor
-Amino Acid synthesis,RP,Adenosyl Methionine,C15H22N6O5S,0.71,399.14451,1,cpd:C00019,CyanoAq,CyanoDCM,S-Adenosyl-L-methionine; S-Adenosylmethionine; AdoMet; SAM
-Amino Acid derivative,RP,Betaine,C5H11NO2,0.71,118.08626,1,cpd:C00719,CyanoAq,CyanoDCM,"Betaine; Trimethylaminoacetate; Glycine betaine; N,N,N-Trimethylglycine; Trimethylammonioacetate"
-Vitamin,RP,Pyridoxal Phosphate,C8H10NO6P,0.78,248.03185,1,cpd:C00018,CyanoAq,CyanoDCM,Pyridoxal phosphate; Pyridoxal 5-phosphate; Pyridoxal 5'-phosphate; PLP
-Vitamin,RP,Pyridoxal,C8H9NO3,0.86,168.06552,1,cpd:C00250,CyanoAq,CyanoDCM,Pyridoxal
-Antioxidant,RP,Glutathione,C10H17N3O6S,0.87,308.09108,1,cpd:C00051,CyanoAq,CyanoDCM,Glutathione; 5-L-Glutamyl-L-cysteinylglycine; N-(N-gamma-L-Glutamyl-L-cysteinyl)glycine; gamma-L-Glutamyl-L-cysteinyl-glycine; GSH; Reduced glutathione
-Vitamin,RP,Vitamin B3,C6H5NO2,0.88,124.0393,1,cpd:C00253,CyanoAq,CyanoDCM,Nicotinate; Nicotinic acid; Niacin; 3-Pyridinecarboxylic acid
-Vitamin,RP,Vitamin B6,C8H11NO3,0.88,170.08117,1,cpd:C00314,CyanoAq,CyanoDCM,Pyridoxine; Pyridoxol
-Amino Acid synthesis,RP,Adenosyl Homocysteine,C14H20N6O5S,0.96,385.12886,1,cpd:C00021,CyanoAq,CyanoDCM,S-Adenosyl-L-homocysteine; S-Adenosylhomocysteine
-Vitamin,RP,Sulfurol,C6H9NOS,1,144.04776,1,cpd:C04294,CyanoAq,CyanoDCM,5-(2-Hydroxyethyl)-4-methylthiazole; 4-Methyl-5-(2'-hydroxyethyl)-thiazole; 4-Methyl-5-(2-hydroxyethyl)-thiazole
-Purine,RP,Xanthine,C5H4N4O2,1.11,153.0412,1,cpd:C00385,CyanoAq,CyanoDCM,Xanthine
-Amino Acid,RP,Phenylalanine,C9H11NO2,1.15,166.08626,1,cpd:C00079,CyanoAq,CyanoDCM,L-Phenylalanine; (S)-alpha-Amino-beta-phenylpropionic acid
-Vitamin,RP,Vitamin B5,C9H17NO5,1.17,220.11795,1,cpd:C00864,CyanoAq,CyanoDCM,Pantothenate; Pantothenic acid; (R)-Pantothenate
-Amino Acid,RP,Kynurenine,C10H12N2O3,1.27,209.0921,1,cpd:C00328,CyanoAq,CyanoDCM,L-Kynurenine; 3-Anthraniloyl-L-alanine
-Quorum sensing,RP,C4-HSL,C8H13NO3,1.47,172.09682,1,cpd:C11837,CyanoAq,CyanoDCM,N-Butyryl-L-homoserine lactone
-Quorum sensing,RP,3OC6-HSL,C10H15NO4,1.96,214.10738,1,cpd:C11839,CyanoAq,CyanoDCM,N-(3-Oxohexanoyl)homoserine lactone
-Lignin,RP,Aminobenzoic Acid,C7H7NO2,2,138.05496,1,cpd:C00568,CyanoAq,CyanoDCM,4-Aminobenzoate; ABEE; 4-Aminobenzoic acid; p-Aminobenzoate
-Amino Acid,RP,Tryptophan,C11H12N2O2,2.07,205.09715,1,cpd:C00078,CyanoAq,CyanoDCM,L-Tryptophan; Tryptophan; (S)-alpha-Amino-beta-(3-indolyl)-propionic acid
-Phytohormone,RP,Tryptamine,C10H12N2,2.55,161.10732,1,cpd:C00398,CyanoAq,CyanoDCM,Tryptamine; 3-(2-Aminoethyl)indole
-Toxin ,RP,Domoic Acid,C15H21NO6,2.72,312.14416,1,cpd:C13732,CyanoAq,CyanoDCM,Domoic acid
-Lignin,RP,Ethyl 3 aminobenzoate,C9H11NO2,3.365,166.08626,1,cpd:C07527,CyanoAq,CyanoDCM,Benzocaine; Ethyl aminobenzoate
-Phytohormone,RP,Kinetin,C10H9N5O,3.37,216.08799,1,cpd:C08272,CyanoAq,CyanoDCM,Kinetin; 6-Furfuryladenine
-Vitamin synthesis,RP,Dimethyl-benzimidazole,C9H10N2,3.38,147.09167,1,cpd:C03114,CyanoAq,CyanoDCM,"Dimethylbenzimidazole; 5,6-Dimethylbenzimidazole"
-Vitamin,RP,Vitamin B7,C10H16N2O3S,3.75,245.09544,1,cpd:C00120,CyanoAq,CyanoDCM,Biotin; D-Biotin; Vitamin H; Coenzyme R
-Purine,RP,Caffeine,C8H10N4O2,3.85,195.08765,1,cpd:C07481,CyanoAq,CyanoDCM,"Caffeine; 1,3,7-Trimethylxanthine"
-Phytohormone,RP,Indole 3 acetamide,C10H10N2O,4.02,175.08659,1,cpd:C02693,CyanoAq,CyanoDCM,(Indol-3-yl)acetamide; Indole-3-acetamide
-Quorum sensing,RP,C6-HSL,C10H17NO3,4.06,200.12812,1,cpd:C21197,CyanoAq,CyanoDCM,N-Hexanoyl-L-homoserine lactone; C6-HSL; N-[(3S)-Tetrahydro-2-oxo-3-furanyl]-hexanamide
-Lignin,RP,Vanillic Acid,C8H8O4,4.115,169.04954,1,cpd:C06672,CyanoAq,CyanoDCM,Vanillate; Vanillic acid; 4-Hydroxy-3-methoxybenzoate; 4-Hydroxy-3-methoxybenzoic acid
-Vitamin,RP,Vitamin B2,C17H20N4O6,4.39,377.14556,1,cpd:C00255,CyanoAq,CyanoDCM,"Riboflavin; Lactoflavin; 7,8-Dimethyl-10-ribitylisoalloxazine; Vitamin B2"
-Vitamin,RP,Desthiobiotin,C10H18N2O3,4.5,215.13902,1,cpd:C01909,CyanoAq,CyanoDCM,Dethiobiotin; Desthiobiotin
-Vitamin,RP,Vitamin B9,C19H19N7O6,4.51,442.14696,1,cpd:C00504,CyanoAq,CyanoDCM,Folate; Pteroylglutamic acid; Folic acid
-Phytohormone,RP,Indole 3 Lactic Acid,C11H11NO3,4.65,206.08117,1,cpd:C02043,CyanoAq,CyanoDCM,Indolelactate
-Lignin,RP,Vanillin,C8H8O3,4.69,153.05462,1,cpd:C00755,CyanoAq,CyanoDCM,4-Hydroxy-3-methoxy-benzaldehyde; Vanillin; Vanillaldehyde; 4-Hydroxy-3-methoxybenzaldehyde
-Lignin,RP,Syringic Acid,C9H10O5,4.88,199.0601,1,cpd:C10833,CyanoAq,CyanoDCM,"Syringic acid; Syringate; 4-Hydroxy-3,5-dimethoxybenzoate; Gallic acid 3,5-dimethyl ether"
-Quorum sensing,RP,3OC8-HSL,C12H19NO4,5.28,242.1392,1,cpd:C11841,CyanoAq,CyanoDCM,N-(3-Oxooctanoyl)homoserine lactone; N-(3-Oxooctanoyl)-L-homoserine lactone; OOHL
-Phytohormone,RP,Tryptophol,C10H11NO,5.33,162.09134,1,cpd:C00955,CyanoAq,CyanoDCM,Indole-3-ethanol; Tryptophol
-Lignin,RP,Acetovanillone,C9H10O3,5.38,167.07027,1,cpd:C11380,CyanoAq,CyanoDCM,Apocynin; Acetovanillone
-Lignin,RP,p-Coumaric Acid,C9H8O3,5.385,165.05462,1,cpd:C00811,CyanoAq,CyanoDCM,4-Coumarate; p-Coumaric acid; trans-4-Hydroxycinnamate; trans-p-Hydroxycinnamate; 4-Hydroxycinnamic acid; 4-Hydroxycinnamate
-Phytohormone,RP,IAA,C10H9NO2,5.41,176.07061,1,cpd:C00954,CyanoAq,CyanoDCM,Indole-3-acetate; Indole-3-acetic acid; (Indol-3-yl)acetate; Indoleacetate; Indoleacetic acid; IAA
-Phytohormone,RP,Indole 3 carboxylic acid,C9H7NO2,5.44,162.05496,1,cpd:C19837,CyanoAq,CyanoDCM,Indole-3-carboxylate; Indole-3-carboxylic acid
-Quorum sensing,RP,p-Coumoroyl-HSL,C13H13NO4,5.46,248.09173,1,cpd:C20677,CyanoAq,CyanoDCM,N-(4-Coumaroyl)-L-homoserine lactone
-Lignin,RP,Syringaldehyde,C9H10O4,5.48,183.06519,1,NA,CyanoAq,CyanoDCM,NA
-Lignin,RP,Acetosyringone,C10H12O4,5.765,197.08084,1,cpd:C10664,CyanoAq,CyanoDCM,Acetosyringone
-Lignin,RP,Ferulic Acid,C10H10O4,5.97,195.06519,1,cpd:C01494,CyanoAq,CyanoDCM,Ferulate; Ferulic acid; 4-Hydroxy-3-methoxycinnamic acid; 3-Methoxy-4-hydroxy-trans-cinnamate; 4-Hydroxy-3-methoxycinnamate
-Lignin,RP,Sinapinic Acid,C11H12O5,5.985,225.07575,1,cpd:C00482,CyanoAq,CyanoDCM,"Sinapate; Sinapic acid; 3,5-Dimethoxy-4-hydroxycinnamic acid"
-Lignin,RP,trans cinnamic acid,C9H8O2,6.2,131.0492,1,cpd:C00423,CyanoAq,CyanoDCM,trans-Cinnamate; trans-Cinnamic acid; (E)-Cinnamate; (2E)-3-Phenylprop-2-enoate
-Quorum sensing,RP,cinnamoyl-HSL,C13H13NO3,6.425,232.09682,1,cpd:C15249,CyanoAq,CyanoDCM,"2-(3,5-Dichlorophenylcarbamoyl)-1,2-dimethylcyclopropane-1-carboxylic acid"
-Antibiotic,RP,Tropodithietic acid,C8H4O3S2,6.47,212.96746,1,cpd:C12105,CyanoAq,CyanoDCM,Thiotropocin
-Circadian,RP,Melatonin,C13H16N2O2,6.51,233.12845,1,cpd:C01598,CyanoAq,CyanoDCM,Melatonin; N-Acetyl-5-methoxytryptamine
-Phytohormone,RP,3 Indolepropionic Acid,C11H11NO2,6.66,190.08626,1,NA,CyanoAq,CyanoDCM,NA
-Phytohormone,RP,Abscisic Acid,C15H20O4,6.7,247.1328,1,cpd:C06082,CyanoAq,CyanoDCM,Abscisate; Abscisic acid; (+)-Abscisic acid; ABA
-Phytohormone,RP,Camalexin,C11H8N2S,6.96,201.0481,1,NA,CyanoAq,CyanoDCM,NA
-Phytohormone,RP,3-Indoleacetonitrile,C10H8N2,7.09,157.07602,1,cpd:C02938,CyanoAq,CyanoDCM,3-Indoleacetonitrile; Indol-3-ylacetonitrile; Indole-3-acetonitrile; (Indol-3-yl)acetonitrile
-PUA,RP,"2,4 octadienal",C8H12O,7.23,125.0966,1,NA,CyanoAq,CyanoDCM,NA
-Phytohormone,RP,Methyl indole 3 carboxylate,C10H9NO2,7.25,176.07061,1,NA,CyanoAq,CyanoDCM,NA
-Phytohormone,RP,Indole 3 methyl acetate,C11H11NO2,7.31,190.08626,1,cpd:C20635,CyanoAq,CyanoDCM,Methyl (indol-3-yl)acetate
-Quorum sensing,RP,C8-HSL,C12H21NO3,7.36,228.15942,1,cpd:C21199,CyanoAq,CyanoDCM,N-Octanoyl-L-homoserine lactone; C8-HSL; N-[(3S)-Tetrahydro-2-oxo-3-furanyl]octanamide
-Phytohormone,RP,3 Indolebutyric Acid,C12H13NO2,7.45,204.10191,1,cpd:C11284,CyanoAq,CyanoDCM,Indolebutyric acid; Indole-3-butyric acid; IBA
-Quorum sensing,RP,3OC10-HSL,C14H23NO4,8.255,270.16998,1,NA,CyanoAq,CyanoDCM,NA
-Sterol,RP,Cholesterol,C27H46O,8.5,387.3626,1,cpd:C00187,CyanoAq,CyanoDCM,Cholesterol; Cholest-5-en-3beta-ol
-Quorum sensing,RP,C10-HSL,C14H25NO3,9.21,256.19072,1,NA,CyanoAq,CyanoDCM,NA
-Quorum sensing,RP,3OHC12-HSL,C16H29NO4,9.275,300.21693,1,NA,CyanoAq,CyanoDCM,NA
-Quinone,RP,Coenzyme Q1,C14H18O4,9.35,251.12779,1,NA,CyanoAq,CyanoDCM,NA
-Quorum sensing,RP,3OC12-HSL,C16H27NO4,9.75,298.20128,1,NA,CyanoAq,CyanoDCM,NA
-PUA,RP,"2, 4 decadienal",C10H16O,9.855,153.12739,1,NA,CyanoAq,CyanoDCM,NA
-Quorum sensing,RP,C12-HSL,C16H29NO3,10.35,284.22202,1,cpd:C21201,CyanoAq,CyanoDCM,N-3-Oxo-dodecanoyl-L-homoserine lactone; 3-Oxo-C12-HSL; 3-Oxo-N-[(3S)-tetrahydro-2-oxo-3-furanyl]-dodecanamide
-Quorum sensing,RP,HHQ,C16H21NO,11.02,244.16959,1,cpd:C20643,CyanoAq,CyanoDCM,2-Heptyl-4(1H)-quinolone; 2-Heptyl-4-quinolone; 2-Heptyl-4-hydroxyquinoline
-Quorum sensing,RP,C14-HSL,C18H33NO3,11.4,312.25332,1,NA,CyanoAq,CyanoDCM,NA
-Antibiotic,RP,Monesin,C36H61NaO11,11.79,693.41843,1,NA,CyanoAq,CyanoDCM,NA
-Vitamin rhodopsin,RP,Retinoic Acid,C20H28O2,11.97,301.21621,1,cpd:C00777,CyanoAq,CyanoDCM,Retinoate; Retinoic acid; Vitamin A acid; all-trans-Retinoate; Tretin M; all-trans-Vitamin A1 acid
-Fatty Acid,RP,EPA,C20H30O2,12.095,303.23186,1,cpd:C06428,CyanoAq,CyanoDCM,"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate"
-Fatty Acid,RP,Arachidonic Acid,C20H32O2,12.15,305.24751,1,cpd:C00219,CyanoAq,CyanoDCM,"Arachidonate; Arachidonic acid; (5Z,8Z,11Z,14Z)-Icosatetraenoic acid; cis-5,8,11,14-Eicosatetraenoic acid"
-Fatty Acid,RP,DHA,C22H32O2,12.23,329.24751,1,cpd:C06429,CyanoAq,CyanoDCM,"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid; Docosahexaenoate"
-Vitamin rhodopsin,RP,trans Retinal,C20H28O,12.52,285.22129,1,cpd:C00376,CyanoAq,CyanoDCM,Retinal; Vitamin A aldehyde; Retinene; all-trans-Retinal; all-trans-Vitamin A aldehyde; all-trans-Retinene
-Vitamin (fat soluble),RP,Vitamin D2,C28H44O,13.75,397.34649,1,cpd:C05441,CyanoAq,CyanoDCM,Vitamin D2; Ergocalciferol
-Sterol,RP,Ergosterol,C28H44O,13.76,379.3362,1,cpd:C01694,CyanoAq,CyanoDCM,Ergosterol; Provitamin D2
-Vitamin (fat soluble),RP,Tocotrienol,C29H44O2,13.88,425.34141,1,cpd:C14153,CyanoAq,CyanoDCM,alpha-Tocotrienol
-Sterol,RP,7-dehydrocholesterol,C27H44O,13.89,367.3363,1,cpd:C01164,CyanoAq,CyanoDCM,"7-Dehydrocholesterol; Provitamin D3; Cholesta-5,7-dien-3beta-ol"
-Phospholipid synthesis,RP,1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine,C42H82NO8P,14.1,760.58508,1,NA,CyanoAq,CyanoDCM,NA
-Quinone,RP,Vitamin K2,C31H40O2,14.14,445.31011,1,cpd:C00828,CyanoAq,CyanoDCM,Menaquinone; Vitamin K2
-Vitamin (fat soluble),RP,Tocopherol (Vit E),C29H50O2,14.725,431.38836,1,cpd:C02477,CyanoAq,CyanoDCM,alpha-Tocopherol; Vitamin E
-Quinone,RP,Vitamin K1,C31H46O2,14.78,451.35706,1,cpd:C02059,CyanoAq,CyanoDCM,"Phylloquinone; Vitamin K1; Phytonadione; 2-Methyl-3-phytyl-1,4-naphthoquinone"
-Phospholipid synthesis,RP,1-stearoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine,C41H79NO8P,14.9,744.55378,1,NA,CyanoAq,CyanoDCM,NA
-Sterol precursor,RP,Squalene,C30H50,15.02,411.39853,1,cpd:C00751,CyanoAq,CyanoDCM,Squalene; Spinacene; Supraene
-Antioxidant pigment,RP,Carotene,C40H56,16.42,536.43765,1,cpd:C02094,CyanoAq,CyanoDCM,beta-Carotene; all-trans-beta-Carotene
-Quinone,RP,Coenzyme Q10,C59H90O4,16.61,863.69119,1,cpd:C11378,CyanoAq,CyanoDCM,Ubiquinone-10; Ubidecarenone; Coenzyme Q10
-New,RP,Cys-Gly,C5H10N2O3S,0.72,179.0486,1,cpd:C01419,CyanoAq,CyanoDCM,Cys-Gly; L-Cysteinylglycine
-Internal Standard,RP,"Indole 3 Acetic Acid, D5",C10D5H4NO2,5.35,181.1021,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Arachiodonic Acid, D8",C20D8H24O2,12.15,313.2977,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Tryptamine Hydrochloride, D4",C10D4H8N2,2.55,164.1246,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"L-Phenylalanine, D8",C9D8H3O2,1.15,174.1365,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Riboflavin-dioxopyrimidine, 13C4, 15N2",C(13)4C13H20N(15)2N2O6,4.39,383.1531,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"L-Tryptophan, D3",C11D3H9N2O2,2.23,208.1161,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Pyridoxal, D3",C8D3H7NO3,0.86,171.0843,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Thiamine Hydrochloride, 13C3",C(13)4C8H17N4OS,0.69,269.1252,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Alpha-Tocopherol, D6",C29D6H44O2,14.725,436.4182,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Docosahexaenoic Acid, D5",C22H28D5O2,12.23,334.2789,1,NA,CyanoAq,CyanoDCM,NA
-Internal Standard,RP,"Eicosapentaenoic Acid, D5",C20H26D5O2,12.095,308.2632,1,NA,CyanoAq,CyanoDCM,NA
-Vitamin B12,RP,Hydroxo B12,C62H89CoN13O15P,4.35,664.7861,2,cpd:C08230,CyanoAq,CyanoDCM,Hydroxocobalamin; Vitamin B12a; Hydroxycobalamin; Hydroxycob(lll)alamin
-Vitamin B12,RP,RP B12,C63H88CoN14O14P,5.02,678.2894,2,cpd:C02823,CyanoAq,CyanoDCM,Cyanocobalamin; Cyanocob(III)alamin; Dicopac; Vitamin B12 complex
-Vitamin B12,RP,Coenzyme B12,C72H100CoN18O17P  ,5.4,790.3367,2,cpd:C00194,CyanoAq,CyanoDCM,"Cobamide coenzyme; Adenosylcobalamin; Adenosylcob(III)alamin; Deoxyadenosylcobalamin; Cobamamide; Vitamin B12 coenzyme; 5,6-Dimethylbenzimidazolyl-5-deoxyadenosyl-cobamide; (5'-Deoxy-5'-adenosyl)cobamide coenzyme; (5,6-Dimethylbenzimidazolyl)cobamide coenzyme; alpha-(5,6-Dimethylbenzimidazolyl)cobamide coenzyme; 5'-Deoxy-5'-adenosylcobalamin; 5'-Deoxy-5'-adenosyl vitamin B12; 5'-Deoxy-5'-adenosyl-5,6-dimethylbenzimidazolylcobamide; 5,6-Dimethylbenzimidazolyl-Co-5'-deoxy-5'-adenosylcobamide; Calomide; Cobalamin coenzyme; Coenzyme B12; DMBC coenzyme; Dibencozide; Funacomide"
-Vitamin B12,RP,Methyl B12,C63H91CoN13O14P,6.29,672.8011,2,cpd:C06453,CyanoAq,CyanoDCM,Methylcobalamin; Methylcob(III)alamin
-Amino Acid,RP,Tyrosine,C9H11NO3,1.01,182.08117,1,cpd:C00082,CyanoAq,CyanoDCM,L-Tyrosine; (S)-3-(p-Hydroxyphenyl)alanine; (S)-2-Amino-3-(p-hydroxyphenyl)propionic acid; Tyrosine
-Redox,HILIC,Riboflavin Monophosphate,C17H21N4O9P,8.6,457.1118,1,cpd:C00061,HILICPos,NA,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
-Redox,RP,Riboflavin Monophosphate,C17H21N4O9P,3.1,455.09734,-1,cpd:C00061,CyanoAq,CyanoDCM,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
-Redox,RP,Riboflavin Monophosphate,C17H21N4O9P,3.1,457.1118,1,cpd:C00061,CyanoAq,CyanoDCM,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
-Sulfur,RP,Glutathione Disulfide,C20H32N6O12S2,0.92,613.1596,1,cpd:C00127,CyanoAq,CyanoDCM,Glutathione disulfide; GSSG; Oxiglutatione; Oxidized glutathione
-Sulfur,HILIC,Glutathione Disulfide,C20H32N6O12S2,14.98,613.1596,1,cpd:C00127,HILICPos,NA,Glutathione disulfide; GSSG; Oxiglutatione; Oxidized glutathione
-Sulfur,HILIC,Hypotaurine,C2H7NO2S,11.36,110.0716,1,cpd:C00519,HILICPos,NA,Hypotaurine; 2-Aminoethanesulfinic acid
-Sulfur,HILIC,N-methyltaurine,C3H9NO3S,6.06,140.0376,1,NA,HILICPos,NA,NA
-Sulfur,HILIC,Ethanesulfonic Acid,C2H6O3S,4.29,108.9953,-1,NA,HILICNeg,NA,NA
-Sulfur,HILIC,Amino Propanesulfonic Acid,C3H9NO3S,11.49,138.0221,-1,NA,HILICNeg,NA,NA
-Sulfur,HILIC,Propanesulfonate,C3H7O3S,2.81,123.0111,-1,NA,HILICNeg,NA,NA
-New2,HILIC,Glucosamine,C6H13NO5,9.97,180.0867,1,NA,HILICPos,NA,NA
-New2,RP,Glucosamine,C6H13NO5,0.65,180.0867,1,NA,CyanoAq,CyanoDCM,NA
-New2,HILIC,Glycerophosphocholine,C8H21NO6P,10.86,258.1099,1,cpd:C00670,HILICPos,NA,sn-Glycero-3-phosphocholine; Glycerophosphocholine
-New2,RP,Glycerophosphocholine,C8H21NO6P,0.66,258.1099,1,cpd:C00670,CyanoAq,CyanoDCM,sn-Glycero-3-phosphocholine; Glycerophosphocholine
-New2,HILIC,Butyryl-L-carnitine,C11H21NO4,4.47,232.1539,1,NA,HILICPos,NA,NA
-New2,RP,Butyryl-L-carnitine,C11H21NO4,1.34,232.1539,1,NA,CyanoAq,CyanoDCM,NA
-New2,RP,Isobutyryl-L-carnitine,C11H21NO4,1.3,232.1539,1,NA,CyanoAq,CyanoDCM,NA
-New2,HILIC,Propionyl-L-carnitine,C10H19NO4,5.63,218.1384,1,cpd:C03017,HILICPos,NA,O-Propanoylcarnitine; O-Propionylcarnitine
-New2,RP,Propionyl-L-carnitine,C10H19NO4,0.99,218.1384,1,cpd:C03017,CyanoAq,CyanoDCM,O-Propanoylcarnitine; O-Propionylcarnitine
-New2,HILIC,Acetyl-L-carnitine,C9H17NO4,7.22,204.1229,1,cpd:C02571,HILICPos,NA,O-Acetylcarnitine; O-Acetyl-L-carnitine
-New2,RP,Acetyl-L-carnitine,C9H17NO4,0.82,204.1229,1,cpd:C02571,CyanoAq,CyanoDCM,O-Acetylcarnitine; O-Acetyl-L-carnitine
-New2,HILIC,S-Farnesyl-L-cysteine Methyl Ester,C19H33NO2S,1.58,340.2305,1,NA,HILICPos,NA,NA
-New2,RP,S-Farnesyl-L-cysteine Methyl Ester,C19H33NO2S,10.43,340.2305,1,NA,CyanoAq,CyanoDCM,NA
-New2,HILIC,L-Pyroglutamic acid ,C5H7NO3,7.06,128.0342,-1,cpd:C01879,HILICNeg,NA,5-Oxoproline; Pidolic acid; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid
-New2,RP,Decarboxylated S-Adenosylmethionine,C14H23N6O3S,0.68,355.1543,1,NA,CyanoAq,CyanoDCM,NA
-New2,HILIC,Ophthalmic Acid,C11H19N3O6,10.73,290.1344,1,NA,HILICPos,NA,NA
-New2,RP,Ophthalmic Acid,C11H19N3O6,0.77,290.1344,1,NA,CyanoAq,CyanoDCM,NA
-New2,RP,Agmatine,C5H14N4,0.62,131.1293,1,cpd:C00179,CyanoAq,CyanoDCM,Agmatine; (4-Aminobutyl) guanidine
-New2,HILIC,Trimethylamine N-oxide,C3H9NO,6.59,76.0763,1,cpd:C01104,HILICPos,NA,Trimethylamine N-oxide; (CH3)3NO
-New2,HILIC,Trimethylamine,C3H9N,5.96,60.0815,1,cpd:C00565,HILICPos,NA,"Trimethylamine; (CH3)3N; N,N-Dimethylmethanamine"
-New2,RP,Indoleacrylic acid,C11H9NO2,6.76,188.0707,1,NA,CyanoAq,CyanoDCM,NA
-New2,RP,Homoserine lactone,C4H7NO2,0.68,102.0554,1,cpd:C02926,CyanoAq,CyanoDCM,Homoserine lactone; 2-Aminobutan-4-olide
-New2,RP,B-cyclocitral,C10H16O,8.39,153.1275,1,NA,CyanoDCM,CyanoAq,NA
-New2,RP,B-ionine,C13H20O,9.71,193.1589,1,NA,CyanoDCM,CyanoAq,NA
-New2,RP,B-ionylidene-acetaldehyde,C15H22O,10.85,219.1745,1,NA,CyanoDCM,CyanoAq,NA
-New2,RP,B-apo-8'-carotenal,C30H40O,14.56,417.3147,1,NA,CyanoDCM,CyanoAq,NA
-New2,HILIC,Maltotetraose,C24H42O21,13.78,665.2167,-1,cpd:C02052,HILICNeg,NA,Maltotetraose
-New2,HILIC,Maltotriose,C18H32O16,13.03,503.1631,-1,cpd:C01835,HILICNeg,NA,Maltotriose; Amylotriose
+Compound.Type,Column,Compound.Name,Emperical.Formula,RT..min.,m.z,z,C0,Fraction1,Fraction2,Conc..uM,KEGGNAME
+Lignin,HILIC,Ethyl Dihydroxybenzoate,C9H10O4,2.08,181.0501,-1,NA,HILICNeg,NA,4,NA
+Antioxidant,HILIC,Salicylic Acid,C7H6O3,2.2,137.0234,-1,cpd:C00805,HILICNeg,NA,4,Salicylate; o-Hydroxybenzoic acid; Salicylic acid
+Phytohormone,HILIC,Indole 3 Pyruvic Acid,C11H9NO3,2.375,202.0509,-1,cpd:C00331,HILICNeg,NA,4,Indolepyruvate; Indolepyruvic acid; (Indol-3-yl)pyruvate; Indole-3-pyruvate; 
+Phytohormone,HILIC,Indole 3 carbinol,C9H9NO,2.395,146.0603,-1,NA,HILICNeg,NA,4,NA
+Organic Acid,HILIC,Lipoic Acid,C8H14O2S2,2.42,205.03624,-1,cpd:C00725,HILICNeg,NA,4,Lipoate; Lipoic acid; Thioctic acid; dl-alpha-Lipoic acid; DL-Thioctic acid
+Sulfur,HILIC,MESNA (Sodium 2-mercaptoethanesulfonate),C2H5O3S2,2.67,140.9676,-1,NA,HILICNeg,NA,4,NA
+Nucleic Acid,HILIC,Adenine,C5H5N5,4.72,136.0617,1,cpd:C00147,HILICPos,NA,4,Adenine; 6-Aminopurine
+Nucleic Acid,HILIC,Adenine,C5H5N5,4.72,134.0462,-1,cpd:C00147,HILICNeg,NA,4,Adenine; 6-Aminopurine
+Nucleic Acid,HILIC,Thymine,C5H6N2O2,3,125.03565,-1,cpd:C00178,HILICNeg,NA,4,Thymine; 5-Methyluracil
+Nucleoside,HILIC,Thymidine,C10H14N2O5,3.27,241.08299,-1,cpd:C00214,HILICNeg,NA,4,Thymidine; Deoxythymidine
+Sulfur,HILIC,N-acetyltaurine,C4H9NO4S,3.74,166.0172,-1,NA,HILICNeg,NA,4,NA
+Nucleic Acid,HILIC,Uracil,C4H4N2O2 ,4,111.0194,-1,cpd:C00106,HILICNeg,NA,4,Uracil
+Intracellular signaling,HILIC,cAMP,C10H12N5O6P,4.06,328.04524,-1,cpd:C00575,HILICNeg,NA,4,"3',5'-Cyclic AMP; Cyclic adenylic acid; Cyclic AMP; Adenosine 3',5'-phosphate; Adenosine 3',5'-cyclic phosphate; cAMP"
+Lignin,HILIC,Resorcylic Acid,C7H6O4,4.08,153.0185,-1,cpd:C00628,HILICNeg,NA,4.8,"2,5-Dihydroxybenzoate; 2,5-Dihydroxybenzoic acid; Gentisic acid; Hydroquinonecarboxylic acid; Gentisate"
+Organic Acid,HILIC,Orotic Acid,C5H4N2O4,4.195,155.0091,-1,cpd:C00295,HILICNeg,NA,4,Orotate; Orotic acid; Uracil-6-carboxylic acid
+Nucleoside,HILIC,Adenosine,C10H13N5O4,4.46,268.1037,1,cpd:C00212,HILICPos,NA,4,Adenosine
+Nucleoside,HILIC,Adenosine,C10H13N5O4,4.46,266.08948,-1,cpd:C00212,HILICNeg,NA,4,Adenosine
+Nucleic Acid,HILIC,Cytosine,C4H5N3O,5.615,110.03599,-1,cpd:C00380,HILICNeg,NA,4,Cytosine
+Nucleoside,HILIC,Uridine,C9H12N2O6,6.02,243.06226,-1,cpd:C00299,HILICNeg,NA,4,Uridine
+Sulfur,HILIC,Isethionic Acid,C2H6O4S,7.2,124.9904,-1,cpd:C05123,HILICNeg,NA,4,2-Hydroxyethanesulfonate; 2-Hydroxyethanesulfonic acid; 2-Hydroxyethane-1-sulfonic acid; Isethionic acid; Isethionate
+Nucleoside,HILIC,Cytidine,C9H13N3O5,7.31,242.07824,-1,cpd:C00475,HILICNeg,NA,4,Cytidine
+Redox,HILIC,FAD,C27H33N9O15P2,7.585,784.14986,-1,cpd:C00016,HILICNeg,NA,4,FAD; Flavin adenine dinucleotide
+Co-enzyme A,HILIC,Crotonyl CoA,C25H40N7O17P3S,8.45,834.13415,-1,cpd:C00877,HILICNeg,NA,4,Crotonoyl-CoA; Crotonyl-CoA; 2-Butenoyl-CoA; trans-But-2-enoyl-CoA; But-2-enoyl-CoA; (E)-But-2-enoyl-CoA
+Redox,HILIC,Riboflavin Monophosphate,C17H21N4O9P,8.6,455.09734,-1,cpd:C00061,HILICNeg,NA,4,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
+Intracellular signaling,HILIC,cGMP,C10H12N5O7P,8.8,344.04016,-1,cpd:C00942,HILICNeg,NA,4,"3',5'-Cyclic GMP; Guanosine 3',5'-cyclic monophosphate; Guanosine 3',5'-cyclic phosphate; Cyclic GMP; cGMP"
+Co-enzyme A,HILIC,Propionyl CoA,C24H40N7O17P3S,8.83,822.13415,-1,cpd:C00100,HILICNeg,NA,4,Propanoyl-CoA; Propionyl-CoA; Propionyl coenzyme A
+Nucleic Acid,HILIC,Guanine,C5H5N5O,8.95,150.0415,-1,cpd:C00242,HILICNeg,NA,4,Guanine; 2-Amino-6-hydroxypurine
+Sulfur,HILIC,DMSP,C5H10O2S,9.325,135.0473,1,cpd:C04022,HILICPos,NA,4,"S,S-Dimethyl-beta-propiothetin; S-Dimethylsulfonium propionic acid; Dimethylpropiothetin; DMPT; DMSP"
+Nucleoside,HILIC,Guanosine,C10H13N5O5 ,9.06,284.0988,1,cpd:C00387,HILICPos,NA,4,Guanosine
+Nucleoside,HILIC,Guanosine,C10H13N5O5 ,9.06,282.08439,-1,cpd:C00387,HILICNeg,NA,4,Guanosine
+Osmolyte,HILIC,Ectoine,C6H10N2O2,10,141.06695,-1,cpd:C06231,HILICNeg,NA,8,Ectoine; L-Ectoine
+Sulfur,HILIC,Taurine,C2H7NO3S,10,124.0064,-1,cpd:C00245,HILICNeg,NA,4,Taurine; 2-Aminoethanesulfonic acid; Aminoethylsulfonic acid
+Co-enzyme A,HILIC,Acetoacetyl CoA,C25H40N7O18P3S,10.6,850.12906,-1,cpd:C00332,HILICNeg,NA,4,Acetoacetyl-CoA; Acetoacetyl coenzyme A; 3-Acetoacetyl-CoA
+Redox,HILIC,NAD,C21H27N7O14P2,10.6,662.10184,-1,cpd:C00003,HILICNeg,NA,4,NAD+; NAD; Nicotinamide adenine dinucleotide; DPN; Diphosphopyridine nucleotide; Nadide; beta-NAD+
+Sulfur,HILIC,DHPS,C3H8O5S,10.67,155.0011,-1,cpd:C19675,HILICNeg,NA,4,"(R)-2,3-Dihydroxypropane-1-sulfonate"
+Organic Acid,HILIC,Gluconic Acid,C6H12O7,10.79,195.05103,-1,cpd:C00257,HILICNeg,NA,4,D-Gluconic acid; D-Gluconate; D-gluco-Hexonic acid
+Co-enzyme A,HILIC,Acetyl CoA,C23H38N7O17P3S,10.84,808.1185,-1,cpd:C00024,HILICNeg,NA,4,Acetyl-CoA; Acetyl coenzyme A
+Organic Acid,HILIC,Ketoglutaric Acid,C5H6O5,10.845,145.0134,-1,cpd:C00026,HILICNeg,NA,4,2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
+Amino Acid synthesis,HILIC,Shikimic Acid,C7H10O5,10.97,173.04555,-1,cpd:C00493,HILICNeg,NA,5,"Shikimate; Shikimic acid; 3,4,5-Trihydroxy-1-cyclohexenecarboxylic acid"
+Organic Acid,HILIC,Methylphosphonic Acid,CH5O3P,11,94.9795,-1,NA,HILICNeg,NA,4,NA
+Redox,HILIC,NADH,C21H27N7O14P2,11.26,664.1191,-1,cpd:C00004,HILICNeg,NA,4,NADH; DPNH; Reduced nicotinamide adenine dinucleotide
+Co-enzyme A,HILIC,Hydroxybutyryl CoA,C25H42N7O18P3S,11.545,852.1098,-1,cpd:C01144,HILICNeg,NA,4,(S)-3-Hydroxybutanoyl-CoA; (S)-3-Hydroxybutyryl-CoA
+Energy charge,HILIC,AMP,C10H14N5O7P,11.585,346.05581,-1,cpd:C00020,HILICNeg,NA,4,AMP; Adenosine 5'-monophosphate; Adenylic acid; Adenylate; 5'-AMP; 5'-Adenylic acid; 5'-Adenosine monophosphate; Adenosine 5'-phosphate
+Organic Acid,HILIC,Succinic Acid,C4H6O4,11.9,117.0183,-1,cpd:C00042,HILICNeg,NA,4,Succinate; Succinic acid; Butanedionic acid; Ethylenesuccinic acid
+Organic Acid,HILIC,Malic Acid,C4H6O5,11.97,133.0133,-1,cpd:C00149,HILICNeg,NA,4,(S)-Malate; L-Malate; L-Apple acid; L-Malic acid; L-2-Hydroxybutanedioic acid; Malate; Malic acid
+Energy charge,HILIC,ADP,C10H15N5O10P2,12.09,426.02214,-1,cpd:C00008,HILICNeg,NA,4,ADP; Adenosine 5'-diphosphate
+Sulfur,HILIC,Cysteic Acid,C3H7NO5S,12.15,167.9966,-1,cpd:C00506,HILICNeg,NA,4,L-Cysteate; L-Cysteic acid; 3-Sulfoalanine; 2-Amino-3-sulfopropionic acid
+Organic Acid,HILIC,Fumaric Acid,C4H4O4,12.7,115.0026,-1,cpd:C00122,HILICNeg,NA,4,Fumarate; Fumaric acid; trans-Butenedioic acid
+Redox,HILIC,NADP,C21H29N7O17P3,12.74,742.0698,-1,cpd:C00006,HILICNeg,NA,4,NADP+; NADP; Nicotinamide adenine dinucleotide phosphate; beta-Nicotinamide adenine dinucleotide phosphate; TPN; Triphosphopyridine nucleotide; beta-NADP+
+Nucleotide sugar,HILIC,UDP-glucosamine,C17H27N3O17P2,12.75,606.07429,-1,cpd:C00043,HILICNeg,NA,4,UDP-N-acetyl-alpha-D-glucosamine; UDP-N-acetyl-D-glucosamine; UDP-N-acetylglucosamine
+Calvin cycle intermediate,HILIC,DHAP,C3H7O6P,12.86,168.9888,-1,cpd:C00111,HILICNeg,NA,4,Glycerone phosphate; Dihydroxyacetone phosphate; 3-Hydroxy-2-oxopropyl phosphate
+Sulfur,HILIC,3-Sulfopyruvic Acid,C3H4O6S,12.92,166.96558,-1,cpd:C05528,HILICNeg,NA,4,3-Sulfopyruvate; 3-Sulfopyruvic acid
+Co-enzyme A,HILIC,Succinyl CoA,C25H40N7O19P3S,12.965,866.12398,-1,cpd:C00091,HILICNeg,NA,4,Succinyl-CoA; Succinyl coenzyme A
+Antioxidant,HILIC,Trehalose,C12H22O11 ,13,341.10893,-1,cpd:C01083,HILICNeg,NA,4,"alpha,alpha-Trehalose; alpha,alpha'-Trehalose; Trehalose"
+Redox,HILIC,glycerol 3 phosphate,C3H9O6P,13.065,171.0064,-1,cpd:C00093,HILICNeg,NA,4,sn-Glycerol 3-phosphate; Glycerophosphoric acid; D-Glycerol 1-phosphate
+Co-enzyme A,HILIC,Methyl Malonyl CoA,C25H40N7O19P3S,13.18,866.1251,-1,cpd:C00683,HILICNeg,NA,4,(S)-Methylmalonyl-CoA; (S)-Methylmalonyl-coenzyme A; (2S)-Methylmalonyl-CoA; D-Methylmalonyl-CoA
+Organic Acid,HILIC,Oxalic Acid,C2H2O4,13.235,88.9869,-1,cpd:C00209,HILICNeg,NA,4,Oxalate; Oxalic acid; Ethanedioic acid
+Sulfur,HILIC,Sulfolactic Acid,C3H6O6S,13.275,168.9812,-1,cpd:C11537,HILICNeg,NA,16,(2R)-3-Sulfolactate; (R)-3-Sulfolactate
+Sugar phosphate,HILIC,Ribose 5 phosphate,C5H11O8P,13.29,229.01188,-1,cpd:C00117,HILICNeg,NA,4,D-Ribose 5-phosphate; Ribose 5-phosphate
+Redox,HILIC,NADPH,C21H29N7O17P3,13.345,744.0833,-1,cpd:C00005,HILICNeg,NA,4,NADPH; TPNH; Reduced nicotinamide adenine dinucleotide phosphate
+Sugar phosphate,HILIC,Glucose 1 phosphate,C6H13O9P,13.45,259.02244,-1,cpd:C00103,HILICNeg,NA,4,D-Glucose 1-phosphate; alpha-D-Glucose 1-phosphate; Cori ester; D-Glucose alpha-1-phosphate
+Sugar phosphate,HILIC,Fructose 6 phosphate,C6H13O9P,13.51,259.02244,-1,cpd:C00085,HILICNeg,NA,4,D-Fructose 6-phosphate; D-Fructose 6-phosphoric acid; Neuberg ester
+Co-enzyme A,HILIC,Malonyl CoA,C24H38N7O19P3S,13.525,852.1458,-1,cpd:C00083,HILICNeg,NA,4,Malonyl-CoA; Malonyl coenzyme A
+Nucleotide sugar,HILIC,UDP-glucose,C15H24N2O17P2,13.59,565.04774,-1,cpd:C00029,HILICNeg,NA,4,UDP-glucose; UDPglucose; UDP-D-glucose; Uridine diphosphate glucose; UDP-alpha-D-glucose
+Intracellular signaling,HILIC,Cyclic diGMP,C20H24N10O14P2,13.74,689.08759,-1,cpd:C16463,HILICNeg,NA,4,"3',5'-Cyclic diGMP; cdiGMP; 3',5'-Cyclic diguanylic acid; Bis-(3',5')-cyclic diGMP; Cyclic di-3',5'-guanylate"
+Energy charge,HILIC,GMP,C10H14N5O8P,13.85,362.0515,-1,cpd:C00144,HILICNeg,NA,4,GMP; Guanosine 5'-phosphate; Guanosine monophosphate; Guanosine 5'-monophosphate; Guanylic acid
+Organic Acid,HILIC,PEP,C3H5O6P,13.865,166.9751,-1,cpd:C00074,HILICNeg,NA,4,Phosphoenolpyruvate; Phosphoenolpyruvic acid; PEP
+Sulfur,HILIC,Sulfoacetic Acid,C2H4O5S,13.9,138.9698,-1,cpd:C14179,HILICNeg,NA,4,Sulfoacetate; Sulfoacetic acid
+Sugar phosphate,HILIC,Glucose 6 phosphate,C6H13O9P,14.12,259.02244,-1,cpd:C00092,HILICNeg,NA,4,D-Glucose 6-phosphate; Glucose 6-phosphate; Robison ester
+Organic Acid,HILIC,Aconitic Acid,C6H6O6,14.21,173.00916,-1,cpd:C00417,HILICNeg,NA,4,cis-Aconitate; cis-Aconitic acid
+Sugar phosphate,HILIC,Phosphoglyceric Acid,C3H7O7P ,14.755,184.98566,-1,cpd:C00197,HILICNeg,NA,4,3-Phospho-D-glycerate; D-Glycerate 3-phosphate; 3-Phospho-(R)-glycerate; 3-Phosphoglycerate
+Energy charge,HILIC,ATP,C10H16N5O13P3,15.35,505.98847,-1,cpd:C00002,HILICNeg,NA,4,ATP; Adenosine 5'-triphosphate
+Organic Acid,HILIC,Isocitric Acid,C6H8O7,15.65,191.01973,-1,cpd:C00311,HILICNeg,NA,4,"Isocitrate; Isocitric acid; 1-Hydroxytricarballylic acid; 1-Hydroxypropane-1,2,3-tricarboxylic acid"
+Energy charge,HILIC,GTP,C10H16N5O14P3,16.58,543.9536,-1,cpd:C00044,HILICNeg,NA,4,GTP; Guanosine 5'-triphosphate
+Organic Acid,HILIC,Citric Acid,C6H8O7,17.06,191.01973,-1,cpd:C00158,HILICNeg,NA,4,"Citrate; Citric acid; 2-Hydroxy-1,2,3-propanetricarboxylic acid; 2-Hydroxytricarballylic acid"
+New,HILIC,Sucrose,C12H22O11,11.93,341.1092,-1,cpd:C00089,HILICNeg,NA,5,Sucrose; Cane sugar; Saccharose; 1-alpha-D-Glucopyranosyl-2-beta-D-fructofuranoside
+New,HILIC,Keto-?-(methylthio)butyric acid,C5H7O3S,2.59,147.0111,-1,NA,HILICNeg,NA,5,NA
+New,HILIC,2-Hydroxy-4-(methylthio)butyric_acid,C5H10O3S,2.69,149.0268,-1,NA,HILICNeg,NA,5,NA
+Internal Standard,HILIC,"L-Cysteic Acid, D3",C3D3H4NO5S,12.15,171.0161,-1,NA,HILICNeg,NA,1,NA
+Internal Standard,HILIC,"Sulfolactic Acid, 13C3",C(13)2H5O4S,13.27,171.9913,-1,NA,HILICNeg,NA,1,NA
+Internal Standard,HILIC,"Sulfoacetic Acid, 13C2",C(13)2H4O5S,13.9,140.9774,-1,NA,HILICNeg,NA,2.5,NA
+Internal Standard,HILIC,"Isethionic Acid, 13C2",C(13)2H6O4S,7.2,126.9981,-1,NA,HILICNeg,NA,0.5,NA
+Internal Standard,HILIC,"Taurine, D4",C2D4H3NO3S,10,128.0325,-1,NA,HILICNeg,NA,1,NA
+Internal Standard,HILIC,"Acetyl CoA, 13C2",C21C(13)2H38N7O17P3S,10.84,810.1252,-1,NA,HILICNeg,NA,1,NA
+Internal Standard,HILIC,"Succinic Acid, D4",C4D4H2O4,11.9,121.0444,-1,NA,HILICNeg,NA,10,NA
+Internal Standard,HILIC,"Guanosine Monophosphate, 15N5",C10H13N(15)5O8P,13.85,367.0359,-1,NA,HILICNeg,NA,2,NA
+Internal Standard,HILIC,"Adenosine Monophosphate, 15N5",C10H13N(15)5O7P,11.585,351.0411,-1,NA,HILICNeg,NA,5,NA
+Internal Standard,HILIC,"Trehalose, 13C",C(13)12H22O11,12.63,353.1781,-1,NA,HILICNeg,NA,5,NA
+Internal Standard,HILIC,"Sucrose, 13C",C(13)12H22O11,11.77,353.1781,-1,NA,HILICNeg,NA,5,NA
+New,HILIC,Cys-Gly,C5H10N2O3S,9.53,179.0486,1,cpd:C01419,HILICPos,NA,5,Cys-Gly; L-Cysteinylglycine
+Lignin,HILIC,Ethyl 3 aminobenzoate,C9H11NO2,2.01,166.08626,1,cpd:C07527,HILICPos,NA,NA,Benzocaine; Ethyl aminobenzoate
+Quorum sensing,HILIC,PQS,C16H21NO2,2.16,260.16451,1,cpd:C11848,HILICPos,NA,4,2-Heptyl-3-hydroxy-quinolone; 2-Heptyl-3-hydroxy-4(1H)-quinolone; 2-Heptyl-3-hydroxy-4-quinolone
+Vitamin,HILIC,Vitamin B3,C6H5NO2,2.68,124.0393,1,cpd:C00253,HILICPos,NA,4,Nicotinate; Nicotinic acid; Niacin; 3-Pyridinecarboxylic acid
+Amino Acid,HILIC,Kynurenine,C10H12N2O3,4.345,209.0921,1,cpd:C00328,HILICPos,NA,NA,L-Kynurenine; 3-Anthraniloyl-L-alanine
+Osmolyte,HILIC,Homarine,C7H7NO2,6.19,138.05496,1,NA,HILICPos,NA,4,NA
+Amino Acid,HILIC,Cysteine,C3H7NO2S,7,122.0276,1,cpd:C00097,HILICPos,NA,NA,L-Cysteine; L-2-Amino-3-mercaptopropionic acid
+Amino Acid,HILIC,Leucine,C6H13NO2,7.63,132.10191,1,cpd:C00123,HILICPos,NA,4,L-Leucine; 2-Amino-4-methylvaleric acid; (2S)-alpha-2-Amino-4-methylvaleric acid; (2S)-alpha-Leucine
+Amino Acid derivative,HILIC,Betaine,C5H11NO2,7.86,118.08626,1,cpd:C00719,HILICPos,NA,4,"Betaine; Trimethylaminoacetate; Glycine betaine; N,N,N-Trimethylglycine; Trimethylammonioacetate"
+Amino Acid,HILIC,Isoleucine,C6H13NO2,8.17,132.10191,1,cpd:C00407,HILICPos,NA,4,L-Isoleucine; 2-Amino-3-methylvaleric acid
+Amino Acid,HILIC,Methionine,C5H11NO2S,8.29,150.05833,1,cpd:C00073,HILICPos,NA,4,L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid
+Amino Acid synthesis,HILIC,L-Homocysteine,C4H9NO2S,8.7,136.04268,1,cpd:C00155,HILICPos,NA,4,L-Homocysteine; L-2-Amino-4-mercaptobutyric acid; Homocysteine
+Amino Acid derivative,HILIC,Dimethyl Glycine,C4H9NO2,8.97,104.07061,1,cpd:C01026,HILICPos,NA,4,"N,N-Dimethylglycine; Dimethylglycine"
+Amino Acid,HILIC,Valine,C5H11NO2,9.09,118.08626,1,cpd:C00183,HILICPos,NA,4,L-Valine; 2-Amino-3-methylbutyric acid
+Amino Acid,HILIC,Proline,C5H9NO2,9.49,116.07061,1,cpd:C00148,HILICPos,NA,4,L-Proline; 2-Pyrrolidinecarboxylic acid
+Amino Acid,HILIC,Tyrosine,C9H11NO3,9.76,182.08117,1,cpd:C00082,HILICPos,NA,4,L-Tyrosine; (S)-3-(p-Hydroxyphenyl)alanine; (S)-2-Amino-3-(p-hydroxyphenyl)propionic acid; Tyrosine
+Amino Acid,HILIC,Glycine,C2H5NO2,9.895,76.0398,1,cpd:C00037,HILICPos,NA,NA,Glycine; Aminoacetic acid; Gly
+Amino Acid - collagen,HILIC,trans Hydroxyl proline,C5H9NO3,10.07,132.06552,1,cpd:C01157,HILICPos,NA,4,Hydroxyproline; L-Hydroxyproline; trans-4-Hydroxy-L-proline
+Osmolyte,HILIC,Glucosylglycerol,C9H18O8,10.1,255.1057,1,cpd:C11546,HILICPos,NA,4,2-O-(alpha-D-Glucopyranosyl)glycerol; 2-O-alpha-D-Glucosylglycerol
+Amino sugar,HILIC,Chitobiose,C16H28N2O11 ,10.21,425.17659,1,cpd:C01674,HILICPos,NA,4,"Chitobiose; Diacetylchitobiose; N,N'-Diacetylchitobiose"
+Glycine metabolite,HILIC,Sarcosine,C3H7NO2,10.6,90.0554,1,cpd:C00213,HILICPos,NA,4,Sarcosine; N-Methylglycine
+Amino Acid synthesis,HILIC,Adenosyl Homocysteine,C14H20N6O5S,10.85,385.12886,1,cpd:C00021,HILICPos,NA,4,S-Adenosyl-L-homocysteine; S-Adenosylhomocysteine
+Amino Acid,HILIC,Threonine,C4H9NO3,10.92,120.06552,1,cpd:C00188,HILICPos,NA,4,L-Threonine; 2-Amino-3-hydroxybutyric acid
+Peptidoglycan,HILIC,Muramic Acid,C9H17NO7,11,252.10778,1,cpd:C06470,HILICPos,NA,4,Muramic acid; 3-O-alpha-Carboxyethyl-D-glucosamine; 2-Amino-3-O-[(R)-1-carboxyethyl]-2-deoxy-D-glucopyranose
+Amino Acid - degraded,HILIC,Aminobutyric Acid,C4H9NO2,11.155,104.07061,1,cpd:C00334,HILICPos,NA,4,4-Aminobutanoate; 4-Aminobutanoic acid; 4-Aminobutyrate; 4-Aminobutyric acid; gamma-Aminobutyric acid; GABA
+Amino Acid,HILIC,Alanine,C3H7NO2,11.3,90.05496,1,cpd:C00041,HILICPos,NA,4,L-Alanine; L-2-Aminopropionic acid; L-alpha-Alanine
+Organic Acid - nitrogenous,HILIC,Creatine,C4H9N3O2,11.34,132.07675,1,cpd:C00300,HILICPos,NA,4,Creatine; alpha-Methylguanidino acetic acid; Methylglycocyamine
+Amino Acid,HILIC,Histidine,C6H9N3O2,11.45,156.07675,1,cpd:C00135,HILICPos,NA,4,L-Histidine; (S)-alpha-Amino-1H-imidazole-4-propionic acid
+Vitamin (B1-derivative),HILIC,Thiamine monophosphate,C12H18N4O4PS,11.5,345.07809,1,cpd:C01081,HILICPos,NA,4,Thiamin monophosphate; Thiamine monophosphate; Thiamin phosphate; Thiamine phosphate; TMP
+Amino Acid,HILIC,Glutamine,C5H10N2O3,11.7,147.07642,1,cpd:C00064,HILICPos,NA,4,L-Glutamine; L-2-Aminoglutaramic acid
+Amino Acid,HILIC,Asparagine,C4H8N2O3,11.86,133.06077,1,cpd:C00152,HILICPos,NA,4,L-Asparagine; 2-Aminosuccinamic acid
+Amino Acid,HILIC,Serine,C3H7NO3,11.86,106.04987,1,cpd:C00065,HILICPos,NA,4,L-Serine; L-2-Amino-3-hydroxypropionic acid; L-3-Hydroxy-alanine; Serine
+Antioxidant,HILIC,Glutathione,C10H17N3O6S,12,308.09108,1,cpd:C00051,HILICPos,NA,4,Glutathione; 5-L-Glutamyl-L-cysteinylglycine; N-(N-gamma-L-Glutamyl-L-cysteinyl)glycine; gamma-L-Glutamyl-L-cysteinyl-glycine; GSH; Reduced glutathione
+Amino Acid,HILIC,Glutamic acid,C5H9NO4,12.41,148.06043,1,cpd:C00025,HILICPos,NA,4,L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Amino Acid,HILIC,Aspartic acid,C4H7NO4,12.86,134.04478,1,cpd:C00049,HILICPos,NA,4,L-Aspartate; L-Aspartic acid; 2-Aminosuccinic acid; L-Asp
+Amino Acid synthesis,HILIC,Adenosyl Methionine,C15H22N6O5S,13.01,399.14451,1,cpd:C00019,HILICPos,NA,4,S-Adenosyl-L-methionine; S-Adenosylmethionine; AdoMet; SAM
+Amino Acid,HILIC,Cystine,C6H12N2O4S2,13.1,241.03112,1,cpd:C00491,HILICPos,NA,4,L-Cystine; L-Dicysteine; L-alpha-Diamino-beta-dithiolactic acid
+Amino Acid synthesis,HILIC,Cystathionine,C7H14N2O4S,13.14,223.07582,1,cpd:C02291,HILICPos,NA,4,L-Cystathionine
+Vitamin (B1-derivative),HILIC,Thiamine pyrophosphate,C12H19N4O7P2S,13.765,425.04442,1,cpd:C00068,HILICPos,NA,4,Thiamin diphosphate; Thiamine diphosphate; Thiamin pyrophosphate; TPP; ThPP
+Vitamin (B-like),HILIC,Choline,C5H14NO,15.265,104.10699,1,cpd:C00114,HILICPos,NA,4,Choline; Bilineurine
+Amino Acid - collagen,HILIC,Hydroxylysine,C6H14N2O3,16.37,163.10772,1,cpd:C16741,HILICPos,NA,4,L-Hydroxylysine; 5-Hydroxy-L-lysine; L-erythro-5-Hydroxylysine; (5R)-5-Hydroxy-L-lysine
+Amino Acid,HILIC,Lysine,C6H14N2O2,17.5,147.1128,1,cpd:C00047,HILICPos,NA,4,"L-Lysine; Lysine acid; 2,6-Diaminohexanoic acid"
+Amino Acid,HILIC,Arginine,C6H14N4O2,17.93,175.11895,1,cpd:C00062,HILICPos,NA,4,L-Arginine; (S)-2-Amino-5-guanidinovaleric acid; L-Arg
+New,HILIC,Methionine Sulfoxide,C5H11NO3S,9.73,166.0644,1,cpd:C02989,HILICPos,NA,4,L-Methionine S-oxide
+New,HILIC,Cys-Gly oxidized,C10H18N4O6S2,11.85,355.0739,1,NA,HILICPos,NA,4,NA
+New,HILIC,N-Acetyl-Lysine,C8H16N2O3,9.71,189.1233,1,cpd:C12989,HILICPos,NA,4,N2-Acetyl-L-lysine; N(alpha)-Acetyllysine
+New,HILIC,Carnitine ,C7H16NO3,10.21,162.1124,1,cpd:C00487,HILICPos,NA,1,Carnitine; gamma-Trimethyl-hydroxybutyrobetaine; 3-Hydroxy-4-trimethylammoniobutanoate
+New,HILIC,Homocystine,C8H16N2O4S2,12.58,269.0105,1,cpd:C01817,HILICPos,NA,4,L-Homocystine; Homocystine
+New,HILIC,Methyl 3-methylthiopropionate,C5H10O2S,6.53,158.1177,1,NA,HILICPos,NA,10,NA
+New,HILIC,Stachydrine hydrochloride,C7H13NO2,7.18,144.1019,1,cpd:C10172,HILICPos,NA,0.5,Stachydrine; Proline betaine; L-Proline betaine
+New,HILIC,Trigonelline,C7H7NO2,8.36,138.0549,1,cpd:C01004,HILICPos,NA,0.5,N-Methylnicotinate; Trigonelline; Trigenelline; 1-Methylpyridinio-3-carboxylate; Betaine nicotinate; Caffearin; Gynesine
+New,HILIC,Ornithine,C5H12N2O2,16.79,133.0973,1,cpd:C00077,HILICPos,NA,5,"L-Ornithine; (S)-2,5-Diaminovaleric acid; (S)-2,5-Diaminopentanoic acid; (S)-2,5-Diaminopentanoate"
+New,HILIC,Homoserine,C4H9NO3,11.32,120.0658,1,cpd:C00263,HILICPos,NA,4,L-Homoserine; 2-Amino-4-hydroxybutyric acid
+New,HILIC,N-Acetyl-Serine,C5H9NO4,6.27,148.0604,1,cpd:C00979,HILICPos,NA,4,O-Acetyl-L-serine; O3-Acetyl-L-serine
+New,HILIC,Homocysteine Thiolactone,C4H7NOS,2.78,118.0865,1,NA,HILICPos,NA,4,NA
+New,HILIC,Citrulline,C6H13N3O3,12.21,176.1031,1,cpd:C00327,HILICPos,NA,4,L-Citrulline; 2-Amino-5-ureidovaleric acid; Citrulline
+New,HILIC,Argininosuccinic Acid,C10H18N4O6,13.69,291.1298,1,cpd:C03406,HILICPos,NA,4,N-(L-Arginino)succinate; 2-(Nomega-L-Arginino)succinate; L-Argininosuccinate; L-Argininosuccinic acid; L-Arginosuccinic acid
+Internal Standard,HILIC,"DL-Proline, D7",C5H3D7NO2,9.49,123.1145,1,NA,HILICPos,NA,1,NA
+Internal Standard,HILIC,"DL-Valine, D8",C5H4D8NO2,9.09,126.1365,1,NA,HILICPos,NA,1,NA
+Internal Standard,HILIC,"L-Methionine, D3",C5D3H8NO2S,8.29,153.0722,1,NA,HILICPos,NA,1,NA
+Internal Standard,HILIC,"DL-Histidine, 15N",C6H9N3N(15)O2,11.45,157.0738,1,NA,HILICPos,NA,2.5,NA
+Internal Standard,HILIC,"DL-Alanine, D3",C3H4D3NO2,11.3,93.0738,1,NA,HILICPos,NA,5,NA
+Internal Standard,HILIC,"L-Isoleucine, 15N",C6H13N(15)O2,8.17,133.0989,1,NA,HILICPos,NA,0.5,NA
+Vitamin,RP,Vitamin C,C6H8O6,0.8,NA,-1,cpd:C00072,CyanoAq,CyanoDCM,1,Ascorbate; Ascorbic acid; L-Ascorbate; L-Ascorbic acid; Vitamin C
+Phytohormone,RP,DHZ,C10H15N5O,2.01,NA,-1,cpd:C02029,CyanoAq,CyanoDCM,0.25,Dihydrozeatin; 2-Methyl-4-(1H-purin-6-ylamino)butan-1-ol; N6-(4-Hydroxyisopentanyl)adenine
+Phytohormone,RP,Zeatin,C10H13N5O,2.02,NA,-1,cpd:C00371,CyanoAq,CyanoDCM,0.25,Zeatin; N6-(4-Hydroxyisopentenyl)adenine; (E)-2-Methyl-4-(1H-purin-6-ylamino)but-2-en-1-ol; trans-Zeatin
+Sulfur,RP,Methylthioadenosine,C11H15N5O3S,2.1,298.0969,-1,cpd:C00170,CyanoAq,CyanoDCM,0.25,5'-Methylthioadenosine; Methylthioadenosine; S-Methyl-5'-thioadenosine; 5-Methylthioadenosine; 5'-Deoxy-5'-(methylthio)adenosine; Thiomethyladenosine; MTA
+Lignin,RP,"3,4-Dihydroxybenzoic acid",C7H6O4,2.55,153.0185,-1,cpd:C00230,CyanoAq,CyanoDCM,1.25,"3,4-Dihydroxybenzoate; 3,4-Dihydroxybenzoic acid; Protocatechuate; Protocatechuic acid"
+Lignin,RP,4-hydroxybenzaldehyde,C7H6O2,3.775,NA,-1,cpd:C00633,CyanoAq,CyanoDCM,0.25,4-Hydroxybenzaldehyde; p-Hydroxybenzaldehyde
+Phytohormone,RP,2iP,C10H13N5,4.18,NA,-1,cpd:C04083,CyanoAq,CyanoDCM,0.25,"N6-(delta2-Isopentenyl)-adenine; N6-(3-Methylbut-2-enyl)adenine; 6-(gamma,gamma-Dimethylallylamino)purine; N6-Dimethylallyladenine"
+Lignin,RP,Caffeic Acid,C9H8O4,4.83,NA,-1,cpd:C01197,CyanoAq,CyanoDCM,0.75,"Caffeate; Caffeic acid; 3,4-Dihydroxy-trans-cinnamate; trans-Caffeate; (2E)-3-(3,4-Dihydroxyphenyl)prop-2-enoate"
+Phytohormone,RP,GA3,C19H22O6,5.16,NA,-1,cpd:C01699,CyanoAq,CyanoDCM,0.25,Gibberellin A3; Gibberellic acid; Gibberellin
+Antioxidant,RP,Trolox,C14H18O4,7,NA,-1,NA,CyanoAq,CyanoDCM,NA,NA
+Phytohormone,RP,GA4,C19H24O5,8.18,NA,-1,cpd:C11864,CyanoAq,CyanoDCM,0.25,Gibberellin A4
+Vitamin,RP,Pyridoxamine,C8H12N2O2,0.65,169.09715,1,cpd:C00534,CyanoAq,CyanoDCM,0.25,Pyridoxamine; PM
+Vitamin (B1-derivative),RP,Thiamine monophosphate,C12H18N4O4PS,0.67,345.07809,1,cpd:C01081,CyanoAq,CyanoDCM,0.25,Thiamin monophosphate; Thiamine monophosphate; Thiamin phosphate; Thiamine phosphate; TMP
+Vitamin (B1-derivative),RP,thiamine pyrophosphate,C12H19N4O7P2S,0.67,425.34141,1,cpd:C00068,CyanoAq,CyanoDCM,0.25,Thiamin diphosphate; Thiamine diphosphate; Thiamin pyrophosphate; TPP; ThPP
+Vitamin (B-like),RP,Choline,C5H14NO,0.69,104.10699,1,cpd:C00114,CyanoAq,CyanoDCM,0.25,Choline; Bilineurine
+Amino Acid derivative,RP,Dimethyl glycine,C4H9NO2,0.69,104.07061,1,cpd:C01026,CyanoAq,CyanoDCM,0.25,"N,N-Dimethylglycine; Dimethylglycine"
+Vitamin,RP,Vitamin B1,C12H17N4OS,0.69,265.1119,1,cpd:C00378,CyanoAq,CyanoDCM,0.25,Thiamine; Thiamin; Vitamin B1; Aneurin; Antiberiberi factor
+Amino Acid synthesis,RP,Adenosyl Methionine,C15H22N6O5S,0.71,399.14451,1,cpd:C00019,CyanoAq,CyanoDCM,0.25,S-Adenosyl-L-methionine; S-Adenosylmethionine; AdoMet; SAM
+Amino Acid derivative,RP,Betaine,C5H11NO2,0.71,118.08626,1,cpd:C00719,CyanoAq,CyanoDCM,0.25,"Betaine; Trimethylaminoacetate; Glycine betaine; N,N,N-Trimethylglycine; Trimethylammonioacetate"
+Vitamin,RP,Pyridoxal Phosphate,C8H10NO6P,0.78,248.03185,1,cpd:C00018,CyanoAq,CyanoDCM,0.25,Pyridoxal phosphate; Pyridoxal 5-phosphate; Pyridoxal 5'-phosphate; PLP
+Vitamin,RP,Pyridoxal,C8H9NO3,0.86,168.06552,1,cpd:C00250,CyanoAq,CyanoDCM,0.25,Pyridoxal
+Antioxidant,RP,Glutathione,C10H17N3O6S,0.87,308.09108,1,cpd:C00051,CyanoAq,CyanoDCM,0.25,Glutathione; 5-L-Glutamyl-L-cysteinylglycine; N-(N-gamma-L-Glutamyl-L-cysteinyl)glycine; gamma-L-Glutamyl-L-cysteinyl-glycine; GSH; Reduced glutathione
+Vitamin,RP,Vitamin B3,C6H5NO2,0.88,124.0393,1,cpd:C00253,CyanoAq,CyanoDCM,0.25,Nicotinate; Nicotinic acid; Niacin; 3-Pyridinecarboxylic acid
+Vitamin,RP,Vitamin B6,C8H11NO3,0.88,170.08117,1,cpd:C00314,CyanoAq,CyanoDCM,0.25,Pyridoxine; Pyridoxol
+Amino Acid synthesis,RP,Adenosyl Homocysteine,C14H20N6O5S,0.96,385.12886,1,cpd:C00021,CyanoAq,CyanoDCM,0.25,S-Adenosyl-L-homocysteine; S-Adenosylhomocysteine
+Vitamin,RP,Sulfurol,C6H9NOS,1,144.04776,1,cpd:C04294,CyanoAq,CyanoDCM,0.25,5-(2-Hydroxyethyl)-4-methylthiazole; 4-Methyl-5-(2'-hydroxyethyl)-thiazole; 4-Methyl-5-(2-hydroxyethyl)-thiazole
+Purine,RP,Xanthine,C5H4N4O2,1.11,153.0412,1,cpd:C00385,CyanoAq,CyanoDCM,0.25,Xanthine
+Amino Acid,RP,Phenylalanine,C9H11NO2,1.15,166.08626,1,cpd:C00079,CyanoAq,CyanoDCM,0.25,L-Phenylalanine; (S)-alpha-Amino-beta-phenylpropionic acid
+Vitamin,RP,Vitamin B5,C9H17NO5,1.17,220.11795,1,cpd:C00864,CyanoAq,CyanoDCM,0.25,Pantothenate; Pantothenic acid; (R)-Pantothenate
+Amino Acid,RP,Kynurenine,C10H12N2O3,1.27,209.0921,1,cpd:C00328,CyanoAq,CyanoDCM,0.25,L-Kynurenine; 3-Anthraniloyl-L-alanine
+Quorum sensing,RP,C4-HSL,C8H13NO3,1.47,172.09682,1,cpd:C11837,CyanoAq,CyanoDCM,0.25,N-Butyryl-L-homoserine lactone
+Quorum sensing,RP,3OC6-HSL,C10H15NO4,1.96,214.10738,1,cpd:C11839,CyanoAq,CyanoDCM,0.25,N-(3-Oxohexanoyl)homoserine lactone
+Lignin,RP,Aminobenzoic Acid,C7H7NO2,2,138.05496,1,cpd:C00568,CyanoAq,CyanoDCM,0.25,4-Aminobenzoate; ABEE; 4-Aminobenzoic acid; p-Aminobenzoate
+Amino Acid,RP,Tryptophan,C11H12N2O2,2.07,205.09715,1,cpd:C00078,CyanoAq,CyanoDCM,0.25,L-Tryptophan; Tryptophan; (S)-alpha-Amino-beta-(3-indolyl)-propionic acid
+Phytohormone,RP,Tryptamine,C10H12N2,2.55,161.10732,1,cpd:C00398,CyanoAq,CyanoDCM,0.25,Tryptamine; 3-(2-Aminoethyl)indole
+Toxin ,RP,Domoic Acid,C15H21NO6,2.72,312.14416,1,cpd:C13732,CyanoAq,CyanoDCM,0.25,Domoic acid
+Lignin,RP,Ethyl 3 aminobenzoate,C9H11NO2,3.365,166.08626,1,cpd:C07527,CyanoAq,CyanoDCM,0.25,Benzocaine; Ethyl aminobenzoate
+Phytohormone,RP,Kinetin,C10H9N5O,3.37,216.08799,1,cpd:C08272,CyanoAq,CyanoDCM,0.25,Kinetin; 6-Furfuryladenine
+Vitamin synthesis,RP,Dimethyl-benzimidazole,C9H10N2,3.38,147.09167,1,cpd:C03114,CyanoAq,CyanoDCM,0.25,"Dimethylbenzimidazole; 5,6-Dimethylbenzimidazole"
+Vitamin,RP,Vitamin B7,C10H16N2O3S,3.75,245.09544,1,cpd:C00120,CyanoAq,CyanoDCM,0.25,Biotin; D-Biotin; Vitamin H; Coenzyme R
+Purine,RP,Caffeine,C8H10N4O2,3.85,195.08765,1,cpd:C07481,CyanoAq,CyanoDCM,0.25,"Caffeine; 1,3,7-Trimethylxanthine"
+Phytohormone,RP,Indole 3 acetamide,C10H10N2O,4.02,175.08659,1,cpd:C02693,CyanoAq,CyanoDCM,0.25,(Indol-3-yl)acetamide; Indole-3-acetamide
+Quorum sensing,RP,C6-HSL,C10H17NO3,4.06,200.12812,1,cpd:C21197,CyanoAq,CyanoDCM,0.25,N-Hexanoyl-L-homoserine lactone; C6-HSL; N-[(3S)-Tetrahydro-2-oxo-3-furanyl]-hexanamide
+Lignin,RP,Vanillic Acid,C8H8O4,4.115,169.04954,1,cpd:C06672,CyanoAq,CyanoDCM,0.25,Vanillate; Vanillic acid; 4-Hydroxy-3-methoxybenzoate; 4-Hydroxy-3-methoxybenzoic acid
+Vitamin,RP,Vitamin B2,C17H20N4O6,4.39,377.14556,1,cpd:C00255,CyanoAq,CyanoDCM,0.25,"Riboflavin; Lactoflavin; 7,8-Dimethyl-10-ribitylisoalloxazine; Vitamin B2"
+Vitamin,RP,Desthiobiotin,C10H18N2O3,4.5,215.13902,1,cpd:C01909,CyanoAq,CyanoDCM,0.25,Dethiobiotin; Desthiobiotin
+Vitamin,RP,Vitamin B9,C19H19N7O6,4.51,442.14696,1,cpd:C00504,CyanoAq,CyanoDCM,0.25,Folate; Pteroylglutamic acid; Folic acid
+Phytohormone,RP,Indole 3 Lactic Acid,C11H11NO3,4.65,206.08117,1,cpd:C02043,CyanoAq,CyanoDCM,0.25,Indolelactate
+Lignin,RP,Vanillin,C8H8O3,4.69,153.05462,1,cpd:C00755,CyanoAq,CyanoDCM,0.25,4-Hydroxy-3-methoxy-benzaldehyde; Vanillin; Vanillaldehyde; 4-Hydroxy-3-methoxybenzaldehyde
+Lignin,RP,Syringic Acid,C9H10O5,4.88,199.0601,1,cpd:C10833,CyanoAq,CyanoDCM,0.25,"Syringic acid; Syringate; 4-Hydroxy-3,5-dimethoxybenzoate; Gallic acid 3,5-dimethyl ether"
+Quorum sensing,RP,3OC8-HSL,C12H19NO4,5.28,242.1392,1,cpd:C11841,CyanoAq,CyanoDCM,0.25,N-(3-Oxooctanoyl)homoserine lactone; N-(3-Oxooctanoyl)-L-homoserine lactone; OOHL
+Phytohormone,RP,Tryptophol,C10H11NO,5.33,162.09134,1,cpd:C00955,CyanoAq,CyanoDCM,0.25,Indole-3-ethanol; Tryptophol
+Lignin,RP,Acetovanillone,C9H10O3,5.38,167.07027,1,cpd:C11380,CyanoAq,CyanoDCM,0.25,Apocynin; Acetovanillone
+Lignin,RP,p-Coumaric Acid,C9H8O3,5.385,165.05462,1,cpd:C00811,CyanoAq,CyanoDCM,0.25,4-Coumarate; p-Coumaric acid; trans-4-Hydroxycinnamate; trans-p-Hydroxycinnamate; 4-Hydroxycinnamic acid; 4-Hydroxycinnamate
+Phytohormone,RP,IAA,C10H9NO2,5.41,176.07061,1,cpd:C00954,CyanoAq,CyanoDCM,0.25,Indole-3-acetate; Indole-3-acetic acid; (Indol-3-yl)acetate; Indoleacetate; Indoleacetic acid; IAA
+Phytohormone,RP,Indole 3 carboxylic acid,C9H7NO2,5.44,162.05496,1,cpd:C19837,CyanoAq,CyanoDCM,0.25,Indole-3-carboxylate; Indole-3-carboxylic acid
+Quorum sensing,RP,p-Coumoroyl-HSL,C13H13NO4,5.46,248.09173,1,cpd:C20677,CyanoAq,CyanoDCM,0.25,N-(4-Coumaroyl)-L-homoserine lactone
+Lignin,RP,Syringaldehyde,C9H10O4,5.48,183.06519,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Lignin,RP,Acetosyringone,C10H12O4,5.765,197.08084,1,cpd:C10664,CyanoAq,CyanoDCM,0.25,Acetosyringone
+Lignin,RP,Ferulic Acid,C10H10O4,5.97,195.06519,1,cpd:C01494,CyanoAq,CyanoDCM,0.25,Ferulate; Ferulic acid; 4-Hydroxy-3-methoxycinnamic acid; 3-Methoxy-4-hydroxy-trans-cinnamate; 4-Hydroxy-3-methoxycinnamate
+Lignin,RP,Sinapic Acid,C11H12O5,5.985,225.07575,1,cpd:C00482,CyanoAq,CyanoDCM,0.25,"Sinapate; Sinapic acid; 3,5-Dimethoxy-4-hydroxycinnamic acid"
+Lignin,RP,trans cinnamic acid,C9H8O2,6.2,131.0492,1,cpd:C00423,CyanoAq,CyanoDCM,0.25,trans-Cinnamate; trans-Cinnamic acid; (E)-Cinnamate; (2E)-3-Phenylprop-2-enoate
+Quorum sensing,RP,cinnamoyl-HSL,C13H13NO3,6.425,232.09682,1,cpd:C15249,CyanoAq,CyanoDCM,0.25,"2-(3,5-Dichlorophenylcarbamoyl)-1,2-dimethylcyclopropane-1-carboxylic acid"
+Antibiotic,RP,Tropodithietic acid,C8H4O3S2,6.47,212.96746,1,cpd:C12105,CyanoAq,CyanoDCM,0.25,Thiotropocin
+Circadian,RP,Melatonin,C13H16N2O2,6.51,233.12845,1,cpd:C01598,CyanoAq,CyanoDCM,0.25,Melatonin; N-Acetyl-5-methoxytryptamine
+Phytohormone,RP,3 Indolepropionic Acid,C11H11NO2,6.66,190.08626,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Phytohormone,RP,Abscisic Acid,C15H20O4,6.7,247.1328,1,cpd:C06082,CyanoAq,CyanoDCM,0.25,Abscisate; Abscisic acid; (+)-Abscisic acid; ABA
+Phytohormone,RP,Camalexin,C11H8N2S,6.96,201.0481,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Phytohormone,RP,3-Indoleacetonitrile,C10H8N2,7.09,157.07602,1,cpd:C02938,CyanoAq,CyanoDCM,0.75,3-Indoleacetonitrile; Indol-3-ylacetonitrile; Indole-3-acetonitrile; (Indol-3-yl)acetonitrile
+PUA,RP,"2,4 octadienal",C8H12O,7.23,125.0966,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Phytohormone,RP,Methyl indole 3 carboxylate,C10H9NO2,7.25,176.07061,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Phytohormone,RP,Indole 3 methyl acetate,C11H11NO2,7.31,190.08626,1,cpd:C20635,CyanoAq,CyanoDCM,0.25,Methyl (indol-3-yl)acetate
+Quorum sensing,RP,C8-HSL,C12H21NO3,7.36,228.15942,1,cpd:C21199,CyanoAq,CyanoDCM,0.25,N-Octanoyl-L-homoserine lactone; C8-HSL; N-[(3S)-Tetrahydro-2-oxo-3-furanyl]octanamide
+Phytohormone,RP,3 Indolebutyric Acid,C12H13NO2,7.45,204.10191,1,cpd:C11284,CyanoAq,CyanoDCM,0.25,Indolebutyric acid; Indole-3-butyric acid; IBA
+Quorum sensing,RP,3OC10-HSL,C14H23NO4,8.255,270.16998,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Sterol,RP,Cholesterol,C27H46O,8.5,387.3626,1,cpd:C00187,CyanoAq,CyanoDCM,NA,Cholesterol; Cholest-5-en-3beta-ol
+Quorum sensing,RP,C10-HSL,C14H25NO3,9.21,256.19072,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Quorum sensing,RP,3OHC12-HSL,C16H29NO4,9.275,300.21693,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Quinone,RP,Coenzyme Q1,C14H18O4,9.35,251.12779,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Quorum sensing,RP,3OC12-HSL,C16H27NO4,9.75,298.20128,1,NA,CyanoAq,CyanoDCM,0.25,NA
+PUA,RP,"2, 4 decadienal",C10H16O,9.855,153.12739,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Quorum sensing,RP,C12-HSL,C16H29NO3,10.35,284.22202,1,cpd:C21201,CyanoAq,CyanoDCM,0.25,N-3-Oxo-dodecanoyl-L-homoserine lactone; 3-Oxo-C12-HSL; 3-Oxo-N-[(3S)-tetrahydro-2-oxo-3-furanyl]-dodecanamide
+Quorum sensing,RP,HHQ,C16H21NO,11.02,244.16959,1,cpd:C20643,CyanoAq,CyanoDCM,0.25,2-Heptyl-4(1H)-quinolone; 2-Heptyl-4-quinolone; 2-Heptyl-4-hydroxyquinoline
+Quorum sensing,RP,C14-HSL,C18H33NO3,11.4,312.25332,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Antibiotic,RP,Monesin,C36H61NaO11,11.79,693.41843,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Vitamin rhodopsin,RP,Retinoic Acid,C20H28O2,11.97,301.21621,1,cpd:C00777,CyanoAq,CyanoDCM,0.25,Retinoate; Retinoic acid; Vitamin A acid; all-trans-Retinoate; Tretin M; all-trans-Vitamin A1 acid
+Fatty Acid,RP,EPA,C20H30O2,12.095,303.23186,1,cpd:C06428,CyanoAq,CyanoDCM,1,"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate"
+Fatty Acid,RP,Arachidonic Acid,C20H32O2,12.15,305.24751,1,cpd:C00219,CyanoAq,CyanoDCM,0.25,"Arachidonate; Arachidonic acid; (5Z,8Z,11Z,14Z)-Icosatetraenoic acid; cis-5,8,11,14-Eicosatetraenoic acid"
+Fatty Acid,RP,DHA,C22H32O2,12.23,329.24751,1,cpd:C06429,CyanoAq,CyanoDCM,0.25,"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid; 4,7,10,13,16,19-Docosahexaenoic acid; Docosahexaenoic acid; Docosahexaenoate"
+Vitamin rhodopsin,RP,trans Retinal,C20H28O,12.52,285.22129,1,cpd:C00376,CyanoAq,CyanoDCM,,Retinal; Vitamin A aldehyde; Retinene; all-trans-Retinal; all-trans-Vitamin A aldehyde; all-trans-Retinene
+Vitamin (fat soluble),RP,Vitamin D2,C28H44O,13.75,397.34649,1,cpd:C05441,CyanoAq,CyanoDCM,1,Vitamin D2; Ergocalciferol
+Sterol,RP,Ergosterol,C28H44O,13.76,379.3362,1,cpd:C01694,CyanoAq,CyanoDCM,0.25,Ergosterol; Provitamin D2
+Vitamin (fat soluble),RP,Tocotrienol,C29H44O2,13.88,425.34141,1,cpd:C14153,CyanoAq,CyanoDCM,0.25,alpha-Tocotrienol
+Sterol,RP,7-dehydrocholesterol,C27H44O,13.89,367.3363,1,cpd:C01164,CyanoAq,CyanoDCM,0.25,"7-Dehydrocholesterol; Provitamin D3; Cholesta-5,7-dien-3beta-ol"
+Phospholipid synthesis,RP,1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine,C42H82NO8P,14.1,760.58508,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Quinone,RP,Vitamin K2,C31H40O2,14.14,445.31011,1,cpd:C00828,CyanoAq,CyanoDCM,0.25,Menaquinone; Vitamin K2
+Vitamin (fat soluble),RP,Tocopherol (Vit E),C29H50O2,14.725,431.38836,1,cpd:C02477,CyanoAq,CyanoDCM,0.25,alpha-Tocopherol; Vitamin E
+Quinone,RP,Vitamin K1,C31H46O2,14.78,451.35706,1,cpd:C02059,CyanoAq,CyanoDCM,0.25,"Phylloquinone; Vitamin K1; Phytonadione; 2-Methyl-3-phytyl-1,4-naphthoquinone"
+Phospholipid synthesis,RP,1-stearoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine,C41H79NO8P,14.9,744.55378,1,NA,CyanoAq,CyanoDCM,0.25,NA
+Sterol precursor,RP,Squalene,C30H50,15.02,411.39853,1,cpd:C00751,CyanoAq,CyanoDCM,0.25,Squalene; Spinacene; Supraene
+Antioxidant pigment,RP,Carotene,C40H56,16.42,536.43765,1,cpd:C02094,CyanoAq,CyanoDCM,0.25,beta-Carotene; all-trans-beta-Carotene
+Quinone,RP,Coenzyme Q10,C59H90O4,16.61,863.69119,1,cpd:C11378,CyanoAq,CyanoDCM,0.25,Ubiquinone-10; Ubidecarenone; Coenzyme Q10
+New,RP,Cys-Gly,C5H10N2O3S,0.72,179.0486,1,cpd:C01419,CyanoAq,CyanoDCM,0.25,Cys-Gly; L-Cysteinylglycine
+Internal Standard,RP,"Indole 3 Acetic Acid, D5",C10D5H4NO2,5.35,181.1021,1,NA,CyanoAq,CyanoDCM,5,NA
+Internal Standard,RP,"Arachiodonic Acid, D8",C20D8H24O2,12.15,313.2977,1,NA,CyanoAq,CyanoDCM,20,NA
+Internal Standard,RP,"Tryptamine Hydrochloride, D4",C10D4H8N2,2.55,164.1246,1,NA,CyanoAq,CyanoDCM,2.5,NA
+Internal Standard,RP,"L-Phenylalanine, D8",C9D8H3O2,1.15,174.1365,1,NA,CyanoAq,CyanoDCM,0.1,NA
+Internal Standard,RP,"Riboflavin-dioxopyrimidine, 13C4, 15N2",C(13)4C13H20N(15)2N2O6,4.39,383.1531,1,NA,CyanoAq,CyanoDCM,0.1,NA
+Internal Standard,RP,"L-Tryptophan, D3",C11D3H9N2O2,2.23,208.1161,1,NA,CyanoAq,CyanoDCM,0.1,NA
+Internal Standard,RP,"Pyridoxal, D3",C8D3H7NO3,0.86,171.0843,1,NA,CyanoAq,CyanoDCM,0.2,NA
+Internal Standard,RP,"Thiamine Hydrochloride, 13C3",C(13)4C8H17N4OS,0.69,269.1252,1,NA,CyanoAq,CyanoDCM,0.2,NA
+Internal Standard,RP,"Alpha-Tocopherol, D6",C29D6H44O2,14.725,436.4182,1,NA,CyanoAq,CyanoDCM,5,NA
+Internal Standard,RP,"Docosahexaenoic Acid, D5",C22H28D5O2,12.23,334.2789,1,NA,CyanoAq,CyanoDCM,2,NA
+Internal Standard,RP,"Eicosapentaenoic Acid, D5",C20H26D5O2,12.095,308.2632,1,NA,CyanoAq,CyanoDCM,5,NA
+Vitamin B12,RP,Hydroxo B12,C62H89CoN13O15P,4.35,664.7861,2,cpd:C08230,CyanoAq,CyanoDCM,0.25,Hydroxocobalamin; Vitamin B12a; Hydroxycobalamin; Hydroxycob(lll)alamin
+Vitamin B12,RP,RP B12,C63H88CoN14O14P,5.02,678.2894,2,cpd:C02823,CyanoAq,CyanoDCM,0.25,Cyanocobalamin; Cyanocob(III)alamin; Dicopac; Vitamin B12 complex
+Vitamin B12,RP,Coenzyme B12,C72H100CoN18O17P  ,5.4,790.3367,2,cpd:C00194,CyanoAq,CyanoDCM,0.25,"Cobamide coenzyme; Adenosylcobalamin; Adenosylcob(III)alamin; Deoxyadenosylcobalamin; Cobamamide; Vitamin B12 coenzyme; 5,6-Dimethylbenzimidazolyl-5-deoxyadenosyl-cobamide; (5'-Deoxy-5'-adenosyl)cobamide coenzyme; (5,6-Dimethylbenzimidazolyl)cobamide coenzyme; alpha-(5,6-Dimethylbenzimidazolyl)cobamide coenzyme; 5'-Deoxy-5'-adenosylcobalamin; 5'-Deoxy-5'-adenosyl vitamin B12; 5'-Deoxy-5'-adenosyl-5,6-dimethylbenzimidazolylcobamide; 5,6-Dimethylbenzimidazolyl-Co-5'-deoxy-5'-adenosylcobamide; Calomide; Cobalamin coenzyme; Coenzyme B12; DMBC coenzyme; Dibencozide; Funacomide"
+Vitamin B12,RP,Methyl B12,C63H91CoN13O14P,6.29,672.8011,2,cpd:C06453,CyanoAq,CyanoDCM,0.25,Methylcobalamin; Methylcob(III)alamin
+Amino Acid,RP,Tyrosine,C9H11NO3,1.01,182.08117,1,cpd:C00082,CyanoAq,CyanoDCM,NA,L-Tyrosine; (S)-3-(p-Hydroxyphenyl)alanine; (S)-2-Amino-3-(p-hydroxyphenyl)propionic acid; Tyrosine
+Redox,HILIC,Riboflavin Monophosphate,C17H21N4O9P,8.6,457.1118,1,cpd:C00061,HILICPos,NA,4,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
+Redox,RP,Riboflavin Monophosphate,C17H21N4O9P,3.1,455.09734,-1,cpd:C00061,CyanoAq,CyanoDCM,0.5,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
+Redox,RP,Riboflavin Monophosphate,C17H21N4O9P,3.1,457.1118,1,cpd:C00061,CyanoAq,CyanoDCM,0.5,FMN; Riboflavin-5-phosphate; Flavin mononucleotide
+Sulfur,RP,Glutathione Disulfide,C20H32N6O12S2,0.92,613.1596,1,cpd:C00127,CyanoAq,CyanoDCM,0.5,Glutathione disulfide; GSSG; Oxiglutatione; Oxidized glutathione
+Sulfur,HILIC,Glutathione Disulfide,C20H32N6O12S2,14.98,613.1596,1,cpd:C00127,HILICPos,NA,4,Glutathione disulfide; GSSG; Oxiglutatione; Oxidized glutathione
+Sulfur,HILIC,Hypotaurine,C2H7NO2S,11.36,110.0716,1,cpd:C00519,HILICPos,NA,4,Hypotaurine; 2-Aminoethanesulfinic acid
+Sulfur,HILIC,N-methyltaurine,C3H9NO3S,6.06,140.0376,1,NA,HILICPos,NA,4,NA
+Sulfur,HILIC,Ethanesulfonic Acid,C2H6O3S,4.29,108.9953,-1,NA,HILICNeg,NA,4,NA
+Sulfur,HILIC,Amino Propanesulfonic Acid,C3H9NO3S,11.49,138.0221,-1,NA,HILICNeg,NA,4,NA
+Sulfur,HILIC,Propanesulfonate,C3H7O3S,2.81,123.0111,-1,NA,HILICNeg,NA,4,NA
+New2,HILIC,Glucosamine,C6H13NO5,9.97,180.0867,1,NA,HILICPos,NA,5,NA
+New2,RP,Glucosamine,C6H13NO5,0.65,180.0867,1,NA,CyanoAq,CyanoDCM,NA,NA
+New2,HILIC,Glycerophosphocholine,C8H21NO6P,10.86,258.1099,1,cpd:C00670,HILICPos,NA,4,sn-Glycero-3-phosphocholine; Glycerophosphocholine
+New2,RP,Glycerophosphocholine,C8H21NO6P,0.66,258.1099,1,cpd:C00670,CyanoAq,CyanoDCM,NA,sn-Glycero-3-phosphocholine; Glycerophosphocholine
+New2,HILIC,Butyryl-L-carnitine,C11H21NO4,4.47,232.1539,1,NA,HILICPos,NA,4,NA
+New2,RP,Butyryl-L-carnitine,C11H21NO4,1.34,232.1539,1,NA,CyanoAq,CyanoDCM,0.25,NA
+New2,RP,Isobutyryl-L-carnitine,C11H21NO4,1.3,232.1539,1,NA,CyanoAq,CyanoDCM,4,NA
+New2,HILIC,Propionyl-L-carnitine,C10H19NO4,5.63,218.1384,1,cpd:C03017,HILICPos,NA,4,O-Propanoylcarnitine; O-Propionylcarnitine
+New2,RP,Propionyl-L-carnitine,C10H19NO4,0.99,218.1384,1,cpd:C03017,CyanoAq,CyanoDCM,0.25,O-Propanoylcarnitine; O-Propionylcarnitine
+New2,HILIC,Acetyl-L-carnitine,C9H17NO4,7.22,204.1229,1,cpd:C02571,HILICPos,NA,4,O-Acetylcarnitine; O-Acetyl-L-carnitine
+New2,RP,Acetyl-L-carnitine,C9H17NO4,0.82,204.1229,1,cpd:C02571,CyanoAq,CyanoDCM,0.25,O-Acetylcarnitine; O-Acetyl-L-carnitine
+New2,HILIC,S-Farnesyl-L-cysteine Methyl Ester,C19H33NO2S,1.58,340.2305,1,NA,HILICPos,NA,NA,NA
+New2,RP,S-Farnesyl-L-cysteine Methyl Ester,C19H33NO2S,10.43,340.2305,1,NA,CyanoAq,CyanoDCM,0.5,NA
+New2,HILIC,L-Pyroglutamic acid ,C5H7NO3,7.06,128.0342,-1,cpd:C01879,HILICNeg,NA,4,5-Oxoproline; Pidolic acid; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid
+New2,RP,Decarboxylated S-Adenosylmethionine,C14H23N6O3S,0.68,355.1543,1,NA,CyanoAq,CyanoDCM,0.5,NA
+New2,HILIC,Ophthalmic Acid,C11H19N3O6,10.73,290.1344,1,NA,HILICPos,NA,5,NA
+New2,RP,Ophthalmic Acid,C11H19N3O6,0.77,290.1344,1,NA,CyanoAq,CyanoDCM,NA,NA
+New2,RP,Agmatine,C5H14N4,0.62,131.1293,1,cpd:C00179,CyanoAq,CyanoDCM,0.5,Agmatine; (4-Aminobutyl) guanidine
+New2,HILIC,Trimethylamine N-oxide,C3H9NO,6.59,76.0763,1,cpd:C01104,HILICPos,NA,4,Trimethylamine N-oxide; (CH3)3NO
+New2,HILIC,Trimethylamine,C3H9N,5.96,60.0815,1,cpd:C00565,HILICPos,NA,10,"Trimethylamine; (CH3)3N; N,N-Dimethylmethanamine"
+New2,RP,Indoleacrylic acid,C11H9NO2,6.76,188.0707,1,NA,CyanoAq,CyanoDCM,0.5,NA
+New2,RP,Homoserine lactone,C4H7NO2,0.68,102.0554,1,cpd:C02926,CyanoAq,CyanoDCM,0.25,Homoserine lactone; 2-Aminobutan-4-olide
+New2,RP,B-cyclocitral,C10H16O,8.39,153.1275,1,NA,CyanoDCM,CyanoAq,NA,NA
+New2,RP,B-ionine,C13H20O,9.71,193.1589,1,NA,CyanoDCM,CyanoAq,NA,NA
+New2,RP,B-ionylidene-acetaldehyde,C15H22O,10.85,219.1745,1,NA,CyanoDCM,CyanoAq,NA,NA
+New2,RP,B-apo-8'-carotenal,C30H40O,14.56,417.3147,1,NA,CyanoDCM,CyanoAq,NA,NA
+New2,HILIC,Maltotetraose,C24H42O21,13.78,665.2167,-1,cpd:C02052,HILICNeg,NA,NA,Maltotetraose
+New2,HILIC,Maltotriose,C18H32O16,13.03,503.1631,-1,cpd:C01835,HILICNeg,NA,NA,Maltotriose; Amylotriose
