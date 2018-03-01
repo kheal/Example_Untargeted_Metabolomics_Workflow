@@ -191,7 +191,8 @@ Internal Standard,HILIC,"DL-Histidine, 15N",NA,NA,NA,NA,NA,NA,C6H9N3N(15)O2,11.4
 Internal Standard,HILIC,"DL-Proline, D7",NA,NA,NA,NA,NA,NA,C5H3D7NO2,9.49,123.1145,1,NA,HILICPos,NA,1,NA
 Internal Standard,HILIC,"DL-Valine, D8",NA,NA,NA,NA,NA,NA,C5H4D8NO2,9.09,126.1365,1,NA,HILICPos,NA,1,NA
 Sulfur,HILIC,DMSP,<10 - >10000,0.324,10,<10 - 1000,0.278,9,C5H10O2S,9.325,135.0473,1,cpd:C04022,HILICPos,NA,4,"S,S-Dimethyl-beta-propiothetin; S-Dimethylsulfonium propionic acid; Dimethylpropiothetin; DMPT; DMSP"
-Osmolyte,HILIC,Ectoine,100 - >10000,0.544,14,500 - 1000,1.894,12.8,C6H10N2O2,10,141.06695,-1,cpd:C06231,HILICNeg,NA,8,Ectoine; L-Ectoine
+Osmolyte,HILIC,Ectoine,100 - >10000,0.544,14,500 - 1000,1.894,12.8,C6H10N2O2,9.25,141.06695,-1,cpd:C06231,HILICNeg,NA,8,Ectoine; L-Ectoine
+Osmolyte,HILIC,Ectoine,NA,NA,NA,NA,NA,NA,C6H10N2O2,9.25,143.0814,1,cpd:C06231,HILICPos,NA,8,Ectoine; L-Ectoine
 Sulfur,HILIC,Ethanesulfonic Acid,NA,NA,NA,NA,NA,NA,C2H6O3S,4.29,108.9953,-1,NA,HILICNeg,NA,4,NA
 Lignin,HILIC,Ethyl 3 aminobenzoate,NA,NA,NA,NA,NA,NA,C9H11NO2,2.01,166.08626,1,cpd:C07527,HILICPos,NA,NA,Benzocaine; Ethyl aminobenzoate
 Lignin,HILIC,Ethyl Dihydroxybenzoate,<10 - >10000,0.861,16,<10 - >10000,1.074,5.4,C9H10O4,2.08,181.0501,-1,NA,HILICNeg,NA,4,NA
@@ -253,7 +254,7 @@ New,HILIC,Methyl 3-methylthiopropionate,NA,NA,NA,NA,NA,NA,C5H10O2S,6.53,158.1177
 Co-enzyme A,HILIC,Methyl Malonyl CoA,100 - >10000,0.625,17.5,20 - >10000,0.759,8.5,C25H40N7O19P3S,13.18,866.1251,-1,cpd:C00683,HILICNeg,NA,4,(S)-Methylmalonyl-CoA; (S)-Methylmalonyl-coenzyme A; (2S)-Methylmalonyl-CoA; D-Methylmalonyl-CoA
 Organic Acid,HILIC,Methylphosphonic Acid,1000 - >10000,dl,dl,100 - >10000,0.759,8.5,CH5O3P,11,94.9795,-1,NA,HILICNeg,NA,4,NA
 Peptidoglycan,HILIC,Muramic Acid,1000 - >10000,0.545,23.8,20 - 1000,0.63,15,C9H17NO7,11,252.10778,1,cpd:C06470,HILICPos,NA,4,Muramic acid; 3-O-alpha-Carboxyethyl-D-glucosamine; 2-Amino-3-O-[(R)-1-carboxyethyl]-2-deoxy-D-glucopyranose
-New,HILIC,N-Acetyl-Lysine,NA,NA,NA,NA,NA,NA,C8H16N2O3,9.71,189.1233,1,cpd:C12989,HILICPos,NA,4,N2-Acetyl-L-lysine; N(alpha)-Acetyllysine
+New,HILIC,N(e)-Acetyl-Lysine,NA,NA,NA,NA,NA,NA,C8H16N2O3,9.71,189.1233,1,cpd:C12989,HILICPos,NA,4,N2-Acetyl-L-lysine; N(alpha)-Acetyllysine
 New,HILIC,N-Acetyl-Serine,NA,NA,NA,NA,NA,NA,C5H9NO4,6.27,148.0604,1,cpd:C00979,HILICPos,NA,4,O-Acetyl-L-serine; O3-Acetyl-L-serine
 Sulfur,HILIC,N-acetyltaurine,<10 - 1000,1.111,9.9,20 - 1000,1.079,2.1,C4H9NO4S,3.74,166.0172,-1,NA,HILICNeg,NA,4,NA
 Redox,HILIC,NAD,100 - >10000,0.594,15.9,20 - >10000,1.022,19.3,C21H27N7O14P2,10.6,662.10184,-1,cpd:C00003,HILICNeg,NA,4,NAD+; NAD; Nicotinamide adenine dinucleotide; DPN; Diphosphopyridine nucleotide; Nadide; beta-NAD+
