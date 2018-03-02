@@ -292,7 +292,7 @@ Sulfur,HILIC,Sulfoacetic Acid,<10 - >10000,0.906,19.8,<10 - 1000,0.909,3,C2H4O5S
 Internal Standard,HILIC,"Sulfoacetic Acid, 13C2",NA,NA,NA,NA,NA,NA,C(13)2H4O5S,13.9,140.9774,-1,NA,HILICNeg,NA,2.5,NA
 Sulfur,HILIC,Sulfolactic Acid,10000 - >10000,1.416,19.1,10000 - >10000,1.768,9.1,C3H6O6S,13.275,168.9812,-1,cpd:C11537,HILICNeg,NA,16,(2R)-3-Sulfolactate; (R)-3-Sulfolactate
 Internal Standard,HILIC,"Sulfolactic Acid, 13C3",NA,NA,NA,NA,NA,NA,C(13)2H5O4S,13.27,171.9913,-1,NA,HILICNeg,NA,1,NA
-Sulfur,HILIC,Taurine,<10 - 1000,0.481,5.2,<10 - 1000,0,3.3,C2H7NO3S,10,124.0064,-1,cpd:C00245,HILICNeg,NA,4,Taurine; 2-Aminoethanesulfonic acid; Aminoethylsulfonic acid
+Sulfur,HILIC,Taurine,<10 - 1000,0.481,5.2,<10 - 1000,0.228,3.3,C2H7NO3S,10,124.0064,-1,cpd:C00245,HILICNeg,NA,4,Taurine; 2-Aminoethanesulfonic acid; Aminoethylsulfonic acid
 Internal Standard,HILIC,"Taurine, D4",NA,NA,NA,NA,NA,NA,C2D4H3NO3S,10,128.0325,-1,NA,HILICNeg,NA,1,NA
 Vitamin (B1-derivative),HILIC,Thiamine monophosphate,100 - >10000,0.821,13.5,<10 - >10000,1.08,17.3,C12H18N4O4PS,11.5,345.07809,1,cpd:C01081,HILICPos,NA,4,Thiamin monophosphate; Thiamine monophosphate; Thiamin phosphate; Thiamine phosphate; TMP
 Vitamin (B1-derivative),HILIC,Thiamine pyrophosphate,100 - >10000,0.929,23.1,100 - >10000,1.164,19.6,C12H19N4O7P2S,13.765,425.04442,1,cpd:C00068,HILICPos,NA,4,Thiamin diphosphate; Thiamine diphosphate; Thiamin pyrophosphate; TPP; ThPP
