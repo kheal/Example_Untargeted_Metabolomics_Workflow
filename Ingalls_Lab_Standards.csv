@@ -312,3 +312,30 @@ Nucleic Acid,HILIC,Uracil,500 - 1000,0.825,5.2,20 - 1000,0.794,11,C4H4N2O2 ,4,11
 Nucleoside,HILIC,Uridine,100 - >10000,0.91,13.1,<10 - 1000,0.965,22.1,C9H12N2O6,6.02,243.06226,-1,cpd:C00299,HILICNeg,NA,4,Uridine
 Amino Acid,HILIC,Valine,100 - >10000,0.762,7.7,<10 - 1000,0.438,14.9,C5H11NO2,9.09,118.08626,1,cpd:C00183,HILICPos,NA,4,L-Valine; 2-Amino-3-methylbutyric acid
 Vitamin,HILIC,Vitamin B3,NA,0.989,7.1,NA,1.071,9.4,C6H5NO2,2.68,124.0393,1,cpd:C00253,HILICPos,NA,4,Nicotinate; Nicotinic acid; Niacin; 3-Pyridinecarboxylic acid
+New3,HILIC,Dimethylsulfonioacetate (DMS-Ac),NA,NA,NA,NA,NA,NA,C4H9O2S,8.39,121.0319,1,cpd:C03392,HILICPos,NA,NA,Dimethylsulfonioacetate
+New3,HILIC,Gonyol,NA,NA,NA,NA,NA,NA,C7H14O3S,10.74,179.0736,1,NA,HILICPos,NA,NA,NA
+New3,HILIC,Turicine,NA,NA,NA,NA,NA,NA,C7H13NO3,8.48,160.0968,1,cpd:C21513,HILICPos,NA,NA,Turicine; (+)-Turicine; cis-4-Hydroxy-D-proline betaine
+New3,HILIC,Betonicine,NA,NA,NA,NA,NA,NA,C7H13NO3,8.45,160.0968,1,cpd:C08269,HILICPos,NA,NA,(-)-Betonicine; Betonicine; trans-4-Hydroxy-L-proline betaine
+New3,HILIC,Methylmalonyl carnitine,NA,NA,NA,NA,NA,NA,C11H19NO6,9.67,262.1283,1,NA,HILICPos,NA,NA,NA
+New3,HILIC,Succinic semialdehyde,NA,NA,NA,NA,NA,NA,C4H6O3,6.51,101.0233,-1,cpd:C00232,HILICNeg,NA,NA,Succinate semialdehyde; Succinic semialdehyde; 4-Oxobutanoate
+New3,HILIC,Arsenobetaine,NA,NA,NA,NA,NA,NA,C5H11AsO2,7.06,179.0045,1,cpd:C19331,HILICPos,NA,NA,Arsenobetaine
+New3,RP,Arsenobetaine,NA,NA,NA,NA,NA,NA,C5H11AsO2,0.72,179.0045,1,cpd:C19331,CyanoAq,CyanoDCM,NA,Arsenobetaine
+New3,HILIC,Dexpanthenol,NA,NA,NA,NA,NA,NA,C9H19NO4,2.27,206.1385,1,cpd:C05944,HILICPos,NA,NA,"Pantothenol; (R)-2,4-Dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide; Dexpanthenol; 2,4-Dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide; (+)-Panthenol; Bepanthen; Bepanthene; Bepantol; D-(+)-2,4-Dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutyramide; Cozyme; D(+)-Panthenol; D(+)-Pantothenyl alcohol; D-P-A Injection; D-Panthenol; d-Pantothenol; d-Pantothenyl alcohol; Ilopan; Motilyn; Panadon; Panthenol; Panthoderm; Pantol; Pantothenyl alcohol; N-Pantoyl-propanolamine; Provitamin B; Synapan; Thenalton; Zentinic"
+New3,RP,Dexpanthenol,NA,NA,NA,NA,NA,NA,C9H19NO4,1.11,206.1385,1,cpd:C05944,CyanoAq,CyanoDCM,NA,"Pantothenol; (R)-2,4-Dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide; Dexpanthenol; 2,4-Dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutanamide; (+)-Panthenol; Bepanthen; Bepanthene; Bepantol; D-(+)-2,4-Dihydroxy-N-(3-hydroxypropyl)-3,3-dimethylbutyramide; Cozyme; D(+)-Panthenol; D(+)-Pantothenyl alcohol; D-P-A Injection; D-Panthenol; d-Pantothenol; d-Pantothenyl alcohol; Ilopan; Motilyn; Panadon; Panthenol; Panthoderm; Pantol; Pantothenyl alcohol; N-Pantoyl-propanolamine; Provitamin B; Synapan; Thenalton; Zentinic"
+New3,HILIC,Sulfanilic Acid,NA,NA,NA,NA,NA,NA,C6H7NO3S,7.23,172.0067,-1,cpd:C06335,HILICNeg,NA,NA,4-Aminobenzenesulfonate; 4-Aminobenzenesulfonic acid; p-Aminobenzenesulfonic acid; Sulfanilic acid
+New3,HILIC,Inosine,NA,NA,NA,NA,NA,NA,C10H12N4O5,7.57,269.0880,1,cpd:C00294,HILICPos,NA,NA,Inosine
+New3,HILIC,Inosine,NA,NA,NA,NA,NA,NA,C10H12N4O5,7.57,267.0738,-1,cpd:C00294,HILICNeg,NA,NA,Inosine
+New3,RP,Inosine,NA,NA,NA,NA,NA,NA,C10H12N4O5,1.01,269.088,1,cpd:C00294,CyanoAq,CyanoDCM,NA,Inosine
+New3,HILIC,Hordenine,NA,NA,NA,NA,NA,NA,C10H15NO,3.34,166.1226,1,cpd:C06199,HILICPos,NA,NA,Hordenine; 4-[2-(Dimethylamino)ethyl]phenol
+New3,RP,Hordenine,NA,NA,NA,NA,NA,NA,C10H15NO,1.29,166.1226,1,cpd:C06199,CyanoAq,CyanoDCM,NA,Hordenine; 4-[2-(Dimethylamino)ethyl]phenol
+New3,HILIC,Allopurinol,NA,NA,NA,NA,NA,NA,C5H4N4O,4.16,137.0458,1,NA,HILICPos,NA,NA,NA
+New3,HILIC,Allopurinol,NA,NA,NA,NA,NA,NA,C5H4N4O,4.16,135.0304,-1,NA,HILICNeg,NA,NA,NA
+New3,RP,Allopurinol,NA,NA,NA,NA,NA,NA,C5H4N4O,1.27,137.0458,1,NA,CyanoAq,CyanoDCM,NA,NA
+New3,HILIC,Imidazoleacrylic Acid,NA,NA,NA,NA,NA,NA,C6H6N2O2,8.16,139.0501,1,cpd:C00785,HILICPos,NA,NA,Urocanate; Urocanic acid
+New3,HILIC,Imidazoleacrylic Acid,NA,NA,NA,NA,NA,NA,C6H6N2O2,8.16,137.0347,-1,cpd:C00785,HILICNeg,NA,NA,Urocanate; Urocanic acid
+New3,HILIC,4-Hydroxyisoleucine,NA,NA,NA,NA,NA,NA,C6H13NO3,8.34,148.0968,1,cpd:C20802,HILICPos,NA,NA,(4S)-4-Hydroxy-L-isoleucine; Hydroxyisoleucine
+New3,HILIC,4-Hydroxyisoleucine,NA,NA,NA,NA,NA,NA,C6H13NO3,8.34,146.0815,-1,cpd:C20802,HILICNeg,NA,NA,(4S)-4-Hydroxy-L-isoleucine; Hydroxyisoleucine
+New3,HILIC,Deoxyadenosine,NA,NA,NA,NA,NA,NA,C10H13N5O3,3.44,252.1088,1,cpd:C00559,HILICPos,NA,NA,Deoxyadenosine; 2'-Deoxyadenosine
+New3,RP,Deoxyadenosine,NA,NA,NA,NA,NA,NA,C10H13N5O3,1.14,252.1088,1,cpd:C00559,CyanoAq,CyanoDCM,NA,Deoxyadenosine; 2'-Deoxyadenosine
+New3,HILIC,beta-Alanine,NA,NA,NA,NA,NA,NA,C3H7NO2,11.39,90.0555,1,cpd:C00099,HILICPos,NA,NA,beta-Alanine; 3-Aminopropionic acid; 3-Aminopropanoate
+New3,HILIC,Melamine,NA,NA,NA,NA,NA,NA,C3H6N6,6.68,127.0727,1,cpd:C08737,HILICPos,NA,NA,"Melamine; 2,4,6-Triamino-1,3,5-triazine"
