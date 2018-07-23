@@ -164,7 +164,7 @@ Energy charge,HILIC,ATP,500 - >10000,0.209,75.8,100 - >10000,3.608,23.1,C10H16N5
 Amino Acid derivative,HILIC,Betaine,100 - >10000,0.762,7.7,20 - 1000,0.229,1.7,C5H11NO2,7.86,118.08626,1,cpd:C00719,HILICPos,NA,4,Mix1,CHEBI:17750,"Betaine; Trimethylaminoacetate; Glycine betaine; N,N,N-Trimethylglycine; Trimethylammonioacetate"
 New2,HILIC,Butyryl-L-carnitine,NA,NA,NA,NA,NA,NA,C11H21NO4,4.47,232.1539,1,NA,HILICPos,NA,4,Mix1,CHEBI:21949,NA
 Intracellular signaling,HILIC,cAMP,100 - >10000,0.661,18.7,<10 - 1000,0.859,6.7,C10H12N5O6P,4.06,328.04524,-1,cpd:C00575,HILICNeg,NA,4,Mix2,CHEBI:17489,"3',5'-Cyclic AMP; Cyclic adenylic acid; Cyclic AMP; Adenosine 3',5'-phosphate; Adenosine 3',5'-cyclic phosphate; cAMP"
-New,HILIC,Carnitine ,NA,NA,NA,NA,NA,NA,C7H15NO3,10.21,162.1124,1,cpd:C00487,HILICPos,NA,1,Mix1,CHEBI:17126,Carnitine; gamma-Trimethyl-hydroxybutyrobetaine; 3-Hydroxy-4-trimethylammoniobutanoate
+New,HILIC,Carnitine,NA,NA,NA,NA,NA,NA,C7H15NO3,10.21,162.1124,1,cpd:C00487,HILICPos,NA,1,Mix1,CHEBI:17126,Carnitine; gamma-Trimethyl-hydroxybutyrobetaine; 3-Hydroxy-4-trimethylammoniobutanoate
 Intracellular signaling,HILIC,cGMP,20 - >10000,0.598,19.1,<10 - >10000,0.822,6.4,C10H12N5O7P,8.8,344.04016,-1,cpd:C00942,HILICNeg,NA,4,Mix2,CHEBI:16356,"3',5'-Cyclic GMP; Guanosine 3',5'-cyclic monophosphate; Guanosine 3',5'-cyclic phosphate; Cyclic GMP; cGMP"
 Amino sugar,HILIC,Chitobiose,100 - >10000,0.434,25.7,<10 - >10000,0.299,20.1,C16H28N2O11 ,10.21,425.17659,1,cpd:C01674,HILICPos,NA,4,Mix2,CHEBI:28681,"Chitobiose; Diacetylchitobiose; N,N'-Diacetylchitobiose"
 Vitamin (B-like),HILIC,Choline,100 - >10000,0.998,32.7,20 - >10000,0.782,11.6,C5H14NO,15.265,104.10699,1,cpd:C00114,HILICPos,NA,4,Mix1,CHEBI:15354,Choline; Bilineurine
