@@ -343,3 +343,6 @@ New3,HILIC,beta-Alanine,NA,NA,NA,NA,NA,NA,C3H7NO2,11.39,90.0555,[M+H],1,cpd:C000
 New3,HILIC,Melamine,NA,NA,NA,NA,NA,NA,C3H6N6,6.68,127.0727,[M+H],1,cpd:C08737,HILICPos,NA,4,Mix2,CHEBI:27915,"Melamine; 2,4,6-Triamino-1,3,5-triazine"
 New3,HILIC,Maltose,NA,NA,NA,NA,NA,NA,C12H22O11,12.31,341.1096,[M-H],-1,cpd:C00208,HILICNeg,NA,4,Mix2,CHEBI:17306,Maltose; Malt sugar; alpha-D-Glucopyranosyl-(1->4)-D-glucopyranose
 New3,HILIC,Lactose,NA,NA,NA,NA,NA,NA,C12H22O11,12.53,343.1236,[M+H],1,cpd:C00243,HILICPos,NA,4,Mix2,CHEBI:17716,Lactose; 1-beta-D-Galactopyranosyl-4-D-glucopyranose; beta-D-Gal-(1->4)-D-Glc; Milk sugar
+New4,HILIC,Acetylcholine,NA,NA,NA,NA,NA,NA,C7H16NO2,13.37,146.1174,[M],1,cpd:C01996,HILICPos,NA,NA,NA,CHEBI:15355,Acetylcholine; O-Acetylcholine
+New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,154.0169,[M+H],1,cpd:C00606,HILICPos,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
+New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,152.0015,[M-H],-1,cpd:C00606,HILICNeg,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
