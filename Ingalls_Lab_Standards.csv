@@ -168,7 +168,7 @@ New,HILIC,Carnitine,NA,NA,NA,NA,NA,NA,C7H15NO3,10.21,162.1124,[M+H],1,cpd:C00487
 Intracellular signaling,HILIC,cGMP,20 - >10000,0.598,19.1,<10 - >10000,0.822,6.4,C10H12N5O7P,8.8,344.04016,[M-H],-1,cpd:C00942,HILICNeg,NA,4,Mix2,CHEBI:16356,"3',5'-Cyclic GMP; Guanosine 3',5'-cyclic monophosphate; Guanosine 3',5'-cyclic phosphate; Cyclic GMP; cGMP"
 Amino sugar,HILIC,Chitobiose,100 - >10000,0.434,25.7,<10 - >10000,0.299,20.1,C16H28N2O11,10.21,425.17659,[M+H],1,cpd:C01674,HILICPos,NA,4,Mix2,CHEBI:28681,"Chitobiose; Diacetylchitobiose; N,N'-Diacetylchitobiose"
 Vitamin (B-like),HILIC,Choline,100 - >10000,0.998,32.7,20 - >10000,0.782,11.6,C5H14NO,15.265,104.10699,[M],1,cpd:C00114,HILICPos,NA,4,Mix1,CHEBI:15354,Choline; Bilineurine
-Organic Acid,HILIC,Citric Acid,500 - >10000,1.136,25,100 - >10000,0.934,6.9,C6H8O7,17.06,191.01973,[M-H],-1,cpd:C00158,HILICNeg,NA,4,Mix2,CHEBI:30769,"Citrate; Citric acid; 2-Hydroxy-1,2,3-propanetricarboxylic acid; 2-Hydroxytricarballylic acid"
+Organic Acid,HILIC,Citric Acid,500 - >10000,1.136,25,100 - >10000,0.934,6.9,C6H8O7,15.65,191.01918,[M-H],-1,cpd:C00158,HILICNeg,NA,4,Mix2,CHEBI:30769,"Citrate; Citric acid; 2-Hydroxy-1,2,3-propanetricarboxylic acid; 2-Hydroxytricarballylic acid"
 New,HILIC,Citrulline,NA,NA,NA,NA,NA,NA,C6H13N3O3,12.21,176.1031,[M+H],1,cpd:C00327,HILICPos,NA,4,Mix1,CHEBI:16349,L-Citrulline; 2-Amino-5-ureidovaleric acid; Citrulline
 Organic Acid - nitrogenous,HILIC,Creatine,20 - >10000,0.945,8.4,<10 - 1000,0.816,3.5,C4H9N3O2,11.34,132.07675,[M+H],1,cpd:C00300,HILICPos,NA,4,Mix1,CHEBI:16919,Creatine; alpha-Methylguanidino acetic acid; Methylglycocyamine
 Co-enzyme A,HILIC,Crotonyl CoA,100 - >10000,0.444,19.8,100 - >10000,0.761,16.8,C25H40N7O17P3S,8.45,834.13415,[M-H],-1,cpd:C00877,HILICNeg,NA,4,Mix1,CHEBI:15473,Crotonoyl-CoA; Crotonyl-CoA; 2-Butenoyl-CoA; trans-But-2-enoyl-CoA; But-2-enoyl-CoA; (E)-But-2-enoyl-CoA
@@ -181,8 +181,8 @@ Amino Acid,HILIC,Cysteine,NA,NA,NA,NA,NA,NA,C3H7NO2S,7,122.0276,[M+H],1,cpd:C000
 Amino Acid,HILIC,Cystine,10000 - >10000,0.385,15.4,100 - >10000,0.261,15.1,C6H12N2O4S2,13.1,241.03112,[M+H],1,cpd:C00491,HILICPos,NA,4,Mix1,CHEBI:16283,L-Cystine; L-Dicysteine; L-alpha-Diamino-beta-dithiolactic acid
 Nucleoside,HILIC,Cytidine,100 - >10000,0.348,18.4,100 - 1000,0.518,7.7,C9H13N3O5,8.55,242.07824,[M-H],-1,cpd:C00475,HILICNeg,NA,4,Mix2,CHEBI:17562,Cytidine
 Nucleoside,HILIC,Cytidine,NA,NA,NA,NA,NA,NA,C9H13N3O5,8.55,244.1143,[M+H],1,cpd:C00475,HILICPos,NA,4,Mix2,CHEBI:17562,Cytidine
-Nucleic Acid,HILIC,Cytosine,10000 - >10000,dl,dl,500 - >10000,dl,dl,C4H5N3O,7.41,110.03599,[M-H],-1,cpd:C00380,HILICNeg,NA,4,Mix2,CHEBI:16040,Cytosine
-Nucleic Acid,HILIC,Cytosine,NA,NA,NA,NA,NA,NA,C4H5N3O,7.41,112.0508,[M+H],1,cpd:C00380,HILICPos,NA,4,Mix2,CHEBI:16040,Cytosine
+Nucleic Acid,HILIC,Cytosine,10000 - >10000,dl,dl,500 - >10000,dl,dl,C4H5N3O,7.41,110.035437 ,[M-H],-1,cpd:C00380,HILICNeg,NA,4,Mix2,CHEBI:16040,Cytosine
+Nucleic Acid,HILIC,Cytosine,NA,NA,NA,NA,NA,NA,C4H5N3O,7.41,112.051087,[M+H],1,cpd:C00380,HILICPos,NA,4,Mix2,CHEBI:16040,Cytosine
 Calvin cycle intermediate,HILIC,DHAP,10000 - >10000,0.52,12.5,500 - >10000,0.921,15.8,C3H7O6P,12.86,168.9888,[M-H],-1,cpd:C00111,HILICNeg,NA,4,Mix2,CHEBI:16108,Glycerone phosphate; Dihydroxyacetone phosphate; 3-Hydroxy-2-oxopropyl phosphate
 Sulfur,HILIC,DHPS,<10 - 1000,0.548,15.2,<10 - 1000,0.712,18.2,C3H8O5S,10.67,155.0011,[M-H],-1,cpd:C19675,HILICNeg,NA,4,Mix2,CHEBI:60997,"(R)-2,3-Dihydroxypropane-1-sulfonate"
 Amino Acid derivative,HILIC,Dimethyl Glycine,100 - >10000,0.464,11.8,<10 - 1000,0.773,5.2,C4H9NO2,8.97,104.07061,[M+H],1,cpd:C01026,HILICPos,NA,4,Mix1,CHEBI:17724,"N,N-Dimethylglycine; Dimethylglycine"
@@ -217,7 +217,7 @@ Nucleic Acid,HILIC,Guanine,NA,1.159,12.2,NA,1.617,8.5,C5H5N5O,8.61,150.0415,[M-H
 Nucleic Acid,HILIC,Guanine,NA,NA,NA,NA,NA,NA,C5H5N5O,8.61,152.0567,[M+H],1,cpd:C00242,HILICPos,NA,4,Mix2,CHEBI:16235,Guanine; 2-Amino-6-hydroxypurine
 Nucleoside,HILIC,Guanosine,NA,NA,NA,NA,NA,NA,C10H13N5O5,9.06,284.0988,[M+H],1,cpd:C00387,HILICPos,NA,4,Mix2,CHEBI:16750,Guanosine
 Nucleoside,HILIC,Guanosine,100 - >10000,0.609,13.7,<10 - 1000,4.329,16.5,C10H13N5O5 ,9.06,282.08439,[M-H],-1,cpd:C00387,HILICNeg,NA,4,Mix2,CHEBI:16750,Guanosine
-Internal Standard,HILIC,"Guanosine Monophosphate, 15N5",NA,NA,NA,NA,NA,NA,C10H13N(15)5O8P,13.85,367.0359,[M-H],-1,NA,HILICNeg,NA,2,NA,NA,NA
+Internal Standard,HILIC,"Guanosine Monophosphate, 15N5",NA,NA,NA,NA,NA,NA,C10H13N(15)5O8P,13.85,367.0364,[M-H],-1,NA,HILICNeg,NA,2,NA,NA,NA
 Amino Acid,HILIC,Histidine,100 - >10000,0.759,23,<10 - 1000,0.704,6.9,C6H9N3O2,11.45,156.07675,[M+H],1,cpd:C00135,HILICPos,NA,4,Mix1,CHEBI:15971,L-Histidine; (S)-alpha-Amino-1H-imidazole-4-propionic acid
 Osmolyte,HILIC,Homarine,NA,1.23,10.4,NA,1.177,9.4,C7H7NO2,6.19,138.05496,[M+H],1,NA,HILICPos,NA,4,Mix2,CHEBI:69061,NA
 New,HILIC,Homocysteine Thiolactone,NA,NA,NA,NA,NA,NA,C4H7NOS,2.78,118.0865,[M+H],1,NA,HILICPos,NA,4,Mix1,CHEBI:60315,NA
@@ -230,7 +230,7 @@ Phytohormone,HILIC,Indole 3 carbinol,100 - >10000,1.007,10.1,500 - >10000,0.973,
 Phytohormone,HILIC,Indole 3 Pyruvic Acid,500 - >10000,0.662,5.1,NA - 1000,1.377,30.4,C11H9NO3,2.375,202.0509,[M-H],-1,cpd:C00331,HILICNeg,NA,4,Mix2,CHEBI:29750,Indolepyruvate; Indolepyruvic acid; (Indol-3-yl)pyruvate; Indole-3-pyruvate; 
 Sulfur,HILIC,Isethionic Acid,<10 - 1000,0.758,17.5,<10 - 1000,0.747,6.1,C2H6O4S,7.2,124.9904,[M-H],-1,cpd:C05123,HILICNeg,NA,4,Mix2,CHEBI:1157,2-Hydroxyethanesulfonate; 2-Hydroxyethanesulfonic acid; 2-Hydroxyethane-1-sulfonic acid; Isethionic acid; Isethionate
 Internal Standard,HILIC,"Isethionic Acid, 13C2",NA,NA,NA,NA,NA,NA,C(13)2H6O4S,7.2,126.9981,[M-H],-1,NA,HILICNeg,NA,0.5,NA,NA,NA
-Organic Acid,HILIC,Isocitric Acid,500 - >10000,0.929,44.7,20 - >10000,0.982,18.4,C6H8O7,15.65,191.01973,[M-H],-1,cpd:C00311,HILICNeg,NA,4,Mix1,CHEBI:30887,"Isocitrate; Isocitric acid; 1-Hydroxytricarballylic acid; 1-Hydroxypropane-1,2,3-tricarboxylic acid"
+Organic Acid,HILIC,Isocitric Acid,500 - >10000,0.929,44.7,20 - >10000,0.982,18.4,C6H8O7,15.65,191.01918,[M-H],-1,cpd:C00311,HILICNeg,NA,4,Mix1,CHEBI:30887,"Isocitrate; Isocitric acid; 1-Hydroxytricarballylic acid; 1-Hydroxypropane-1,2,3-tricarboxylic acid"
 Amino Acid,HILIC,Isoleucine,1000 - >10000,0.681,14.7,100 - >10000,0.956,9.3,C6H13NO2,8.17,132.10191,[M+H],1,cpd:C00407,HILICPos,NA,4,Mix1,CHEBI:17191,L-Isoleucine; 2-Amino-3-methylvaleric acid
 New,HILIC,Keto-?-(methylthio)butyric acid,NA,NA,NA,NA,NA,NA,C5H7O3S,2.59,147.0111,[M],-1,NA,HILICNeg,NA,5,Mix1,NA,NA
 Organic Acid,HILIC,Ketoglutaric Acid,1000 - >10000,0.867,14.7,500 - >10000,1.114,5.9,C5H6O5,10.845,145.0134,[M-H],-1,cpd:C00026,HILICNeg,NA,4,Mix1,CHEBI:30915,2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
@@ -266,7 +266,7 @@ New2,HILIC,Ophthalmic Acid,NA,NA,NA,NA,NA,NA,C11H19N3O6,10.73,290.1344,[M+H],1,N
 New,HILIC,Ornithine,NA,NA,NA,NA,NA,NA,C5H12N2O2,16.79,133.0973,[M+H],1,cpd:C00077,HILICPos,NA,5,Mix1,CHEBI:15729,"L-Ornithine; (S)-2,5-Diaminovaleric acid; (S)-2,5-Diaminopentanoic acid; (S)-2,5-Diaminopentanoate"
 Organic Acid,HILIC,Orotic Acid,100 - 1000,0.78,13.9,<10 - 1000,0.554,3.7,C5H4N2O4,4.195,155.0091,[M-H],-1,cpd:C00295,HILICNeg,NA,4,Mix1,CHEBI:16742,Orotate; Orotic acid; Uracil-6-carboxylic acid
 Organic Acid,HILIC,Oxalic Acid,500 - >10000,dl,dl,500 - >10000,0.717,19.8,C2H2O4,13.235,88.9869,[M-H],-1,cpd:C00209,HILICNeg,NA,4,Mix1,CHEBI:16995,Oxalate; Oxalic acid; Ethanedioic acid
-Organic Acid,HILIC,PEP,1000 - >10000,0.668,30.4,500 - >10000,1.369,27.7,C3H5O6P,13.865,166.9751,[M-H],-1,cpd:C00074,HILICNeg,NA,4,Mix1,CHEBI:18021,Phosphoenolpyruvate; Phosphoenolpyruvic acid; PEP
+Organic Acid,HILIC,PEP,1000 - >10000,0.668,30.4,500 - >10000,1.369,27.7,C3H5O6P,13.865,166.974553,[M-H],-1,cpd:C00074,HILICNeg,NA,4,Mix1,CHEBI:18021,Phosphoenolpyruvate; Phosphoenolpyruvic acid; PEP
 Sugar phosphate,HILIC,Phosphoglyceric Acid,10000 - >10000,0.757,27.6,100 - >10000,1.253,10.1,C3H7O7P,14.755,184.98566,[M-H],-1,cpd:C00197,HILICNeg,NA,4,Mix1,CHEBI:17794,3-Phospho-D-glycerate; D-Glycerate 3-phosphate; 3-Phospho-(R)-glycerate; 3-Phosphoglycerate
 Quorum sensing,HILIC,PQS,<10 - 1000,0.821,26.6,<10 - 1000,0.789,37.4,C16H21NO2,2.16,260.16451,[M+H],1,cpd:C11848,HILICPos,NA,4,Mix1,CHEBI:29472,2-Heptyl-3-hydroxy-quinolone; 2-Heptyl-3-hydroxy-4(1H)-quinolone; 2-Heptyl-3-hydroxy-4-quinolone
 Amino Acid,HILIC,Proline,100 - >10000,0.331,5.9,<10 - >10000,0.251,23.2,C5H9NO2,9.49,116.07061,[M+H],1,cpd:C00148,HILICPos,NA,4,Mix1,CHEBI:17203,L-Proline; 2-Pyrrolidinecarboxylic acid
@@ -287,7 +287,7 @@ Organic Acid,HILIC,Succinic Acid,1000 - >10000,dl,dl,500 - 1000,0.965,12.2,C4H6O
 Internal Standard,HILIC,"Succinic Acid, D4",NA,NA,NA,NA,NA,NA,C4D4H2O4,11.9,121.0444,[M-H],-1,NA,HILICNeg,NA,10,NA,NA,NA
 Co-enzyme A,HILIC,Succinyl CoA,100 - >10000,0.637,17.5,20 - >10000,0.968,21.2,C25H40N7O19P3S,12.965,866.12398,[M-H],-1,cpd:C00091,HILICNeg,NA,4,Mix1,CHEBI:15380,Succinyl-CoA; Succinyl coenzyme A
 New,HILIC,Sucrose,NA,NA,NA,NA,NA,NA,C12H22O11,11.93,341.1092,[M-H],-1,cpd:C00089,HILICNeg,NA,5,Mix1,CHEBI:17992,Sucrose; Cane sugar; Saccharose; 1-alpha-D-Glucopyranosyl-2-beta-D-fructofuranoside
-Internal Standard,HILIC,"Sucrose, 13C",NA,NA,NA,NA,NA,NA,C(13)12H22O11,11.77,353.1781,[M-H],-1,NA,HILICNeg,NA,5,NA,NA,NA
+Internal Standard,HILIC,"Sucrose, 13C",NA,NA,NA,NA,NA,NA,C(13)12H22O11,11.77,353.1497,[M-H],-1,NA,HILICNeg,NA,5,NA,NA,NA
 Sulfur,HILIC,Sulfoacetic Acid,<10 - >10000,0.906,19.8,<10 - 1000,0.909,3,C2H4O5S,13.9,138.9698,[M-H],-1,cpd:C14179,HILICNeg,NA,4,Mix2,CHEBI:50519,Sulfoacetate; Sulfoacetic acid
 Internal Standard,HILIC,"Sulfoacetic Acid, 13C2",NA,NA,NA,NA,NA,NA,C(13)2H4O5S,13.9,140.9774,[M-H],-1,NA,HILICNeg,NA,2.5,NA,NA,NA
 Sulfur,HILIC,Sulfolactic Acid,10000 - >10000,1.416,19.1,10000 - >10000,1.768,9.1,C3H6O6S,13.275,168.9812,[M-H],-1,cpd:C11537,HILICNeg,NA,16,Mix2,CHEBI:50519,(2R)-3-Sulfolactate; (R)-3-Sulfolactate
@@ -303,7 +303,7 @@ Nucleic Acid,HILIC,Thymine,NA,NA,NA,NA,NA,NA,C5H6N2O2,3.02,127.0504,[M+H],1,cpd:
 Nucleic Acid,HILIC,Thymine,100 - >10000,0.913,10.4,100 - 1000,1.113,2.5,C5H6N2O2,3.02,125.03565,[M-H],-1,cpd:C00178,HILICNeg,NA,4,Mix2,CHEBI:17821,Thymine; 5-Methyluracil
 Amino Acid - collagen,HILIC,trans Hydroxyl proline,20 - >10000,0.764,13.5,<10 - >10000,0.726,7,C5H9NO3,10.07,132.06552,[M+H],1,cpd:C01157,HILICPos,NA,4,Mix1,CHEBI:18095,Hydroxyproline; L-Hydroxyproline; trans-4-Hydroxy-L-proline
 Antioxidant,HILIC,Trehalose,100 - >10000,0.751,18.1,500 - >10000,1.046,8.4,C12H22O11,13,341.10893,[M-H],-1,cpd:C01083,HILICNeg,NA,4,Mix2,CHEBI:16551,"alpha,alpha-Trehalose; alpha,alpha'-Trehalose; Trehalose"
-Internal Standard,HILIC,"Trehalose, 13C",NA,NA,NA,NA,NA,NA,C(13)12H22O11,12.63,353.1781,[M-H],-1,NA,HILICNeg,NA,5,NA,NA,NA
+Internal Standard,HILIC,"Trehalose, 13C",NA,NA,NA,NA,NA,NA,C(13)12H22O11,12.63,353.1497,[M-H],-1,NA,HILICNeg,NA,5,NA,NA,NA
 New,HILIC,Trigonelline,NA,NA,NA,NA,NA,NA,C7H7NO2,8.36,138.0549,[M+H],1,cpd:C01004,HILICPos,NA,0.5,Mix1,CHEBI:18123,N-Methylnicotinate; Trigonelline; Trigenelline; 1-Methylpyridinio-3-carboxylate; Betaine nicotinate; Caffearin; Gynesine
 New2,HILIC,Trimethylamine,NA,NA,NA,NA,NA,NA,C3H9N,5.96,60.0815,[M+H],1,cpd:C00565,HILICPos,NA,10,Mix1,CHEBI:18139,"Trimethylamine; (CH3)3N; N,N-Dimethylmethanamine"
 New2,HILIC,Trimethylamine N-oxide,NA,NA,NA,NA,NA,NA,C3H9NO,6.59,76.0763,[M+H],1,cpd:C01104,HILICPos,NA,4,Mix1,CHEBI:15724,Trimethylamine N-oxide; (CH3)3NO
