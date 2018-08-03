@@ -225,7 +225,7 @@ New,HILIC,Homocystine,NA,NA,NA,NA,NA,NA,C8H16N2O4S2,12.58,269.0105,[M+H],1,cpd:C
 New,HILIC,Homoserine,NA,NA,NA,NA,NA,NA,C4H9NO3,11.32,120.0658,[M+H],1,cpd:C00263,HILICPos,NA,4,Mix1,CHEBI:15699,L-Homoserine; 2-Amino-4-hydroxybutyric acid
 Co-enzyme A,HILIC,Hydroxybutyryl CoA,100 - >10000,0.622,20.4,20 - >10000,1.021,22.2,C25H42N7O18P3S,11.545,852.1098,[M-H],-1,cpd:C01144,HILICNeg,NA,4,Mix1,CHEBI:15453,(S)-3-Hydroxybutanoyl-CoA; (S)-3-Hydroxybutyryl-CoA
 Amino Acid - collagen,HILIC,Hydroxylysine,10000 - >10000,0.796,25.4,20 - >10000,0.974,18.8,C6H14N2O3,16.37,163.10772,[M+H],1,cpd:C16741,HILICPos,NA,4,Mix1,CHEBI:21994,L-Hydroxylysine; 5-Hydroxy-L-lysine; L-erythro-5-Hydroxylysine; (5R)-5-Hydroxy-L-lysine
-Sulfur,HILIC,Hypotaurine,NA,NA,NA,NA,NA,NA,C2H7NO2S,11.36,110.0716,[M+H],1,cpd:C00519,HILICPos,NA,4,Mix2,CHEBI:16668,Hypotaurine; 2-Aminoethanesulfinic acid
+Sulfur,HILIC,Hypotaurine,NA,NA,NA,NA,NA,NA,C2H7NO2S,11.36,110.027576,[M+H],1,cpd:C00519,HILICPos,NA,4,Mix2,CHEBI:16668,Hypotaurine; 2-Aminoethanesulfinic acid
 Phytohormone,HILIC,Indole 3 carbinol,100 - >10000,1.007,10.1,500 - >10000,0.973,16.3,C9H9NO,2.395,146.0603,[M-H],-1,NA,HILICNeg,NA,4,Mix2,CHEBI:24814,NA
 Phytohormone,HILIC,Indole 3 Pyruvic Acid,500 - >10000,0.662,5.1,NA - 1000,1.377,30.4,C11H9NO3,2.375,202.0509,[M-H],-1,cpd:C00331,HILICNeg,NA,4,Mix2,CHEBI:29750,Indolepyruvate; Indolepyruvic acid; (Indol-3-yl)pyruvate; Indole-3-pyruvate; 
 Sulfur,HILIC,Isethionic Acid,<10 - 1000,0.758,17.5,<10 - 1000,0.747,6.1,C2H6O4S,7.2,124.9904,[M-H],-1,cpd:C05123,HILICNeg,NA,4,Mix2,CHEBI:1157,2-Hydroxyethanesulfonate; 2-Hydroxyethanesulfonic acid; 2-Hydroxyethane-1-sulfonic acid; Isethionic acid; Isethionate
@@ -240,7 +240,7 @@ Amino Acid,HILIC,Leucine,1000 - >10000,0.895,10.3,20 - >10000,0.743,4,C6H13NO2,7
 Amino Acid synthesis,HILIC,L-Homocysteine,100 - >10000,0,dl,100 - >10000,0,dl,C4H9NO2S,8.7,136.04268,[M+H],1,cpd:C00155,HILICPos,NA,4,Mix2,CHEBI:17588,L-Homocysteine; L-2-Amino-4-mercaptobutyric acid; Homocysteine
 Organic Acid,HILIC,Lipoic Acid,500 - >10000,0.93,14.2,20 - >10000,1.022,7.8,C8H14O2S2,2.42,205.03624,[M-H],-1,cpd:C00725,HILICNeg,NA,4,Mix1,CHEBI:16494,Lipoate; Lipoic acid; Thioctic acid; dl-alpha-Lipoic acid; DL-Thioctic acid
 Internal Standard,HILIC,"L-Isoleucine, 15N",NA,NA,NA,NA,NA,NA,C6H13N(15)O2,8.17,133.0989,[M+H],1,NA,HILICPos,NA,0.5,NA,NA,NA
-Internal Standard,HILIC,"L-Methionine, D3",NA,NA,NA,NA,NA,NA,C5D3H8NO2S,8.29,153.0722,[M+H],1,NA,HILICPos,NA,1,NA,NA,NA
+Internal Standard,HILIC,"L-Methionine, D3",NA,NA,NA,NA,NA,NA,C5D3H8NO2S,7.96,153.0771,[M+H],1,NA,HILICPos,NA,1,NA,NA,NA
 New2,HILIC,L-Pyroglutamic acid ,NA,NA,NA,NA,NA,NA,C5H7NO3,7.97,128.0342,[M-H],-1,cpd:C01879,HILICNeg,NA,4,Mix1,CHEBI:16010,5-Oxoproline; Pidolic acid; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid
 New2,HILIC,L-Pyroglutamic acid ,NA,NA,NA,NA,NA,NA,C5H7NO3,7.97,130.0501,[M+H],1,cpd:C01879,HILICPos,NA,4,Mix1,CHEBI:16010,5-Oxoproline; Pidolic acid; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid
 Amino Acid,HILIC,Lysine,10000 - >10000,0.822,20,<10 - >10000,0.967,13.1,C6H14N2O2,17.5,147.1128,[M+H],1,cpd:C00047,HILICPos,NA,4,Mix1,CHEBI:18019,"L-Lysine; Lysine acid; 2,6-Diaminohexanoic acid"
@@ -249,8 +249,8 @@ Co-enzyme A,HILIC,Malonyl CoA,100 - >10000,0.441,50,100 - >10000,0.281,10.7,C24H
 New2,HILIC,Maltotetraose,NA,NA,NA,NA,NA,NA,C24H42O21,13.78,665.2167,[M-H],-1,cpd:C02052,HILICNeg,NA,NA,NA,CHEBI:28460,Maltotetraose
 New2,HILIC,Maltotriose,NA,NA,NA,NA,NA,NA,C18H32O16,13.03,503.1631,[M-H],-1,cpd:C01835,HILICNeg,NA,NA,NA,CHEBI:61993,Maltotriose; Amylotriose
 Sulfur,HILIC,MESNA (Sodium 2-mercaptoethanesulfonate),<10 - 1000,0.266,20.6,<10 - 1000,0.953,7.8,C2H5O3S2,2.67,140.9676,[M],-1,NA,HILICNeg,NA,4,Mix2,CHEBI:31824,NA
-Amino Acid,HILIC,Methionine,1000 - >10000,0.85,12,<10 - 1000,1.021,18.5,C5H11NO2S,8.29,150.05833,[M+H],1,cpd:C00073,HILICPos,NA,4,Mix1,CHEBI:16811,L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid
-New,HILIC,Methionine Sulfoxide,NA,NA,NA,NA,NA,NA,C5H11NO3S,9.73,166.0644,[M+H],1,cpd:C02989,HILICPos,NA,4,Mix1,CHEBI:17016,L-Methionine S-oxide
+Amino Acid,HILIC,Methionine,1000 - >10000,0.85,12,<10 - 1000,1.021,18.5,C5H11NO2S,7.96,150.05833,[M+H],1,cpd:C00073,HILICPos,NA,4,Mix1,CHEBI:16811,L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid
+New,HILIC,Methionine Sulfoxide,NA,NA,NA,NA,NA,NA,C5H11NO3S,9.73,166.053791,[M+H],1,cpd:C02989,HILICPos,NA,4,Mix1,CHEBI:17016,L-Methionine S-oxide
 Co-enzyme A,HILIC,Methyl Malonyl CoA,100 - >10000,0.625,17.5,20 - >10000,0.759,8.5,C25H40N7O19P3S,13.18,866.1251,[M-H],-1,cpd:C00683,HILICNeg,NA,4,Mix1,CHEBI:15466,(S)-Methylmalonyl-CoA; (S)-Methylmalonyl-coenzyme A; (2S)-Methylmalonyl-CoA; D-Methylmalonyl-CoA
 Organic Acid,HILIC,Methylphosphonic Acid,1000 - >10000,dl,dl,100 - >10000,0.759,8.5,CH5O3P,11,94.9795,[M-H],-1,NA,HILICNeg,NA,4,Mix1,CHEBI:45129,NA
 Peptidoglycan,HILIC,Muramic Acid,1000 - >10000,0.545,23.8,20 - 1000,0.63,15,C9H17NO7,11,252.10778,[M+H],1,cpd:C06470,HILICPos,NA,4,Mix1,CHEBI:44312,Muramic acid; 3-O-alpha-Carboxyethyl-D-glucosamine; 2-Amino-3-O-[(R)-1-carboxyethyl]-2-deoxy-D-glucopyranose
@@ -343,6 +343,6 @@ New3,HILIC,beta-Alanine,NA,NA,NA,NA,NA,NA,C3H7NO2,11.39,90.0555,[M+H],1,cpd:C000
 New3,HILIC,Melamine,NA,NA,NA,NA,NA,NA,C3H6N6,6.68,127.0727,[M+H],1,cpd:C08737,HILICPos,NA,4,Mix2,CHEBI:27915,"Melamine; 2,4,6-Triamino-1,3,5-triazine"
 New3,HILIC,Maltose,NA,NA,NA,NA,NA,NA,C12H22O11,12.31,341.1096,[M-H],-1,cpd:C00208,HILICNeg,NA,4,Mix2,CHEBI:17306,Maltose; Malt sugar; alpha-D-Glucopyranosyl-(1->4)-D-glucopyranose
 New3,HILIC,Lactose,NA,NA,NA,NA,NA,NA,C12H22O11,12.53,343.1236,[M+H],1,cpd:C00243,HILICPos,NA,4,Mix2,CHEBI:17716,Lactose; 1-beta-D-Galactopyranosyl-4-D-glucopyranose; beta-D-Gal-(1->4)-D-Glc; Milk sugar
-New4,HILIC,Acetylcholine,NA,NA,NA,NA,NA,NA,C7H16NO2,13.37,146.1174,[M],1,cpd:C01996,HILICPos,NA,NA,NA,CHEBI:15355,Acetylcholine; O-Acetylcholine
-New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,154.0169,[M+H],1,cpd:C00606,HILICPos,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
-New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,152.0015,[M-H],-1,cpd:C00606,HILICNeg,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
+New4,HILIC,Acetylcholine,NA,NA,NA,NA,NA,NA,C7H16NO2,13.37,146.118104,[M],1,cpd:C01996,HILICPos,NA,NA,NA,CHEBI:15355,Acetylcholine; O-Acetylcholine
+New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,154.017406,[M+H],1,cpd:C00606,HILICPos,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
+New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,152.001756,[M-H],-1,cpd:C00606,HILICNeg,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
