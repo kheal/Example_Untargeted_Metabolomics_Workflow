@@ -210,7 +210,7 @@ Antioxidant,HILIC,Glutathione,100 - >10000,0.112,23.3,20 - >10000,0.143,19.1,C10
 Sulfur,HILIC,Glutathione Disulfide,NA,NA,NA,NA,NA,NA,C20H32N6O12S2,14.98,613.159793,[M+H],1,cpd:C00127,HILICPos,NA,4,Mix2,CHEBI:17858,Glutathione disulfide; GSSG; Oxiglutatione; Oxidized glutathione
 Redox,HILIC,glycerol 3 phosphate,1000 - 1000,0.83,16.7,100 - >10000,0.828,6.1,C3H9O6P,13.065,171.005853,[M-H],-1,cpd:C00093,HILICNeg,NA,4,Mix2,CHEBI:15978,sn-Glycerol 3-phosphate; Glycerophosphoric acid; D-Glycerol 1-phosphate
 New2,HILIC,Glycerophosphocholine,NA,NA,NA,NA,NA,NA,C8H21NO6P,10.86,258.110652,[M],1,cpd:C00670,HILICPos,NA,4,Mix1,CHEBI:36313,sn-Glycero-3-phosphocholine; Glycerophosphocholine
-Amino Acid,HILIC,Glycine,NA,NA,NA,NA,NA,NA,C2H5NO2,9.895,76.039854,[M+H],1,cpd:C00037,HILICPos,NA,NA,Mix1,CHEBI:15428,Glycine; Aminoacetic acid; Gly
+Amino Acid,HILIC,Glycine,NA,NA,NA,NA,NA,NA,C2H5NO2,11.51,76.039854,[M+H],1,cpd:C00037,HILICPos,NA,NA,Mix1,CHEBI:15428,Glycine; Aminoacetic acid; Gly
 Energy charge,HILIC,GMP,100 - >10000,0.248,28.8,100 - >10000,0.577,13,C10H14N5O8P,13.85,362.050178,[M-H],-1,cpd:C00144,HILICNeg,NA,4,Mix2,CHEBI:17345,GMP; Guanosine 5'-phosphate; Guanosine monophosphate; Guanosine 5'-monophosphate; Guanylic acid
 Energy charge,HILIC,GTP,100 - >10000,0.493,92.4,500 - >10000,1.978,20.5,C10H16N5O14P3,16.58,521.982844,[M-H],-1,cpd:C00044,HILICNeg,NA,4,Mix2,CHEBI:15996,GTP; Guanosine 5'-triphosphate
 Nucleic Acid,HILIC,Guanine,NA,1.159,12.2,NA,1.617,8.5,C5H5N5O,8.61,150.041585,[M-H],-1,cpd:C00242,HILICNeg,NA,4,Mix2,CHEBI:16235,Guanine; 2-Amino-6-hydroxypurine
@@ -347,4 +347,4 @@ New3,HILIC,Lactose,NA,NA,NA,NA,NA,NA,C12H22O11,12.53,343.12404,[M+H],1,cpd:C0024
 New4,HILIC,Acetylcholine,NA,NA,NA,NA,NA,NA,C7H16NO2,13.37,146.118104,[M],1,cpd:C01996,HILICPos,NA,NA,NA,CHEBI:15355,Acetylcholine; O-Acetylcholine
 New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,154.017406,[M+H],1,cpd:C00606,HILICPos,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
 New4,HILIC,Cysteinesulfinic acid,NA,NA,NA,NA,NA,NA,C3H7NO4S,10.74,152.001756,[M-H],-1,cpd:C00606,HILICNeg,NA,NA,NA,CHEBI:16345,3-Sulfino-L-alanine; L-Cysteinesulfinic acid; 3-Sulphino-L-alanine; 3-Sulfinoalanine
-New4,HILIC,Trimethylammonium Propionate (TMAP),NA,NA,NA,NA,NA,NA,C6H13NO2,9.38,132.1018,[M+H],1,NA,HILICPos,NA,NA,NA,NA,NA
+New4,HILIC,Trimethylammonium Propionate (TMAP),NA,NA,NA,NA,NA,NA,C6H13NO2,9.38,132.1018,[M+H],1,cpd:C08263,HILICPos,NA,NA,NA,CHEBI:28825,beta-Alaninebetaine; beta-Alanine betaine; Propiobetaine; Trimethylalanine
