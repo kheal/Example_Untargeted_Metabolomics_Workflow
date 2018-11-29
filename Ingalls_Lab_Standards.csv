@@ -193,6 +193,7 @@ Internal Standard,HILIC,"DL-Valine, D8",NA,NA,NA,NA,NA,NA,C5H4D8NO2,9.09,126.136
 Sulfur,HILIC,DMSP,<10 - >10000,0.324,10,<10 - 1000,0.278,9,C5H10O2S,9.325,135.047977,[M+H],1,cpd:C04022,HILICPos,NA,4,Mix2,CHEBI:16457,"S,S-Dimethyl-beta-propiothetin; S-Dimethylsulfonium propionic acid; Dimethylpropiothetin; DMPT; DMSP"
 Osmolyte,HILIC,Ectoine,100 - >10000,0.544,14,500 - 1000,1.894,12.8,C6H10N2O2,9.25,141.066403,[M-H],-1,cpd:C06231,HILICNeg,NA,8,Mix2,CHEBI:27592,Ectoine; L-Ectoine
 Osmolyte,HILIC,Ectoine,NA,NA,NA,NA,NA,NA,C6H10N2O2,9.25,143.082053,[M+H],1,cpd:C06231,HILICPos,NA,8,Mix2,CHEBI:27592,Ectoine; L-Ectoine
+Osmolyte,HILIC,Hydroxyectoine,NA,NA,NA,NA,NA,NA,C6H10N2O3,11.07,159.076968,[M+H],1,cpd:C16432,HILICPos,NA,0.1,Mix2,CHEBI:49432,5-Hydroxyectoine
 Sulfur,HILIC,Ethanesulfonic Acid,NA,NA,NA,NA,NA,NA,C2H6O3S,4.29,108.995942,[M-H],-1,NA,HILICNeg,NA,4,Mix2,CHEBI:42465,NA
 Lignin,HILIC,Ethyl 3 aminobenzoate,NA,NA,NA,NA,NA,NA,C9H11NO2,2.01,166.086804,[M+H],1,cpd:C07527,HILICPos,NA,NA,NA,CHEBI:116735,Benzocaine; Ethyl aminobenzoate
 Lignin,HILIC,Ethyl Dihydroxybenzoate,<10 - >10000,0.861,16,<10 - >10000,1.074,5.4,C9H10O4,2.08,181.050085,[M-H],-1,NA,HILICNeg,NA,4,Mix2,CHEBI:132364,NA
