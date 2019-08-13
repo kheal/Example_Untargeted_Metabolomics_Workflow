@@ -255,7 +255,7 @@ New,HILIC,Methionine Sulfoxide,NA,NA,NA,NA,NA,NA,C5H11NO3S,9.73,166.053791,[M+H]
 Co-enzyme A,HILIC,Methyl Malonyl CoA,100 - >10000,0.625,17.5,20 - >10000,0.759,8.5,C25H40N7O19P3S,13.18,866.123439,[M-H],-1,cpd:C00683,HILICNeg,NA,4,Mix1,160401,CHEBI:15466,(S)-Methylmalonyl-CoA; (S)-Methylmalonyl-coenzyme A; (2S)-Methylmalonyl-CoA; D-Methylmalonyl-CoA
 Organic Acid,HILIC,Methylphosphonic Acid,1000 - >10000,dl,dl,100 - >10000,0.759,8.5,CH5O3P,11,94.989808,[M-H],-1,NA,HILICNeg,NA,4,Mix1,160401,CHEBI:45129,NA
 Peptidoglycan,HILIC,Muramic Acid,1000 - >10000,0.545,23.8,20 - 1000,0.63,15,C9H17NO7,11,252.108329,[M+H],1,cpd:C06470,HILICPos,NA,4,Mix1,160401,CHEBI:44312,Muramic acid; 3-O-alpha-Carboxyethyl-D-glucosamine; 2-Amino-3-O-[(R)-1-carboxyethyl]-2-deoxy-D-glucopyranose
-New,HILIC,N(e)-Acetyl-Lysine,NA,NA,NA,NA,NA,NA,C8H16N2O3,9.71,189.123918,[M+H],1,cpd:C12989,HILICPos,NA,4,Mix1,170331,CHEBI:35704,N2-Acetyl-L-lysine; N(alpha)-Acetyllysine
+New,HILIC,N(e)-Acetyl-Lysine,NA,NA,NA,NA,NA,NA,C8H16N2O3,9.71,189.123918,[M+H],1,cpd:C02727,HILICPos,NA,4,Mix1,170331,CHEBI:17752,N6-Acetyl-L-lysine
 New,HILIC,N-Acetyl-Serine,NA,NA,NA,NA,NA,NA,C5H9NO4,6.27,148.060984,[M+H],1,cpd:C00979,HILICPos,NA,4,Mix1,170331,CHEBI:17981,O-Acetyl-L-serine; O3-Acetyl-L-serine
 Sulfur,HILIC,N-acetyltaurine,<10 - 1000,1.111,9.9,20 - 1000,1.079,2.1,C4H9NO4S,3.74,166.017406,[M-H],-1,NA,HILICNeg,NA,4,Mix2,160401,CHEBI:84415,NA
 Redox,HILIC,NAD,100 - >10000,0.594,15.9,20 - >10000,1.022,19.3,C21H27N7O14P2,10.6,662.101304,[M-H],-1,cpd:C00003,HILICNeg,NA,4,Mix2,160401,CHEBI:15846,NAD+; NAD; Nicotinamide adenine dinucleotide; DPN; Diphosphopyridine nucleotide; Nadide; beta-NAD+
